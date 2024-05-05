@@ -27,17 +27,17 @@ class AuthFilter implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        $key = getenv('JWT_SECRET_KEY');
-        $header = $request->getheaders("Authorization");
+        $key = getenv('JWT_SECRET');
+        $header = $request->getHeader("Authorization");
         $token = null;
 
         if (!empty($header)){
-            if(preg_match('/bearer\s(\S+)/',$header,$matches)){
+            if(preg_match('/Bearer\s(\S+)/',$header,$matches)){
                 $token = $matches[1];
             }
         }
 
-        if(is_null($token)||empty($token)){
+        if(is_null($token) || empty($token)){
             $response = service('response');
             $response->setBody('Access denied');
             $response->setStatusCode(401);

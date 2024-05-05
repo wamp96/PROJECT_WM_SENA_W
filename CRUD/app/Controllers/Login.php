@@ -1,7 +1,7 @@
 <?php
-namespace App\Controller;
+namespace App\Controllers;
 
-use App\Controller\BaseController;
+use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\UserModel;
 use \Firebase\JWT\JWT;
@@ -9,7 +9,7 @@ use \Firebase\JWT\JWT;
 
 class Login extends BaseController
 {
-    use RequestTrait;
+    use ResponseTrait;
 
     public function index()
     {
@@ -26,14 +26,15 @@ class Login extends BaseController
             return $this->respond(['error' => 'Invalid username or password'],401);
         }
 
-        $pwd_verify = password_verify($password,$user['password']);
+        $pwd_verify = password_verify($password, $user['password']);
 
-        if($pwd_verify){
+        if(!$pwd_verify){
             return $this->respond(['error' => 'Invalid username or password'],401);
         }
+
         $key = getenv('JWT_SECRET');
         $iat = time();
-        $exp = $iat + 360;
+        $exp = $iat + 3600;
         $payload = array(
             "iss" => "Issuer of the JWT",
             "aud" => "Audience that the JWT",

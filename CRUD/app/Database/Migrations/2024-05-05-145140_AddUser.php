@@ -4,6 +4,8 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
+
+//Se cra
 class AddUser extends Migration
 {
     public function up()
@@ -15,10 +17,6 @@ class AddUser extends Migration
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'name' => [
-                'type' => 'VARCHAR',
-                'constraint' => '255',
-            ],
             'email' => [
                 'type' => 'VARCHAR',
                 'unique' => true,
@@ -28,15 +26,13 @@ class AddUser extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'role' => [
-                'type' => 'VARCHAR',
-                'constraint' => '255',
-            ],
             'created_at' => [
-                'type' => 'DATETIME',
+                'type' => 'TIMESTAMP',
+                'null' => true,
             ],
             'updated_at' => [
-                'type' => 'DATETIME',
+                'type' => 'TIMESTAMP',
+                'null' => true,
             ],
         ]);
         $this->forge->addPrimaryKey('id');
