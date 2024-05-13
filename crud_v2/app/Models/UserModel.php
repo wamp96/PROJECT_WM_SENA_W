@@ -4,21 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProfileModel extends Model
+class UserModel extends Model
 {
-    protected $table            = 'profiles';
-    protected $primaryKey       = 'Profile_id';
+    protected $table            = 'users';
+    protected $primaryKey       = 'User_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['Profile_email', 'Profile_name', 'Profile_photo', 'User_id_fk'];
+    protected $allowedFields    = ['User_user', 'User_password','Roles_fk','User_status_fk'];
 
     protected bool $allowEmptyInserts = false;
-    protected bool $updateOnlyChanged = true;
-
-    protected array $casts = [];
-    protected array $castHandlers = [];
 
     // Dates
     protected $useTimestamps = false;

@@ -5,13 +5,14 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+//$routes->get('/', 'Home::index');
 
-//CRUD----------------------------------------------------------------
+//GROUP CRUD----------------------------------------------------------------
 
-$routes->get('profiles-list','Profile::index');
-$routes->get('profile-form','Profile::create');
-$routes->post('submit-form','Profile::store');
-$routes->get('edit-view/(:num)', 'Profile::singleProfile/$1');
-$routes->post('update', 'Profile::update');
-$routes->get('delete/(:num)', 'Profile::delete/$1');
+$routes->group("userStatus", function($routes){
+    $routes->get("show", "UserStatus::index");
+    $routes->get("edit/(:num)","UserStatus::singleUserStatus/$1");
+    $routes->get("delete/(:num)","UserStatus::delete/$1");
+    $routes->post("add","UserStatus::create");
+    $routes->post("update","UserStatus::update");
+});
