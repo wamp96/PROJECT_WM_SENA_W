@@ -13,22 +13,26 @@
 
 
 <body>
+    <!--Preload--> 
+    <?php require_once('../app/Views/preload/preload.php')?>
+    <!--End Preload--> 
+
     <!--Navbar-->
-    <?php require_once('../app/Views/assets/navbar/navbar.php');?>    
+    <?php require_once('../app/Views/nav/navbar.php');?>    
     <!--End Navbar-->
 
     <!--Container-->
     <div class="container">
     <h3><?=$title?></h3>
-    <button type="button" class="btn btn-primary" onclick="newStatus()" style="font-size:0.5em;"></button>
+    <button type="button" class="btn btn-primary" onclick="add()" style="font-size:0.5em;">ADD</button>
         <!--Container Table-->
-        <?php require_once('../app/Views/assets/userStatus/table.php');?>    
+        <?php require_once('../app/Views/userStatus/table.php');?>    
         <!--End Container Table-->    
     </div>
     <!--End Container-->
     
     <!--Footer-->
-    <?php require_once('../app/Views/assets/footer/footer.php');?>    
+    <?php require_once('../app/Views/footer/footer.php');?>    
     <!--End Footer-->
     
     <!--Modal-->
@@ -40,7 +44,7 @@
                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <?php require_once('../app/Views/assets/userStatus/form.php')?>
+                    <?php require_once('../app/Views/nav/navbar.php')?>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>

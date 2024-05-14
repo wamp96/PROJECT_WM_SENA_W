@@ -6,11 +6,12 @@ namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
 use App\Models\UserStatusModel;
-use CodeIgntier\Controllers;
+use CodeIgntier\Controller;
 use CodeIgntier\HTTP\ResponseInterface;
 
 
-class UserStatus extends Controller{
+class UserStatus extends BaseController
+{
 
     //Variables
     private $primarykey;
