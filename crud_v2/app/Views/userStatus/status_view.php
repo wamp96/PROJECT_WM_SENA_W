@@ -24,7 +24,7 @@
     <!--Container-->
     <div class="container">
     <h3><?=$title?></h3>
-    <button type="button" class="btn btn-primary" onclick="add()" style="font-size:0.5em;">ADD</button>
+    <button type="button" class="btn btn-primary btn-actions" title="Button new User Status" onclick="add()" style="font-size: 0.5em;"><i class="bi bi-plus-circle-fill"></i></button>
         <!--Container Table-->
         <?php require_once('../app/Views/userStatus/table.php');?>    
         <!--End Container Table-->    
@@ -58,6 +58,6 @@
     <?php require_once('../app/Views/assets/js/js.php')?>
     <?php require_once('../app/Views/assets/js/dataTable.php')?>
     <!--JS Controller-->
-    <script src="../Controllers/userStatus/userStatus.js"></script>
+    <script src="../public/controllers/userStatus.js"></script>
 </body>
 </html>

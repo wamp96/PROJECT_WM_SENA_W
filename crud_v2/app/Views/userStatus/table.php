@@ -17,9 +17,9 @@
                         <td><?php echo $obj['User_status_description'];?></td>
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                <button type="button" onclick="show(<?php echo $obj['User_status_id'];?>)" class="btn btn-success" style="font-size: 0.5em;">SHOW</button>
-                                <button type="button" onclick="edit(<?php echo $obj['User_status_id'];?>)" class="btn btn-warning" style="font-size: 0.5em;">EDIT</button>
-                                <button type="button" onclick="delete_(<?php echo $obj['User_status_id'];?>)" class="btn btn-danger" style="font-size: 0.5em;">DELETE</button>                        
+                                <button type="button" title="Button Show User Status" onclick="show(<?php echo $obj['User_status_id'];?>)" class="btn btn-success btn-action" style="font-size: 0.5em;"><i class="bi bi-eye-fill"></i></button>
+                                <button type="button" title="Button Edit User Status" onclick="edit(<?php echo $obj['User_status_id'];?>)" class="btn btn-warning btn-action" style="font-size: 0.5em;"><i class="bi bi-pencil-square"></i></button>
+                                <button type="button" title="Button Delete User Status" onclick="delete_(<?php echo $obj['User_status_id'];?>)" class="btn btn-danger btn-action" style="font-size: 0.5em;"><i class="bi bi-trash-fill"></i></button>                        
                             </div>
                         </td>
                     </tr>                
