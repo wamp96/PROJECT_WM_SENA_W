@@ -6,11 +6,11 @@ namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
 use App\Models\UserStatusModel;
-use CodeIgntier\Controller;
-use CodeIgntier\HTTP\ResponseInterface;
+use CodeIgniter\Controller;
+use CodeIgniter\HTTP\ResponseInterface;
 
 
-class UserStatus extends BaseController
+class UserStatus extends BaseController 
 {
 
     //Variables
@@ -81,12 +81,12 @@ class UserStatus extends BaseController
 
     public function update(){
         if($this ->request->isAJAX()){
-            $today =date("Y-m-d H:i:s");
+            $today = date("Y-m-d H:i:s");
             $id = $this->request->getVar($this->primarykey);
             $dataModel=[
                 'User_status_name' => $this->request->getVar('User_status_name'),
                 'User_status_description' => $this->request->getVar('User_status_description'),
-                'update_at' => $today
+                'update_at' => $today                 
             ];
             if($this->StatusModel->update($id, $dataModel)){
                 $data['message'] = 'success' ;
@@ -107,7 +107,8 @@ class UserStatus extends BaseController
     }
 
     public function delete($id = null)
-    {   try{
+    {   
+        try{
             if($this->StatusModel->where($this->primarykey, $id)->delete($id)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
@@ -131,8 +132,11 @@ class UserStatus extends BaseController
             'User_status_id' => $this->request->getVar('User_status_id'),
             'User_status_name' => $this->request->getVar('User_status_name'),
             'User_status_description' => $this->request->getVar('User_status_description'),
-            'updated_at' => $this->request->getVar('updated_at'),
+            'updated_at' => $this->request->getVar('updated_at')
         ];
         return $data;
     }
 }
+
+
+?>

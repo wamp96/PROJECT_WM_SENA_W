@@ -2,7 +2,7 @@
 //CONSTANTES
 const formId = 'my-form';
 const modalId = 'my-modal';
-const model = 'userStatus';
+const model = 'UserStatus';
 const tableId = 'table-index';
 const preloadId = 'preloadId';
 const classEdit = 'edit-input';
@@ -35,7 +35,7 @@ function add(){
 }
 
 function edit(id){
-    mainApp.disabledFormAll();
+    mainApp.disabledFormEdit();
     mainApp.resetForm();
     insertUpdate = false;
     btnEnabled(false);
@@ -43,7 +43,7 @@ function edit(id){
 }
 
 //FUNCIONES ASINCRONICAS
-async function delete_(){
+async function delete_(id){
     method = 'GET';
     url = URI_STATUS + LIST_CRUD[3] + '/' + id;
     data = "";
@@ -51,7 +51,7 @@ async function delete_(){
         resultFetch = getData(data , method, url);
         resultFetch.then(response => response.json())
         .then(data => {
-            console.log(data);
+            //console.log(data);
             reloadPage();
         })
         .catch(error => {
@@ -70,23 +70,27 @@ async function getDataId(id){
     resultFetch = getData(data , method, url);
     resultFetch.then(response => response.json())
         .then(data => {
-            console.log(data);
             mainApp.setDataFormJson(data[model]);
             mainApp.showModal();
             mainApp.hiddenPreload();
         })
         .catch(error => {
-            console.log(error);
+            console.error(error);
             mainApp.hiddenPreload();
         })
         .finally();
 }
 
+
+function btnEnabled(type) {
+     btnSubmit.disabled = type; 
+    }
+
+
 async function getData(data, method, url){
     var parameters;
     mainApp.showPreload();
-
-    if(method == 'GET'){
+    if(method == "GET"){
         parameters = {
             method: method,
             headers: {
@@ -126,7 +130,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
             resultFetch.then(response => response.json())
            .then(data => {
                 console.log(data);
-                mainApp.hiddenPreload();
+                mainApp.hiddenModal();
                 reloadPage();
            })
            .catch(error => {
@@ -138,11 +142,11 @@ mainApp.getForm().addEventListener('submit', async function (event){
             method = 'POST';
             url = URI_STATUS + LIST_CRUD[2];
             data = mainApp.getDataFormJson();
-            const returnFetch = getData(data, method, url);
-            returnFetch.then(response => response.json())
+            resultFetch = getData(data, method, url);
+            resultFetch.then(response => response.json())
             .then(data => {
                 console.log(data);
-                mainApp.hiddenPreload();
+                mainApp.hiddenModal();
                 reloadPage();
            })
            .catch(error => {
@@ -153,7 +157,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
         }
     }else{
         alert("Data Validate");
-        mainApp.resetForm();
+        //mainApp.resetForm();
     }
 });
 
@@ -164,3 +168,9 @@ function reloadPage(){
     location.reload();
   },500)
 }
+
+function action() {
+    mainApp.hiddenPreload();
+  };
+
+document.addEventListener("DOMContentLoaded", action); 

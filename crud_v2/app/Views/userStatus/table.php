@@ -10,8 +10,8 @@
         </thead>
         <tbody>
             <?php if ($UserStatus) : ?>
-                <?php foreach($UserStatus as $obj) : ?>
-                    <tr>
+                <?php foreach($UserStatus as $obj) :  ?>
+                    <tr class="text-center">
                         <td><?php echo $obj['User_status_id'];?></td>
                         <td><?php echo $obj['User_status_name'];?></td>
                         <td><?php echo $obj['User_status_description'];?></td>

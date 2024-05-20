@@ -10,7 +10,7 @@ use CodeIgniter\Router\RouteCollection;
 //GROUP CRUD----------------------------------------------------------------
 
 $routes->group("userStatus", function($routes){
-    $routes->get("/", "UserStatus::index");
+    $routes->get("/", "userStatus::index");
     $routes->get("show", "UserStatus::index");
     $routes->get("edit/(:num)","UserStatus::singleUserStatus/$1");
     $routes->get("delete/(:num)","UserStatus::delete/$1");

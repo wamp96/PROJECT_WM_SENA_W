@@ -32,7 +32,7 @@
     <!--End Container-->
     
     <!--Footer-->
-    <?php require_once('../app/Views/footer/footer.php');?>    
+    <?php require_once('../app/Views/footer/footer.php');?>         
     <!--End Footer-->
     
     <!--Modal-->
@@ -44,11 +44,11 @@
                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <?php require_once('../app/Views/nav/navbar.php')?>
+                    <?php require_once('../app/Views/userStatus/form.php')?>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-                    <button type="submit" form="my-form" class="btn btn-primary">Send Data</button>
+                    <button type="submit" form="my-form" id="btnSubmit" class="btn btn-primary">Send Data</button>
                 </div>
             </div>
         </div>
@@ -58,6 +58,6 @@
     <?php require_once('../app/Views/assets/js/js.php')?>
     <?php require_once('../app/Views/assets/js/dataTable.php')?>
     <!--JS Controller-->
-    <script src="../public/controllers/userStatus.js"></script>
+    <script src="../controllers/userStatus/userStatus.js"></script>
 </body>
 </html>

@@ -8,6 +8,12 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controllers\\BaseController' => $baseDir . '/app/Controllers/BaseController.php',
     'App\\Controllers\\Home' => $baseDir . '/app/Controllers/Home.php',
+    'App\\Controllers\\Profile' => $baseDir . '/app/Controllers/Profile.php',
+    'App\\Controllers\\UserStatus' => $baseDir . '/app/Controllers/UserStatus.php',
+    'App\\Models\\ProfileModel' => $baseDir . '/app/Models/ProfileModel.php',
+    'App\\Models\\RoleModel' => $baseDir . '/app/Models/RoleModel.php',
+    'App\\Models\\UserModel' => $baseDir . '/app/Models/UserModel.php',
+    'App\\Models\\UserStatusModel' => $baseDir . '/app/Models/UserStatusModel.php',
     'CodeIgniter\\API\\ResponseTrait' => $vendorDir . '/codeigniter4/framework/system/API/ResponseTrait.php',
     'CodeIgniter\\Autoloader\\Autoloader' => $vendorDir . '/codeigniter4/framework/system/Autoloader/Autoloader.php',
     'CodeIgniter\\Autoloader\\FileLocator' => $vendorDir . '/codeigniter4/framework/system/Autoloader/FileLocator.php',

@@ -13,11 +13,11 @@ class Main{
     }
 
     showPreload(){
-        $this.preload.style.display = "block";
+        this.preload.style.display = "block";
     }
 
     hiddenPreload(){
-        $this.preload.style.display = "node";
+        this.preload.style.display = "none";
     }
 
     showModal(){
@@ -39,7 +39,7 @@ class Main{
             elementsInput[i].disabled = true;
         }
         for(let j = 0; j < elementsSelect.length; j++) {
-            elementsSelect[i].disabled = true;
+            elementsSelect[j].disabled = true;
         }
     }
 
@@ -70,7 +70,7 @@ class Main{
             elementsInput[i].disabled = false;
         }
         for(let j = 0; j < elementsSelect.length; j++) {
-            elementsSelect[i].disabled = false;
+            elementsSelect[j].disabled = false;
         }    
     }
 
@@ -81,15 +81,16 @@ class Main{
             if(element.id){
                 if(element.tagName === 'INPUT'){
                     if(element.type === 'checkbox'){
-                        getJson[element.id] = element.Checked;
+                        getJson[element.id] = element.checked;
                     }else{
-                        getJson[element.id] = element.ariaValueMax.trim();
+                        getJson[element.id] = element.value.trim();
                     }
-                }else if(element,tagName === 'SELECT'){
-                    getJson[element.id] = element.ariaValueMax.trim();
+                }else if(element.tagName === 'SELECT'){
+                    getJson[element.id] = element.value.trim();
                 }
             }
         });
+        console.log(getJson);
         return getJson;    
     }
 
@@ -99,11 +100,11 @@ class Main{
             if(element.id){
                 if(element.tagName === 'INPUT'){
                     if(element.type === 'checkbox'){
-                        this.fromData.append(element.id, element.Checked);
+                        this.fromData.append(element.id, element.checked);
                     }else{
                         this.fromData.append(element.id, element.value.trim());
                     }
-                }else if(element,tagName === 'SELECT'){
+                }else if(element.tagName === 'SELECT'){
                     this.fromData.append(element.id, element.value.trim());
                 }
             }
@@ -115,6 +116,7 @@ class Main{
         let elements = this.myForm.querySelectorAll("input, select");
         for(let i = 0 ; i < elements.length; i++){
             document.getElementById(elements[i].id).value = json[elements[i].id];
+            console.log( document.getElementById(elements[i].id).value = json[elements[i].id]);
         }
     }
 
@@ -200,5 +202,13 @@ class Main{
             data.innerHTML = "";
         }
     }
+
+    resetForm(){
+        this.myForm.reset();
+        this.hiddenMessageError();
+        this.hiddenModal();
+        this.hiddenPreload();
+    }
+
 
 }
