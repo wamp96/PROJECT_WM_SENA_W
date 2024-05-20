@@ -11,7 +11,7 @@ const btnSubmit = document.getElementById('btnSubmit');
 const mainApp = new Main(modalId, formId, classEdit, preloadId);
 
 //VARIABLES
-var insertUpdte = true;
+var insertUpdate = true;
 var url = "";
 var method = "";
 var data = "";
@@ -108,7 +108,9 @@ async function getData(data, method, url){
             },
         }
     }
+ 
     return await fetch(url, parameters);
+    debugger
 }
 
 
@@ -122,7 +124,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
     event.preventDefault();
     if(mainApp.setValidateForm()){
         mainApp.showPreload();
-        if(insertUpdte){
+        if(insertUpdate){
             method = 'POST';
             url = URI_STATUS + LIST_CRUD[0];
             data = mainApp.getDataFormJson();

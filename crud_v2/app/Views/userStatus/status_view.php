@@ -22,12 +22,17 @@
     <!--End Navbar-->
 
     <!--Container-->
-    <div class="container">
-    <h3><?=$title?></h3>
-    <button type="button" class="btn btn-primary btn-actions" title="Button new User Status" onclick="add()" style="font-size: 0.5em;"><i class="bi bi-plus-circle-fill"></i></button>
-        <!--Container Table-->
-        <?php require_once('../app/Views/userStatus/table.php');?>    
-        <!--End Container Table-->    
+    <div class="container-fluid">
+        <div class="row">
+        <?php require_once('../app/Views/navSlider/navSlider.php') ?>
+            <div class="col">
+                 <h3><?=$title?></h3>
+                <button type="button" class="btn btn-primary btn-actions" title="Button new User Status" onclick="add()" style="font-size: 0.5em;"><i class="bi bi-plus-circle-fill"></i></button>
+                <!--Container Table-->
+                <?php require_once('../app/Views/userStatus/table.php');?>    
+                <!--End Container Table-->
+            </div>    
+        </div>
     </div>
     <!--End Container-->
     
