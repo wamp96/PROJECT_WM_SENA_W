@@ -97,6 +97,7 @@ class Element extends BaseController
                 'Element_modelo' => $this->request->getVar('Element_modelo'),
                 'Element_procesador' => $this->request->getVar('Element_procesador'),
                 'Element_memoria_ram' => $this->request->getVar('Element_memoria_ram'),
+                'Element_disco' => $this->request->getVar('Element_disco'),
                 'Element_valor' => $this->request->getVar('Element_valor'),
                 'Element_stock' => $this->request->getVar('Element_stock'),
                 'Category_fk' => $this->request->getVar('Category_fk'),

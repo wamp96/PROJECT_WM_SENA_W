@@ -26,11 +26,11 @@
         <label for="Element_procesador">Procesador</label>
     </div>
     <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="Element_memoria_ram" id="Element_memoria_ram" placeholder="Name">
+        <input type="number" class="form-control" name="Element_memoria_ram" id="Element_memoria_ram" placeholder="Name">
         <label for="Element_memoria_ram">RAM</label>
     </div>
     <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="Element_disco" id="Element_disco" placeholder="Name">
+        <input type="number" class="form-control" name="Element_disco" id="Element_disco" placeholder="Name">
         <label for="Element_disco">DISCO</label>
     </div>
     <div class="form-floating mb-3">

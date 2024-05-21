@@ -20,5 +20,19 @@ class ElementModel extends Model
     // Dates
     protected $createdField  = 'create_at';
     protected $updatedField  = 'update_at';
+
+    
+    public function sp_elements()
+    {
+        try{
+            $sql = "CALL sp_elements();";
+            $query = $this->db->query($sql);
+            $result = $query->getResultArray();
+        }catch(Exception $e){
+            $result = null;
+        }
+        return $result;
+
+    }
     
 }

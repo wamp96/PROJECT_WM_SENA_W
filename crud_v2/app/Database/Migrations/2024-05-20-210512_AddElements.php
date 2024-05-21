@@ -45,11 +45,11 @@ class AddElements extends Migration
                 'constraint' => 50,
             ],
             'Element_disco' => [
-                'type' => 'VARCHAR',
+                'type' => 'INT',
                 'constraint' => 50,
             ],
             'Element_valor' => [
-                'type' => 'DOUBLE',
+                'type' => 'INT',
             ],
             'Element_stock' => [
                 'type' => 'INT',

@@ -13,12 +13,14 @@
                 <th scope="col">DISCO</th>
                 <th scope="col">Valor</th>
                 <th scope="col">Stock</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Estado</th>
                 <th scope="col">Action</th>                
             </tr>
         </thead>
         <tbody>
-            <?php if ($users) : ?>
-                <?php foreach($users as $obj) :  ?>
+            <?php if ($elements) : ?>
+                <?php foreach($elements as $obj) :  ?>
                     <tr class="text-center">
                         <td><?php echo $obj['Element_id'];?></td>
                         <td><?php echo $obj['Element_nombre'];?></td>
@@ -31,7 +33,6 @@
                         <td><?php echo $obj['Element_disco'];?></td>
                         <td><?php echo $obj['Element_valor'];?></td>
                         <td><?php echo $obj['Element_stock'];?></td>
-                        <td><?php echo '*****';//echo str_repeat('*',strlen($obj['User_password']));?></td>                        
                         <td><?php echo $obj['Category_nombre'];?></td>                        
                         <td><?php echo $obj['Element_status_name'];?></td>                        
                         <td>
@@ -47,7 +48,7 @@
         </tbody>
         <tfoot class="table-dark">
             <tr class="text-center">    
-                <th scope="col">#</th>
+            <th scope="col">#</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Imagen</th>
                 <th scope="col">Serial</th>
@@ -58,7 +59,9 @@
                 <th scope="col">DISCO</th>
                 <th scope="col">Valor</th>
                 <th scope="col">Stock</th>
-                <th scope="col">Action</th> 
+                <th scope="col">Categoria</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Action</th>    
             </tr>
         </tfoot>
     </table>
