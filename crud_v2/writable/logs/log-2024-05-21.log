@@ -3345,3 +3345,548 @@ WARNING - 2024-05-21 17:44:48 --> [DEPRECATED] Creation of dynamic property App\
  5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:22:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "permission/permissions_view.php"
+[Method: GET, Route: permission/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('permission/permissions_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('permission/permissions_view', [], true)
+ 3 APPPATH\Controllers\Permission.php(36): view('permission/permissions_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:24:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "permission/permissions_view.php"
+[Method: GET, Route: permission/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('permission/permissions_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('permission/permissions_view', [], true)
+ 3 APPPATH\Controllers\Permission.php(36): view('permission/permissions_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:24:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "permission/permissions_view.php"
+[Method: GET, Route: permission/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('permission/permissions_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('permission/permissions_view', [], true)
+ 3 APPPATH\Controllers\Permission.php(36): view('permission/permissions_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:27:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "permission/permissions_view.php"
+[Method: GET, Route: permission/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('permission/permissions_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('permission/permissions_view', [], true)
+ 3 APPPATH\Controllers\Permission.php(36): view('permission/permissions_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:27:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "permission/permissions_view.php"
+[Method: GET, Route: permission/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('permission/permissions_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('permission/permissions_view', [], true)
+ 3 APPPATH\Controllers\Permission.php(36): view('permission/permissions_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:27:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "permission/permissions_view.php"
+[Method: GET, Route: permission/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('permission/permissions_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('permission/permissions_view', [], true)
+ 3 APPPATH\Controllers\Permission.php(36): view('permission/permissions_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:27:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "permission/permissions_view.php"
+[Method: GET, Route: permission/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('permission/permissions_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('permission/permissions_view', [], true)
+ 3 APPPATH\Controllers\Permission.php(36): view('permission/permissions_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:31:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Permission/permissions_view.php"
+[Method: GET, Route: permission/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Permission/permissions_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Permission/permissions_view', [], true)
+ 3 APPPATH\Controllers\Permission.php(36): view('Permission/permissions_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:31:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Permission/permissions_view.php"
+[Method: GET, Route: permission/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Permission/permissions_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Permission/permissions_view', [], true)
+ 3 APPPATH\Controllers\Permission.php(36): view('Permission/permissions_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:31:47 --> ErrorException: Undefined variable $permissions
+[Method: GET, Route: permission/]
+in APPPATH\Views\Permissions\table.php on line 12.
+ 1 APPPATH\Views\Permissions\table.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $permissions', 'C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\app\\Views\\Permissions\\table.php', 12)
+ 2 APPPATH\Views\Permissions\permission_view.php(32): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\app\\Views\\Permissions\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\app\\Views\\Permissions\\permission_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Permissions/permission_view', [], true)
+ 6 APPPATH\Controllers\Permission.php(36): view('Permissions/permission_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 18:31:50 --> ErrorException: Undefined variable $permissions
+[Method: GET, Route: permission/]
+in APPPATH\Views\Permissions\table.php on line 12.
+ 1 APPPATH\Views\Permissions\table.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $permissions', 'C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\app\\Views\\Permissions\\table.php', 12)
+ 2 APPPATH\Views\Permissions\permission_view.php(32): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\app\\Views\\Permissions\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\app\\Views\\Permissions\\permission_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Permissions/permission_view', [], true)
+ 6 APPPATH\Controllers\Permission.php(36): view('Permissions/permission_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\permission->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\permission))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+ERROR - 2024-05-21 19:00:50 --> mysqli_sql_exception: Table 'api_proyecto.element_status' doesn't exist in C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\app\Controllers\ElementStatus.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\ElementStatus->index()
+#8 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+#9 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-21 19:00:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'api_proyecto.element_status' doesn't exist
+[Method: GET, Route: elementStatus/]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `element_status`
+ORDER BY `Element_status_id` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ElementStatus.php(35): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:00:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'api_proyecto.element_status' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `element_status`
+ORDER BY `Element_status_id` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `element_status`
+ORDER BY `Element_status_id` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `element_status`
+ORDER BY `Element_status_id` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\ElementStatus.php(35): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:00:50 --> [Caused by] mysqli_sql_exception: Table 'api_proyecto.element_status' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `element_status`
+ORDER BY `Element_status_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `element_status`
+ORDER BY `Element_status_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `element_status`
+ORDER BY `Element_status_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `element_status`
+ORDER BY `Element_status_id` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ElementStatus.php(35): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+ERROR - 2024-05-21 19:03:23 --> mysqli_sql_exception: Table 'modules' already exists in C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\app\Database\Migrations\2024-05-20-210437_AddModules.php(60): CodeIgniter\Database\Forge->createTable('modules')
+#5 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\AddModules->up()
+#6 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-21 19:03:38 --> mysqli_sql_exception: Table 'modules' already exists in C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\app\Database\Migrations\2024-05-20-210437_AddModules.php(60): CodeIgniter\Database\Forge->createTable('modules')
+#5 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\AddModules->up()
+#6 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#14 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2024-05-21 19:04:16 --> mysqli_sql_exception: Table 'modules' already exists in C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\app\Database\Migrations\2024-05-20-210437_AddModules.php(60): CodeIgniter\Database\Forge->createTable('modules')
+#5 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\AddModules->up()
+#6 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#14 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2024-05-21 19:06:38 --> mysqli_sql_exception: Column 'Element_status_name' cannot be null in C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `el...', 0)
+#1 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `el...')
+#2 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `el...', Array, false)
+#4 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\app\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+#9 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+#10 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-05-21 19:06:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Element_status_name' cannot be null
+[Method: POST, Route: elementStatus/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:06:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Element_status_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:06:38 --> [Caused by] mysqli_sql_exception: Column 'Element_status_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+ERROR - 2024-05-21 19:06:55 --> mysqli_sql_exception: Column 'Element_status_name' cannot be null in C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `el...', 0)
+#1 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `el...')
+#2 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `el...', Array, false)
+#4 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\app\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+#9 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+#10 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-05-21 19:06:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Element_status_name' cannot be null
+[Method: POST, Route: elementStatus/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:06:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Element_status_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:06:55 --> [Caused by] mysqli_sql_exception: Column 'Element_status_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+ERROR - 2024-05-21 19:07:08 --> mysqli_sql_exception: Column 'Element_status_name' cannot be null in C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `el...', 0)
+#1 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `el...')
+#2 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `el...', Array, false)
+#4 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\app\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+#9 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+#10 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-05-21 19:07:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Element_status_name' cannot be null
+[Method: POST, Route: elementStatus/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:07:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Element_status_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:07:08 --> [Caused by] mysqli_sql_exception: Column 'Element_status_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+ERROR - 2024-05-21 19:07:17 --> mysqli_sql_exception: Column 'Element_status_name' cannot be null in C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `el...', 0)
+#1 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `el...')
+#2 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `el...', Array, false)
+#4 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\app\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+#9 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+#10 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Codeigniter_Crud\crud_v2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-05-21 19:07:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Element_status_name' cannot be null
+[Method: POST, Route: elementStatus/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:07:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Element_status_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-21 19:07:17 --> [Caused by] mysqli_sql_exception: Column 'Element_status_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (NULL, NULL, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `element_status` (`Element_status_name`, `Element_status_description`, `update_at`) VALUES (:Element_status_name:, :Element_status_description:, :update_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ElementStatus.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ElementStatus->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ElementStatus))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
