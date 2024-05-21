@@ -5,23 +5,23 @@ namespace App\Database\Migrations;
 use CodeIgniter\Database\Migration;
 use CodeIgniter\Database\RawSql;
 
-class AddUserStatus extends Migration
+class AddRequestStatus extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'User_status_id' => [
+            'Request_status_id' => [
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'User_status_name' => [
+            'Request_status_name' => [
                 'type' => 'VARCHAR',
                 'unique' => true,
                 'constraint' => 30,
             ],
-            'User_status_description' => [
+            'Request_status_description' => [
                 'type' => 'VARCHAR',
                 'constraint' => 300,
                 'null' => true,
@@ -36,12 +36,12 @@ class AddUserStatus extends Migration
                 'null' => true,
             ]
         ]);
-        $this->forge->addPrimaryKey('User_status_id');
-        $this->forge->createTable('user_status');
+        $this->forge->addPrimaryKey('Request_status_id');        
+        $this->forge->createTable('request_status');
     }
 
     public function down()
     {
-        $this->forge->dropTable('user_status');
+        $this->forge->dropTable('request_status');
     }
 }

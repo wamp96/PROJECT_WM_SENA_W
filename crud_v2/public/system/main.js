@@ -55,14 +55,14 @@ class Main{
         }
 
         for(let j = 0; j < elementsSelect.length; j++) {
-              if(elementsSelect[i].classList.contains(this.classEdit)){
-                elementsSelect[i].disabled = true;
+              if(elementsSelect[j].classList.contains(this.classEdit)){
+                elementsSelect[j].disabled = true;
             }else{
-                elementsSelect[i].disabled = false;
+                elementsSelect[j].disabled = false;
             }
         }
     }
-
+    
     enableFormAll(){
         var elementsInput =this.myForm.querySelectorAll('input');
         var elementsSelect =this.myForm.querySelectorAll('select');
@@ -72,6 +72,18 @@ class Main{
         for(let j = 0; j < elementsSelect.length; j++) {
             elementsSelect[j].disabled = false;
         }    
+    }
+    
+    resetForm(){
+      var elementsInput = document.querySelectorAll('input');
+      var elementsSelect = document.querySelectorAll('select');
+        for (let i = 0; i < elementsInput.length; i++) {
+            elementsInput[i].value= "";
+        }
+        for (let j = 0; j < elementsSelect.length; j++) {
+            elementsInput[j].value= "";
+        }
+        this.myForm.reset();
     }
 
     getDataFormJson(){
@@ -115,8 +127,13 @@ class Main{
     setDataFormJson(json){
         let elements = this.myForm.querySelectorAll("input, select");
         for(let i = 0 ; i < elements.length; i++){
-            document.getElementById(elements[i].id).value = json[elements[i].id];
-            console.log( document.getElementById(elements[i].id).value = json[elements[i].id]);
+            if(elements[i].type === 'checkbox'){
+                document.getElementById(elements[i].id).checket = (json[elements[i].id]==0)?false:true;
+            }
+            else{
+                document.getElementById(elements[i].id).value = json[elements[i].id];
+            }
+            
         }
     }
 
@@ -201,13 +218,6 @@ class Main{
         for(let data of message){
             data.innerHTML = "";
         }
-    }
-
-    resetForm(){
-        this.myForm.reset();
-        this.hiddenMessageError();
-        this.hiddenModal();
-        this.hiddenPreload();
     }
 
 

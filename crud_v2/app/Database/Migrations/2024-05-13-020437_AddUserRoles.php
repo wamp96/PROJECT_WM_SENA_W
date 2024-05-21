@@ -3,6 +3,7 @@
 namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
+use CodeIgniter\Database\RawSql;
 
 class AddUserRoles extends Migration
 {
@@ -25,11 +26,12 @@ class AddUserRoles extends Migration
                 'constraint' => 300,
                 'null' => true,
             ],
-            'created_at' => [
+            'create_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => true,
+                'default' => new RawSql('CURRENT_TIMESTAMP'),
             ],
-            'updated_at' => [
+            'update_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => true,
             ],

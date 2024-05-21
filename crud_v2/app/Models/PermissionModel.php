@@ -4,19 +4,20 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class PermissionModel extends Model
 {
-    protected $table            = 'users';
-    protected $primaryKey       = 'User_id';
+    protected $table            = 'permissions';
+    protected $primaryKey       = 'Permissions_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['User_id', 'User_documento','User_nombre','User_apellido_paterno','User_apellido_materno','User_ciudad','User_area','User_telefono','User_correo','User_password','Roles_fk','User_status_fk','update_at'];
+    protected $allowedFields    = ['Permissions_name','Permissions_description','update_at'];
 
     protected bool $allowEmptyInserts = false;
 
     // Dates
     protected $createdField  = 'create_at';
     protected $updatedField  = 'update_at';
+
 }

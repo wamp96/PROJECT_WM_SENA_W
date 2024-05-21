@@ -3,55 +3,45 @@
 namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
+use CodeIgniter\Database\RawSql;
 
-class AddProfiles extends Migration
+class AddPermissions extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'Profile_id' => [
+            'Permissions_id' => [
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'Profile_email' => [
+            'Permissions_name' => [
                 'type' => 'VARCHAR',
-                'unique' => true,
                 'constraint' => 255,
             ],
-            'Profile_name' => [
+            'Permissions_description' => [
                 'type' => 'VARCHAR',
-                'constraint' => 30,
-            ],
-            'Profile_photo' => [
-                'type' => 'VARCHAR',
-                'constraint' => '255',
-                'null' => true,
-            ],
-            'User_id_fk' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'unsigned' => true,
+                'constraint' => 300,
                 'null' => true,
             ],
             'create_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => true,
+                'default' => new RawSql('CURRENT_TIMESTAMP'),
             ],
             'update_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => true,
             ],
+
         ]);
-        $this->forge->addKey('Profile_id');
-        $this->forge->addForeignKey('User_id_fk', 'users', 'User_id','CASCADE','fk_user_profile');
-        $this->forge->createTable('profiles');
-        
+        $this->forge->addPrimaryKey('Permissions_id');
+        $this->forge->createTable('permissions');
     }
 
     public function down()
     {
-        $this->forge->dropTable('profiles');
+        $this->forge->dropTable('permissions');
     }
 }

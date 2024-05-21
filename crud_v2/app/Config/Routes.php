@@ -17,3 +17,12 @@ $routes->group("userStatus", function($routes){
     $routes->post("add","UserStatus::create");
     $routes->post("update","UserStatus::update");
 });
+
+$routes->group("user", function($routes){
+    $routes->get("/", "user::index");
+    $routes->get("show", "user::index");
+    $routes->get("edit/(:num)","user::singleUser/$1");
+    $routes->get("delete/(:num)","user::delete/$1");
+    $routes->post("add","user::create");
+    $routes->post("update","user::update");
+});

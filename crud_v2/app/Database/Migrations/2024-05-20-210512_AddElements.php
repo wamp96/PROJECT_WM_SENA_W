@@ -5,63 +5,64 @@ namespace App\Database\Migrations;
 use CodeIgniter\Database\Migration;
 use CodeIgniter\Database\RawSql;
 
-class AddUsers extends Migration
+class AddElements extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'User_id' => [
+            'Element_id' => [
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'User_documento' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'unique' => true,
-            ],
-            'User_nombre' => [
+            'Element_nombre' => [
                 'type' => 'VARCHAR',
                 'constraint' => 20,
             ],
-            'User_apellido_paterno' => [
+            'Element_imagen' => [
                 'type' => 'VARCHAR',
-                'constraint' => 20,
+                'constraint' => 255,
             ],
-            'User_apellido_materno' => [
+            'Element_serial' => [
                 'type' => 'VARCHAR',
-                'constraint' => 20,
-            ],
-            'User_ciudad' => [
-                'type' => 'VARCHAR',
-                'constraint' => 10,
-            ],
-            'User_area' => [
-                'type' => 'VARCHAR',
-                'constraint' => 10,
-            ],
-            'User_telefono' => [
-                'type' => 'INT',
-                'constraint' => 20,
-            ],
-            'User_correo' => [
-                'type' => 'VARCHAR',
-                'unique' => true,
-                'constraint' => 40,
-            ],
-            'User_password' => [
-                'type' => 'VARCHAR',
-                'unique' => true,
                 'constraint' => 50,
             ],
-            'Roles_fk' => [
+            'Element_marca' => [
+                'type' => 'VARCHAR',
+                'constraint' => 50,
+            ],
+            'Element_modelo' => [
+                'type' => 'VARCHAR',
+                'constraint' => 50,
+            ],
+            'Element_procesador' => [
+                'type' => 'VARCHAR',
+                'constraint' => 50,
+            ],
+            'Element_memoria_ram' => [
+                'type' => 'VARCHAR',
+                'constraint' => 50,
+            ],
+            'Element_disco' => [
+                'type' => 'VARCHAR',
+                'constraint' => 50,
+            ],
+            'Element_valor' => [
+                'type' => 'DOUBLE',
+            ],
+            'Element_stock' => [
+                'type' => 'INT',
+                'constraint' => 50,
+            ],
+
+            'Category_fk' => [
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
                 'null' => true,
             ],
-            'User_status_fk' => [
+            'Element_status_fk' => [
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
@@ -77,14 +78,14 @@ class AddUsers extends Migration
                 'null' => true,
             ],
         ]);
-        $this->forge->addPrimaryKey('User_id');
-        $this->forge->addForeignKey('User_status_fk', 'user_status', 'User_status_id', 'CASCADE', 'SET NULL','fk_user_status');
-        $this->forge->addForeignKey('Roles_fk', 'roles', 'Roles_id', 'CASCADE', 'SET NULL','fk_roles');
-        $this->forge->createTable('users');
+        $this->forge->addPrimaryKey('Element_id');
+        $this->forge->createTable('elements');
+        $this->forge->addForeignKey('Category_fk', 'categories', 'Category_id', 'CASCADE', 'SET NULL','fk_category');
+        $this->forge->addForeignKey('Element_status_fk', 'element_status', 'Element_status_id', 'CASCADE', 'SET NULL','fk_element_status');
     }
 
     public function down()
     {
-        $this->forge->dropTable('users');
+        $this->forge->dropTable('elements');
     }
 }
