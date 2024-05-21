@@ -36,6 +36,15 @@ $routes->group("user", function($routes){
     $routes->post("update","user::update");
 });
 
+$routes->group("element", function($routes){
+    $routes->get("/", "element::index");
+    $routes->get("show", "element::index");
+    $routes->get("edit/(:num)","element::singleElement/$1");
+    $routes->get("delete/(:num)","element::delete/$1");
+    $routes->post("add","element::create");
+    $routes->post("update","element::update");
+});
+
 $routes->group("permission", function($routes){
     $routes->get("/", "Permission::index");
     $routes->get("show", "Permission::index");
@@ -48,8 +57,17 @@ $routes->group("permission", function($routes){
 $routes->group("elementStatus", function($routes){
     $routes->get("/", "elementStatus::index");
     $routes->get("show", "elementStatus::index");
-    $routes->get("edit/(:num)","elementStatus::singlePermission/$1");
+    $routes->get("edit/(:num)","elementStatus::singleElementStatus/$1");
     $routes->get("delete/(:num)","elementStatus::delete/$1");
     $routes->post("add","elementStatus::create");
     $routes->post("update","elementStatus::update");
+});
+
+$routes->group("category", function($routes){
+    $routes->get("/", "category::index");
+    $routes->get("show", "category::index");
+    $routes->get("edit/(:num)","category::singleCategory/$1");
+    $routes->get("delete/(:num)","category::delete/$1");
+    $routes->post("add","category::create");
+    $routes->post("update","category::update");
 });

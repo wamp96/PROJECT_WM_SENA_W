@@ -10,5 +10,6 @@ const URI_ELEMENT="/element/";
 const URI_REQUEST="/request/";
 const URI_ELEMENTS="/elementStatus/";
 const URI_REQUESTS="/requestStatus/";
+const URI_CATEGORY="/category/";
 
 

@@ -5,35 +5,35 @@
 namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
-use App\Models\ElementStatusModel;
+use App\Models\CategoryModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class ElementStatus extends BaseController 
+class Category extends BaseController 
 {
 
     //Variables
     private $primarykey;
-    private $ElementStatusModel;
+    private $CategoryModel;
     private $data;
     private $model;
 
     //Metodo Constructor
     public function __construct()
     {
-        $this->primarykey = "Element_status_id";
-        $this->ElementStatusModel = new ElementStatusModel();
+        $this->primarykey = "Category_id";
+        $this->CategoryModel = new CategoryModel();
         $this->data = [];
-        $this->model = "ElementStatus";
+        $this->model = "Category";
     } 
 
     //Metodo index se inicia la vista y se establecen los parametros para enviar los datos en la vista del renderizado html
     public function index()
     {
-        $this->data['title'] = "ELEMENT STATUS";
-        $this->data[$this->model] = $this->ElementStatusModel->orderBy($this->primarykey, 'ASC')->findAll();
-        return view('elementStatus/status_view', $this->data);
+        $this->data['title'] = "CATEGORIES";
+        $this->data[$this->model] = $this->CategoryModel->orderBy($this->primarykey, 'ASC')->findAll();
+        return view('category/category_view', $this->data);
     }
 
     public function create()
@@ -41,7 +41,7 @@ class ElementStatus extends BaseController
         if($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
 
-            if($this->ElementStatusModel->insert($dataModel)){
+            if($this->CategoryModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;
                 $data['data']=  $dataModel ;
@@ -59,10 +59,10 @@ class ElementStatus extends BaseController
         echo json_encode($dataModel);
     }
 
-    public function singleElementStatus($id = null)
+    public function singleCategory($id = null)
     {
         if($this->request->isAJAX()){
-            if($data[$this->model] = $this->ElementStatusModel->where($this->primarykey, $id)->first()){
+            if($data[$this->model] = $this->CategoryModel->where($this->primarykey, $id)->first()){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
@@ -84,11 +84,11 @@ class ElementStatus extends BaseController
             $today = date("Y-m-d H:i:s");
             $id = $this->request->getVar($this->primarykey);
             $dataModel=[
-                'Element_status_name' => $this->request->getVar('Element_status_name'),
-                'Element_status_description' => $this->request->getVar('Element_status_description'),
+                'Category_nombre' => $this->request->getVar('Category_nombre'),
+                'Category_descripcion' => $this->request->getVar('Category_descripcion'),
                 'update_at' => $today                 
             ];
-            if($this->ElementStatusModel->update($id, $dataModel)){
+            if($this->CategoryModel->update($id, $dataModel)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = $dataModel;
@@ -109,7 +109,7 @@ class ElementStatus extends BaseController
     public function delete($id = null)
     {   
         try{
-            if($this->ElementStatusModel->where($this->primarykey, $id)->delete($id)){
+            if($this->CategoryModel->where($this->primarykey, $id)->delete($id)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = "OK";
@@ -129,9 +129,9 @@ class ElementStatus extends BaseController
 
     public function getDataModel(){
         $data =[
-            'Element_status_id' => $this->request->getVar('Element_status_id'),
-            'Element_status_name' => $this->request->getVar('Element_status_name'),
-            'Element_status_description' => $this->request->getVar('Element_status_description'),
+            'Category_id' => $this->request->getVar('Category_id'),
+            'Category_nombre' => $this->request->getVar('Category_nombre'),
+            'Category_descripcion' => $this->request->getVar('Category_descripcion'),
             'update_at' => $this->request->getVar('update_at')
         ];
         return $data;

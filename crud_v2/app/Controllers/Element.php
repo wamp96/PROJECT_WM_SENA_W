@@ -5,35 +5,41 @@
 namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
+use App\Models\ElementModel;
+use App\Models\CategoryModel;
 use App\Models\ElementStatusModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class ElementStatus extends BaseController 
+class Element extends BaseController 
 {
 
     //Variables
     private $primarykey;
-    private $ElementStatusModel;
+    private $elementModel;
     private $data;
     private $model;
 
     //Metodo Constructor
     public function __construct()
     {
-        $this->primarykey = "Element_status_id";
-        $this->ElementStatusModel = new ElementStatusModel();
+        $this->primarykey = "Element_id";
+        $this->elementModel = new ElementModel();
+        $this->categoryModel = new CategoryModel();
+        $this->elementStatusModel = new ElementStatusModel();
         $this->data = [];
-        $this->model = "ElementStatus";
+        $this->model = "elements";
     } 
 
     //Metodo index se inicia la vista y se establecen los parametros para enviar los datos en la vista del renderizado html
     public function index()
     {
-        $this->data['title'] = "ELEMENT STATUS";
-        $this->data[$this->model] = $this->ElementStatusModel->orderBy($this->primarykey, 'ASC')->findAll();
-        return view('elementStatus/status_view', $this->data);
+        $this->data['title'] = "ELEMENTS";
+        $this->data[$this->model] = $this->elementModel->sp_elements();
+        $this->data['categories'] = $this->categoryModel->orderBy('Category_id', 'ASC')->findAll();
+        $this->data['element_status'] = $this->elementStatusModel->orderBy('Element_status_id', 'ASC')->findAll();
+        return view('element/element_view', $this->data);
     }
 
     public function create()
@@ -41,13 +47,13 @@ class ElementStatus extends BaseController
         if($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
 
-            if($this->ElementStatusModel->insert($dataModel)){
+            if($this->elementModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;
                 $data['data']=  $dataModel ;
                 $data['csrf']= csrf_hash();
             }else{
-                $data['message'] = 'Error create user';
+                $data['message'] = 'Error create element';
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
@@ -59,15 +65,15 @@ class ElementStatus extends BaseController
         echo json_encode($dataModel);
     }
 
-    public function singleElementStatus($id = null)
+    public function singleElement($id = null)
     {
         if($this->request->isAJAX()){
-            if($data[$this->model] = $this->ElementStatusModel->where($this->primarykey, $id)->first()){
+            if($data[$this->model] = $this->elementModel->where($this->primarykey, $id)->first()){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
             }else{
-                $data['message'] = 'Error create user';
+                $data['message'] = 'Error create Element';
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
@@ -84,22 +90,31 @@ class ElementStatus extends BaseController
             $today = date("Y-m-d H:i:s");
             $id = $this->request->getVar($this->primarykey);
             $dataModel=[
-                'Element_status_name' => $this->request->getVar('Element_status_name'),
-                'Element_status_description' => $this->request->getVar('Element_status_description'),
+                'Element_nombre' => $this->request->getVar('Element_nombre'),
+                'Element_imagen' => $this->request->getVar('Element_imagen'),
+                'Element_serial' => $this->request->getVar('Element_serial'),
+                'Element_marca' => $this->request->getVar('Element_marca'),
+                'Element_modelo' => $this->request->getVar('Element_modelo'),
+                'Element_procesador' => $this->request->getVar('Element_procesador'),
+                'Element_memoria_ram' => $this->request->getVar('Element_memoria_ram'),
+                'Element_valor' => $this->request->getVar('Element_valor'),
+                'Element_stock' => $this->request->getVar('Element_stock'),
+                'Category_fk' => $this->request->getVar('Category_fk'),
+                'Element_status_fk' => $this->request->getVar('Element_status_fk'),
                 'update_at' => $today                 
             ];
-            if($this->ElementStatusModel->update($id, $dataModel)){
+            if($this->elementModel->update($id, $dataModel)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = $dataModel;
                 $data['csrf'] = csrf_hash();
             }else{
-                $data['message'] = 'Error create user' ;
+                $data['message'] = 'Error create Element' ;
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
         }else{
-            $data['message'] = 'Error create user' ;
+            $data['message'] = 'Error create Element' ;
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = '';
         }
@@ -109,7 +124,7 @@ class ElementStatus extends BaseController
     public function delete($id = null)
     {   
         try{
-            if($this->ElementStatusModel->where($this->primarykey, $id)->delete($id)){
+            if($this->elementModel->where($this->primarykey, $id)->delete($id)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = "OK";
@@ -120,7 +135,7 @@ class ElementStatus extends BaseController
                 $data['data'] = 'error';
             }
         }catch(\Exception $e){
-            $data['message'] = 'Error create user' ;
+            $data['message'] = 'Error create Element' ;
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = 'Error';
         }
@@ -129,10 +144,18 @@ class ElementStatus extends BaseController
 
     public function getDataModel(){
         $data =[
-            'Element_status_id' => $this->request->getVar('Element_status_id'),
-            'Element_status_name' => $this->request->getVar('Element_status_name'),
-            'Element_status_description' => $this->request->getVar('Element_status_description'),
-            'update_at' => $this->request->getVar('update_at')
+            'Element_nombre' => $this->request->getVar('Element_nombre'),
+            'Element_imagen' => $this->request->getVar('Element_imagen'),
+            'Element_serial' => $this->request->getVar('Element_serial'),
+            'Element_marca' => $this->request->getVar('Element_marca'),
+            'Element_modelo' => $this->request->getVar('Element_modelo'),
+            'Element_procesador' => $this->request->getVar('Element_procesador'),
+            'Element_memoria_ram' => $this->request->getVar('Element_memoria_ram'),
+            'Element_valor' => $this->request->getVar('Element_valor'),
+            'Element_stock' => $this->request->getVar('Element_stock'),
+            'Category_fk' => $this->request->getVar('Category_fk'),
+            'Element_status_fk' => $this->request->getVar('Element_status_fk'),
+            'update_at' => $this->request->getVar('update_at'),     
         ];
         return $data;
     }

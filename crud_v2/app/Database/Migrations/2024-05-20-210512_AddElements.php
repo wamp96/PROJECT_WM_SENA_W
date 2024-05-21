@@ -54,8 +54,8 @@ class AddElements extends Migration
             'Element_stock' => [
                 'type' => 'INT',
                 'constraint' => 50,
+                'null' => true,
             ],
-
             'Category_fk' => [
                 'type' => 'INT',
                 'constraint' => 11,
