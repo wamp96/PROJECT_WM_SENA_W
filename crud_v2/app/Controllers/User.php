@@ -34,8 +34,10 @@ class UserStatus extends BaseController
     public function index()
     {
         $this->data['title'] = "USERS";
-        $this->data[$this->model] = $this->StatusModel->orderBy($this->primarykey, 'ASC')->findAll();
-        return view('userStatus/status_view', $this->data);
+        $this->data[$this->model] = $this->userModel->sp_users();
+        $this->data['roles'] = $this->roleModel->orderBy('Roles_id', 'ASC')->findAll();
+        $this->data['user_status'] = $this->userStatusModel->orderBy('User_status_id', 'ASC')->findAll();
+        return view('user/user_view', $this->data);
     }
 
     public function create()
@@ -43,7 +45,7 @@ class UserStatus extends BaseController
         if($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
 
-            if($this->StatusModel->insert($dataModel)){
+            if($this->userModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;
                 $data['data']=  $dataModel ;
@@ -61,10 +63,10 @@ class UserStatus extends BaseController
         echo json_encode($dataModel);
     }
 
-    public function singleUserStatus($id = null)
+    public function singleUser($id = null)
     {
         if($this->request->isAJAX()){
-            if($data[$this->model] = $this->StatusModel->where($this->primarykey, $id)->first()){
+            if($data[$this->model] = $this->userModel->where($this->primarykey, $id)->first()){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
@@ -86,11 +88,20 @@ class UserStatus extends BaseController
             $today = date("Y-m-d H:i:s");
             $id = $this->request->getVar($this->primarykey);
             $dataModel=[
-                'User_status_name' => $this->request->getVar('User_status_name'),
-                'User_status_description' => $this->request->getVar('User_status_description'),
+                'User_documento' => $this->request->getVar('User_documento'),
+                'User_nombre' => $this->request->getVar('User_nombre'),
+                'User_apellido_paterno' => $this->request->getVar('User_apellido_paterno'),
+                'User_apellido_materno' => $this->request->getVar('User_apellido_materno'),
+                'User_ciudad' => $this->request->getVar('User_ciudad'),
+                'User_area' => $this->request->getVar('User_area'),
+                'User_telefono' => $this->request->getVar('User_telefono'),
+                'User_correo' => $this->request->getVar('User_correo'),
+                'User_password' => $this->request->getVar('User_password'),
+                'Roles_fk' => $this->request->getVar('Roles_fk'),
+                'User_status_fk' => $this->request->getVar('User_status_fk'),
                 'update_at' => $today                 
             ];
-            if($this->StatusModel->update($id, $dataModel)){
+            if($this->userModel->update($id, $dataModel)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = $dataModel;
@@ -111,7 +122,7 @@ class UserStatus extends BaseController
     public function delete($id = null)
     {   
         try{
-            if($this->StatusModel->where($this->primarykey, $id)->delete($id)){
+            if($this->userModel->where($this->primarykey, $id)->delete($id)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = "OK";
@@ -131,10 +142,19 @@ class UserStatus extends BaseController
 
     public function getDataModel(){
         $data =[
-            'User_status_id' => $this->request->getVar('User_status_id'),
-            'User_status_name' => $this->request->getVar('User_status_name'),
-            'User_status_description' => $this->request->getVar('User_status_description'),
-            'updated_at' => $this->request->getVar('updated_at')
+            'User_id' => $this->request->getVar('User_id'),
+            'User_documento' => $this->request->getVar('User_documento'),
+            'User_nombre' => $this->request->getVar('User_nombre'),
+            'User_apellido_paterno' => $this->request->getVar('User_apellido_paterno'),
+            'User_apellido_materno' => $this->request->getVar('User_apellido_materno'),
+            'User_ciudad' => $this->request->getVar('User_ciudad'),
+            'User_area' => $this->request->getVar('User_area'),
+            'User_telefono' => $this->request->getVar('User_telefono'),
+            'User_correo' => $this->request->getVar('User_correo'),
+            'User_password' => $this->request->getVar('User_password'),
+            'Roles_fk' => $this->request->getVar('Roles_fk'),
+            'User_status_fk' => $this->request->getVar('User_status_fk'),
+            'update_at' => $this->request->getVar('update_at'),     
         ];
         return $data;
     }
