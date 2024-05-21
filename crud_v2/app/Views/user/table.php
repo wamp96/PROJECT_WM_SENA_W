@@ -17,8 +17,8 @@
             </tr>
         </thead>
         <tbody>
-            <?php if ($UserStatus) : ?>
-                <?php foreach($UserStatus as $obj) :  ?>
+            <?php if ($users) : ?>
+                <?php foreach($users as $obj) :  ?>
                     <tr class="text-center">
                         <td><?php echo $obj['User_id'];?></td>
                         <td><?php echo $obj['User_documento'];?></td>
@@ -28,9 +28,9 @@
                         <td><?php echo $obj['User_area'];?></td>
                         <td><?php echo $obj['User_telefono'];?></td>
                         <td><?php echo $obj['User_correo'];?></td>
-                        <td><?php echo $obj['User_password'];?></td>                        
-                        <td><?php echo $obj['Roles_fk'];?></td>                        
-                        <td><?php echo $obj['User_status_fk'];?></td>                        
+                        <td><?php echo '*****';//echo str_repeat('*',strlen($obj['User_password']));?></td>                        
+                        <td><?php echo $obj['Roles_name'];?></td>                        
+                        <td><?php echo $obj['User_status_name'];?></td>                        
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                 <button type="button" title="Button Show User Status" onclick="show(<?php echo $obj['User_id'];?>)" class="btn btn-success btn-action" style="font-size: 0.5em;"><i class="bi bi-eye-fill"></i></button>

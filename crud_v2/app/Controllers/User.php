@@ -6,11 +6,13 @@ namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
 use App\Models\UserModel;
+use App\Models\RoleModel;
+use App\Models\UserStatusModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class UserStatus extends BaseController 
+class User extends BaseController 
 {
 
     //Variables
@@ -151,7 +153,7 @@ class UserStatus extends BaseController
             'User_area' => $this->request->getVar('User_area'),
             'User_telefono' => $this->request->getVar('User_telefono'),
             'User_correo' => $this->request->getVar('User_correo'),
-            'User_password' => $this->request->getVar('User_password'),
+            'User_password' => password_hash($this->request->getVar('User_password'),PASSWORD_DEFAULT),
             'Roles_fk' => $this->request->getVar('Roles_fk'),
             'User_status_fk' => $this->request->getVar('User_status_fk'),
             'update_at' => $this->request->getVar('update_at'),     

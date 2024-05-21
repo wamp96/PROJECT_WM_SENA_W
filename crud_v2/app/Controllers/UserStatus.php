@@ -132,7 +132,7 @@ class UserStatus extends BaseController
             'User_status_id' => $this->request->getVar('User_status_id'),
             'User_status_name' => $this->request->getVar('User_status_name'),
             'User_status_description' => $this->request->getVar('User_status_description'),
-            'updated_at' => $this->request->getVar('updated_at')
+            'update_at' => $this->request->getVar('update_at')
         ];
         return $data;
     }
