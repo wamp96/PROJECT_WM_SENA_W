@@ -1,0 +1,1118 @@
+CRITICAL - 2024-05-22 03:20:13 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-05-22 03:20:13 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-22 03:22:28 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-05-22 03:22:28 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-22 03:22:35 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-05-22 03:22:35 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-22 03:28:23 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-05-22 03:28:23 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-22 03:28:41 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-05-22 03:28:41 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-22 03:28:43 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-05-22 03:28:43 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-22 03:28:44 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-05-22 03:28:44 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-22 03:28:44 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-05-22 03:28:44 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-05-22 01:31:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'api_proyecto' in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'api_proyecto', 3306, '', 0)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CRUD_V2\app\Controllers\UserStatus.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\UserStatus->index()
+#8 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserStatus))
+#9 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CRUD_V2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'api_proyecto' in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CRUD_V2\app\Controllers\UserStatus.php(35): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\UserStatus->index()
+#7 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserStatus))
+#8 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\CRUD_V2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-05-22 01:31:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'api_proyecto'
+[Method: GET, Route: userStatus]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_status`
+ORDER BY `User_status_id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UserStatus.php(35): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserStatus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserStatus))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+ERROR - 2024-05-22 01:32:36 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'api_proyecto' in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'api_proyecto', 3306, '', 0)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1471): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1490): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'api_proyecto' in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1471): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1490): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#10 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-05-22 01:34:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'api_proyecto' in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'api_proyecto', 3306, '', 0)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1471): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1490): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'api_proyecto' in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1471): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1490): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#10 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\xampp\htdocs\CRUD_V2\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+WARNING - 2024-05-22 01:36:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$roleModel is deprecated in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:36:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$userStatusModel is deprecated in APPPATH\Controllers\User.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+ERROR - 2024-05-22 01:36:47 --> mysqli_sql_exception: PROCEDURE codeigniter_crud_v2.sp_users does not exist in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL sp_users()...', 0)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_users()...')
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_users()...')
+#3 C:\xampp\htdocs\CRUD_V2\app\Models\UserModel.php(27): CodeIgniter\Database\BaseConnection->query('CALL sp_users()...')
+#4 C:\xampp\htdocs\CRUD_V2\app\Controllers\User.php(39): App\Models\UserModel->sp_users()
+#5 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\User->index()
+#6 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\CRUD_V2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-05-22 01:36:47 --> CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE codeigniter_crud_v2.sp_users does not exist
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\UserModel.php(27): CodeIgniter\Database\BaseConnection->query('CALL sp_users();')
+ 2 APPPATH\Controllers\User.php(39): App\Models\UserModel->sp_users()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 01:36:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE codeigniter_crud_v2.sp_users does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_users();')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_users();')
+ 3 APPPATH\Models\UserModel.php(27): CodeIgniter\Database\BaseConnection->query('CALL sp_users();')
+ 4 APPPATH\Controllers\User.php(39): App\Models\UserModel->sp_users()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 01:36:47 --> [Caused by] mysqli_sql_exception: PROCEDURE codeigniter_crud_v2.sp_users does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL sp_users();', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_users();')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_users();')
+ 4 APPPATH\Models\UserModel.php(27): CodeIgniter\Database\BaseConnection->query('CALL sp_users();')
+ 5 APPPATH\Controllers\User.php(39): App\Models\UserModel->sp_users()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:36:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:36:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+ERROR - 2024-05-22 01:36:56 --> mysqli_sql_exception: PROCEDURE codeigniter_crud_v2.sp_elements does not exist in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL sp_element...', 0)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_element...')
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_element...')
+#3 C:\xampp\htdocs\CRUD_V2\app\Models\ElementModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL sp_element...')
+#4 C:\xampp\htdocs\CRUD_V2\app\Controllers\Element.php(39): App\Models\ElementModel->sp_elements()
+#5 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Element->index()
+#6 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Element))
+#7 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\CRUD_V2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-05-22 01:36:56 --> CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE codeigniter_crud_v2.sp_elements does not exist
+[Method: GET, Route: element]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\ElementModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL sp_elements();')
+ 2 APPPATH\Controllers\Element.php(39): App\Models\ElementModel->sp_elements()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Element->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Element))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 01:36:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE codeigniter_crud_v2.sp_elements does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_elements();')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_elements();')
+ 3 APPPATH\Models\ElementModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL sp_elements();')
+ 4 APPPATH\Controllers\Element.php(39): App\Models\ElementModel->sp_elements()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Element->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Element))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 01:36:56 --> [Caused by] mysqli_sql_exception: PROCEDURE codeigniter_crud_v2.sp_elements does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL sp_elements();', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_elements();')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_elements();')
+ 4 APPPATH\Models\ElementModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL sp_elements();')
+ 5 APPPATH\Controllers\Element.php(39): App\Models\ElementModel->sp_elements()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Element->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Element))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:55:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$roleModel is deprecated in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:55:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$userStatusModel is deprecated in APPPATH\Controllers\User.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:57:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$roleModel is deprecated in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:57:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$userStatusModel is deprecated in APPPATH\Controllers\User.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$roleModel is deprecated in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$userStatusModel is deprecated in APPPATH\Controllers\User.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+ERROR - 2024-05-22 01:58:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`codeigniter_crud_v2`.`users`, CONSTRAINT `fk_user_status` FOREIGN KEY (`User_status_fk`) REFERENCES `user_status` (`User_status_id`) ON DELETE SET NULL ON UPDATE CASCADE) in C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CRUD_V2\app\Controllers\User.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\User->create()
+#9 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CRUD_V2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\CRUD_V2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-05-22 01:58:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`codeigniter_crud_v2`.`users`, CONSTRAINT `fk_user_status` FOREIGN KEY (`User_status_fk`) REFERENCES `user_status` (`User_status_id`) ON DELETE SET NULL ON UPDATE CASCADE)
+[Method: POST, Route: user/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`User_documento`, `User_nombre`, `User_apellido_paterno`, `User_apellido_materno`, `User_ciudad`, `User_area`, `User_telefono`, `User_correo`, `User_password`, `Roles_fk`, `User_status_fk`, `update_at`) VALUES (:User_documento:, :User_nombre:, :User_apellido_paterno:, :User_apellido_materno:, :User_ciudad:, :User_area:, :User_telefono:, :User_correo:, :User_password:, :Roles_fk:, :User_status_fk:, :update_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\User.php(50): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 01:58:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`codeigniter_crud_v2`.`users`, CONSTRAINT `fk_user_status` FOREIGN KEY (`User_status_fk`) REFERENCES `user_status` (`User_status_id`) ON DELETE SET NULL ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`User_documento`, `User_nombre`, `User_apellido_paterno`, `User_apellido_materno`, `User_ciudad`, `User_area`, `User_telefono`, `User_correo`, `User_password`, `Roles_fk`, `User_status_fk`, `update_at`) VALUES (\'1023952575\', \'Willian Andres\', \'Moreno\', \'Prieto\', \'Bogota\', \'Inventario\', \'3193065417\', \'wamoreno57@gmai.com\', \'$2y$10$9WujbTBIRqB.gGzOEO6JLejN1pzSWjwSWQPb0T.vozOu6UmPIexiO\', \'NULL\', \'NULL\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`User_documento`, `User_nombre`, `User_apellido_paterno`, `User_apellido_materno`, `User_ciudad`, `User_area`, `User_telefono`, `User_correo`, `User_password`, `Roles_fk`, `User_status_fk`, `update_at`) VALUES (\'1023952575\', \'Willian Andres\', \'Moreno\', \'Prieto\', \'Bogota\', \'Inventario\', \'3193065417\', \'wamoreno57@gmai.com\', \'$2y$10$9WujbTBIRqB.gGzOEO6JLejN1pzSWjwSWQPb0T.vozOu6UmPIexiO\', \'NULL\', \'NULL\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`User_documento`, `User_nombre`, `User_apellido_paterno`, `User_apellido_materno`, `User_ciudad`, `User_area`, `User_telefono`, `User_correo`, `User_password`, `Roles_fk`, `User_status_fk`, `update_at`) VALUES (:User_documento:, :User_nombre:, :User_apellido_paterno:, :User_apellido_materno:, :User_ciudad:, :User_area:, :User_telefono:, :User_correo:, :User_password:, :Roles_fk:, :User_status_fk:, :update_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\User.php(50): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 01:58:02 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`codeigniter_crud_v2`.`users`, CONSTRAINT `fk_user_status` FOREIGN KEY (`User_status_fk`) REFERENCES `user_status` (`User_status_id`) ON DELETE SET NULL ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `users` (`User_documento`, `User_nombre`, `User_apellido_paterno`, `User_apellido_materno`, `User_ciudad`, `User_area`, `User_telefono`, `User_correo`, `User_password`, `Roles_fk`, `User_status_fk`, `update_at`) VALUES (\'1023952575\', \'Willian Andres\', \'Moreno\', \'Prieto\', \'Bogota\', \'Inventario\', \'3193065417\', \'wamoreno57@gmai.com\', \'$2y$10$9WujbTBIRqB.gGzOEO6JLejN1pzSWjwSWQPb0T.vozOu6UmPIexiO\', \'NULL\', \'NULL\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`User_documento`, `User_nombre`, `User_apellido_paterno`, `User_apellido_materno`, `User_ciudad`, `User_area`, `User_telefono`, `User_correo`, `User_password`, `Roles_fk`, `User_status_fk`, `update_at`) VALUES (\'1023952575\', \'Willian Andres\', \'Moreno\', \'Prieto\', \'Bogota\', \'Inventario\', \'3193065417\', \'wamoreno57@gmai.com\', \'$2y$10$9WujbTBIRqB.gGzOEO6JLejN1pzSWjwSWQPb0T.vozOu6UmPIexiO\', \'NULL\', \'NULL\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`User_documento`, `User_nombre`, `User_apellido_paterno`, `User_apellido_materno`, `User_ciudad`, `User_area`, `User_telefono`, `User_correo`, `User_password`, `Roles_fk`, `User_status_fk`, `update_at`) VALUES (\'1023952575\', \'Willian Andres\', \'Moreno\', \'Prieto\', \'Bogota\', \'Inventario\', \'3193065417\', \'wamoreno57@gmai.com\', \'$2y$10$9WujbTBIRqB.gGzOEO6JLejN1pzSWjwSWQPb0T.vozOu6UmPIexiO\', \'NULL\', \'NULL\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`User_documento`, `User_nombre`, `User_apellido_paterno`, `User_apellido_materno`, `User_ciudad`, `User_area`, `User_telefono`, `User_correo`, `User_password`, `Roles_fk`, `User_status_fk`, `update_at`) VALUES (:User_documento:, :User_nombre:, :User_apellido_paterno:, :User_apellido_materno:, :User_ciudad:, :User_area:, :User_telefono:, :User_correo:, :User_password:, :Roles_fk:, :User_status_fk:, :update_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\User.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$roleModel is deprecated in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$userStatusModel is deprecated in APPPATH\Controllers\User.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$roleModel is deprecated in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$userStatusModel is deprecated in APPPATH\Controllers\User.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$roleModel is deprecated in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$userStatusModel is deprecated in APPPATH\Controllers\User.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$roleModel is deprecated in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 01:58:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$userStatusModel is deprecated in APPPATH\Controllers\User.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:10:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:10:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:12:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:12:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:13:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:13:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:13:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:13:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 02:19:01 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "1$"
+[Method: GET, Route: elementStatus/1$]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('elementStatus/1$')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('elementStatus/1$')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 02:20:13 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "$1"
+[Method: POST, Route: elementStatus::singleElementStatus/$1]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('elementStatus::singleElementStatus/$1')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('elementStatus::singleElementStatus/$1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 02:20:25 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "$1"
+[Method: POST, Route: elementStatus/singleElementStatus/$1]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('elementStatus/singleElementStatus/$1')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('elementStatus/singleElementStatus/$1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+CRITICAL - 2024-05-22 02:20:33 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "$1"
+[Method: POST, Route: elementStatus/$1]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('elementStatus/$1')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('elementStatus/$1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:23:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:23:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:25:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 02:25:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:15:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:15:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:20:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:20:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:32:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:32:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:32:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:32:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:38:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:38:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:38:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:38:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:38:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:38:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:38:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:38:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:39:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:39:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:44:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:44:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:44:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:44:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:52:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:52:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:54:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:54:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:55:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:55:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:56:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 18:56:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 19:02:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 19:02:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:45:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:45:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:50:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:50:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:56:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:56:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:58:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$categoryModel is deprecated in APPPATH\Controllers\Element.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:58:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Element::$elementStatusModel is deprecated in APPPATH\Controllers\Element.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Element->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:59:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$roleModel is deprecated in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
+WARNING - 2024-05-22 23:59:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\User::$userStatusModel is deprecated in APPPATH\Controllers\User.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\CRUD_V2\\public\\index.php')
