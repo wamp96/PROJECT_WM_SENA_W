@@ -7,6 +7,8 @@ namespace App\Controllers;
 //Clases Utilizadas en este controlador
 use App\Models\ElementModel;
 use App\Models\CategoryModel;
+use App\Models\ModelModel;
+use App\Models\BrandModel;
 use App\Models\ElementStatusModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -26,7 +28,9 @@ class Element extends BaseController
     {
         $this->primarykey = "Element_id";
         $this->elementModel = new ElementModel();
-        $this->categoryModel = new CategoryModel();
+        $this->categoryModel = new CategoryModel();                
+        $this->modelModel = new ModelModel();        
+        $this->brandModel = new BrandModel();         
         $this->elementStatusModel = new ElementStatusModel();
         $this->data = [];
         $this->model = "elements";
@@ -38,6 +42,8 @@ class Element extends BaseController
         $this->data['title'] = "ELEMENTS";
         $this->data[$this->model] = $this->elementModel->sp_elements();
         $this->data['categories'] = $this->categoryModel->orderBy('Category_id', 'ASC')->findAll();
+        $this->data['brands'] = $this->brandModel->orderBy('Brand_id', 'ASC')->findAll();
+        $this->data['models'] = $this->modelModel->orderBy('Model_id', $brand_fk)->findAll();
         $this->data['element_status'] = $this->elementStatusModel->orderBy('Element_status_id', 'ASC')->findAll();
         return view('element/element_view', $this->data);
     }
@@ -93,15 +99,15 @@ class Element extends BaseController
                 'Element_nombre' => $this->request->getVar('Element_nombre'),
                 'Element_imagen' => $this->request->getVar('Element_imagen'),
                 'Element_serial' => $this->request->getVar('Element_serial'),
-                'Element_marca' => $this->request->getVar('Element_marca'),
-                'Element_modelo' => $this->request->getVar('Element_modelo'),
                 'Element_procesador' => $this->request->getVar('Element_procesador'),
                 'Element_memoria_ram' => $this->request->getVar('Element_memoria_ram'),
                 'Element_disco' => $this->request->getVar('Element_disco'),
                 'Element_valor' => $this->request->getVar('Element_valor'),
                 'Element_stock' => $this->request->getVar('Element_stock'),
                 'Category_fk' => $this->request->getVar('Category_fk'),
+                'Model_Brand_fk' => $this->request->getVar('Model_Brand_fk'),
                 'Element_status_fk' => $this->request->getVar('Element_status_fk'),
+                'Element_Brand_fk' => $this->request->getVar('Element_Brand_fk'),
                 'update_at' => $today                 
             ];
             if($this->elementModel->update($id, $dataModel)){
@@ -148,14 +154,14 @@ class Element extends BaseController
             'Element_nombre' => $this->request->getVar('Element_nombre'),
             'Element_imagen' => $this->request->getVar('Element_imagen'),
             'Element_serial' => $this->request->getVar('Element_serial'),
-            'Element_marca' => $this->request->getVar('Element_marca'),
-            'Element_modelo' => $this->request->getVar('Element_modelo'),
             'Element_procesador' => $this->request->getVar('Element_procesador'),
             'Element_memoria_ram' => $this->request->getVar('Element_memoria_ram'),
             'Element_valor' => $this->request->getVar('Element_valor'),
             'Element_stock' => $this->request->getVar('Element_stock'),
             'Category_fk' => $this->request->getVar('Category_fk'),
             'Element_status_fk' => $this->request->getVar('Element_status_fk'),
+            'Brand_fk' => $this->request->getVar('Brand_fk'),
+            'Model_Brand_fk' => $this->request->getVar('Model_Brand_fk'),
             'update_at' => $this->request->getVar('update_at'),     
         ];
         return $data;

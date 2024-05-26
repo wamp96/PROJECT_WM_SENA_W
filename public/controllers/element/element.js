@@ -29,7 +29,6 @@ function add() {
     mainApp.resetForm();
     insertUpdate = true;
     btnEnabled(false);
-    debugger
     mainApp.showModal();
 }
 
@@ -95,7 +94,6 @@ function btnEnabled(type) {
 async function getData(data, method, url) {
     var parameters;
     //Show Preload
-    debugger
     mainApp.showPreload();
     if (method == "GET") {
         parameters = {
@@ -114,10 +112,8 @@ async function getData(data, method, url) {
             "X-Requested-With": "XMLHttpRequest"
             }
         }
-    debugger
     }
     return await fetch(url, parameters);
-    debugger
 }
 
 
@@ -137,14 +133,11 @@ mainApp.getForm().addEventListener('submit', async function (event) {
         url = URI_ELEMENT + LIST_CRUD[0];
         data = mainApp.getDataFormJson();
         resultFetch = getData(data, method, url);
-
-        debugger
         resultFetch.then(response => response.json())
     .then(data => {
         //show Modal
         mainApp.hiddenModal();
         //Reload View
-        debugger
         reloadPage();
     })
     .catch(error => {
@@ -165,7 +158,6 @@ mainApp.getForm().addEventListener('submit', async function (event) {
             //show Modal
             mainApp.hiddenModal();
             //Reload View
-            debugger
             reloadPage();
         })
         .catch(error => {

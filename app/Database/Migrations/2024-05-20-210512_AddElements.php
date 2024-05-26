@@ -28,14 +28,6 @@ class AddElements extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => 50,
             ],
-            'Element_marca' => [
-                'type' => 'VARCHAR',
-                'constraint' => 50,
-            ],
-            'Element_modelo' => [
-                'type' => 'VARCHAR',
-                'constraint' => 50,
-            ],
             'Element_procesador' => [
                 'type' => 'VARCHAR',
                 'constraint' => 50,
@@ -68,6 +60,12 @@ class AddElements extends Migration
                 'unsigned' => true,
                 'null' => true,
             ],
+            'Brand_fk' => [
+                'type' => 'INT',
+                'constraint' => 11,
+                'unsigned' => true,
+                'null' => true,
+            ],
             'create_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => true,
@@ -82,6 +80,7 @@ class AddElements extends Migration
         $this->forge->createTable('elements');
         $this->forge->addForeignKey('Category_fk', 'categories', 'Category_id', 'CASCADE', 'SET NULL','fk_category');
         $this->forge->addForeignKey('Element_status_fk', 'element_status', 'Element_status_id', 'CASCADE', 'SET NULL','fk_element_status');
+        $this->forge->addForeignKey('Brand_fk', 'brands', 'Brand_id', 'CASCADE', 'SET NULL','fk_brand');
     }
 
     public function down()

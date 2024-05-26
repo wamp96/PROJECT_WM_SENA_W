@@ -14,14 +14,6 @@
         <label for="Element_serial">Serial</label>
     </div>
     <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="Element_marca" id="Element_marca" placeholder="Name">
-        <label for="Element_marca">Marca</label>
-    </div>
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="Element_modelo" id="Element_modelo" placeholder="Name">
-        <label for="Element_modelo">Modelo</label>
-    </div>
-    <div class="form-floating mb-3">
         <input type="text" class="form-control" name="Element_procesador" id="Element_procesador" placeholder="Name">
         <label for="Element_procesador">Procesador</label>
     </div>
@@ -46,15 +38,54 @@
                     <?php endforeach; ?>
                 <?php endif; ?>
         </select>
-        </div>
-        <div class="form-floating mb-3 col-12">           
-            <select class="form-select" aria-label="Id Parent" id="Element_status_fk" name="Element_status_fk" disabled>
-                <option value=NULL selected>Open this select User Status</option>
-                    <?php if ($element_status) : ?>
-                        <?php foreach ($element_status as $obj) : ?>
-                            <option value="<?= $obj['Element_status_id'] ?>"><?= $obj['Element_status_name'] ?></option>
-                        <?php endforeach; ?>
-                    <?php endif; ?>
-            </select>            
-        </div>
+    </div>
+    <div class="form-floating mb-3 col-12">
+        <select class="form-select" aria-label="Id Parent" id="Brand_fk" name="Brand_fk" disabled>
+            <option value=NULL selected>Open this select Tipo</option>
+                <?php if ($brands) : ?>
+                    <?php foreach ($brands as $obj) : ?>
+                        <option value="<?= $obj['Brand_id'] ?>"><?= $obj['Brand_name'] ?></option>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+        </select>
+    </div>
+    <div class="form-floating mb-3 col-12">
+        <select class="form-select" aria-label="Id Parent" id="Model_Brand_fk" name="Model_Brand_fk" disabled>
+            <option value=NULL selected>Open this select Modelo</option>
+                
+        </select>
+    </div>
+    <div class="form-floating mb-3 col-12">           
+        <select class="form-select" aria-label="Id Parent" id="Element_status_fk" name="Element_status_fk" disabled>
+            <option value=NULL selected>Open this select Element  Status</option>
+                <?php if ($element_status) : ?>
+                    <?php foreach ($element_status as $obj) : ?>
+                        <option value="<?= $obj['Element_status_id'] ?>"><?= $obj['Element_status_name'] ?></option>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+        </select>            
+    </div>
 </form>
+
+<script>
+    document.getElementById('Brand_fk').addEventListener('change', function () {
+        var brandId = this.value;
+        var modelSelect = document.getElementById('Model_Brand_fk');
+        modelSelect.innerHTML = '<option value=NULL selected>Open this select Modelo</option>';
+        console.log(modelSelect);
+        console.log(brandId);
+        if (brandId !== 'NULL') {
+            fetch(`Element.php?Brand_fk=${brandId}`)
+                .then(response => response.json())
+                .then(data => {
+                    data.models.forEach(model => {
+                        var option = document.createElement('option');
+                        option.value = model.Model_id;
+                        option.textContent = model.Model_name;
+                        modelSelect.appendChild(option);
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    });
+</script>

@@ -8,6 +8,8 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\RoleModel;
 use App\Models\UserStatusModel;
+use App\Models\CityModel;
+use App\Models\AreaModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -28,6 +30,8 @@ class User extends BaseController
         $this->userModel = new UserModel();
         $this->roleModel = new RoleModel();
         $this->userStatusModel = new UserStatusModel();
+        $this->cityModel = new CityModel();
+        $this->areaModel = new AreaModel();
         $this->data = [];
         $this->model = "users";
     } 
@@ -39,6 +43,8 @@ class User extends BaseController
         $this->data[$this->model] = $this->userModel->sp_users();
         $this->data['roles'] = $this->roleModel->orderBy('Roles_id', 'ASC')->findAll();
         $this->data['user_status'] = $this->userStatusModel->orderBy('User_status_id', 'ASC')->findAll();
+        $this->data['cities'] = $this->cityModel->orderBy('City_id', 'ASC')->findAll();
+        $this->data['areas'] = $this->areaModel->orderBy('Area_id', 'ASC')->findAll();
         return view('user/user_view', $this->data);
     }
 
@@ -94,11 +100,11 @@ class User extends BaseController
                 'User_nombre' => $this->request->getVar('User_nombre'),
                 'User_apellido_paterno' => $this->request->getVar('User_apellido_paterno'),
                 'User_apellido_materno' => $this->request->getVar('User_apellido_materno'),
-                'User_ciudad' => $this->request->getVar('User_ciudad'),
-                'User_area' => $this->request->getVar('User_area'),
                 'User_telefono' => $this->request->getVar('User_telefono'),
                 'User_correo' => $this->request->getVar('User_correo'),
                 'User_password' => $this->request->getVar('User_password'),
+                'City_fk' => $this->request->getVar('City_fk'),
+                'Area_fk' => $this->request->getVar('Area_fk'),
                 'Roles_fk' => $this->request->getVar('Roles_fk'),
                 'User_status_fk' => $this->request->getVar('User_status_fk'),
                 'update_at' => $today                 
@@ -149,13 +155,13 @@ class User extends BaseController
             'User_nombre' => $this->request->getVar('User_nombre'),
             'User_apellido_paterno' => $this->request->getVar('User_apellido_paterno'),
             'User_apellido_materno' => $this->request->getVar('User_apellido_materno'),
-            'User_ciudad' => $this->request->getVar('User_ciudad'),
-            'User_area' => $this->request->getVar('User_area'),
             'User_telefono' => $this->request->getVar('User_telefono'),
             'User_correo' => $this->request->getVar('User_correo'),
-            'User_password' => password_hash($this->request->getVar('User_password'),PASSWORD_DEFAULT),
+            'User_password' => password_hash($this->request->getVar('User_password'),PASSWORD_DEFAULT),     
+            'City_fk' => $this->request->getVar('City_fk'),
+            'Area_fk' => $this->request->getVar('Area_fk'),
             'Roles_fk' => $this->request->getVar('Roles_fk'),
-            'User_status_fk' => $this->request->getVar('User_status_fk'),
+            'User_status_fk' => $this->request->getVar('User_status_fk'),            
             'update_at' => $this->request->getVar('update_at'),     
         ];
         return $data;

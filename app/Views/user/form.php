@@ -18,14 +18,6 @@
         <label for="User_apellido_materno">Apellido Materno</label>
     </div>
     <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="User_ciudad" id="User_ciudad" placeholder="Name">
-        <label for="User_ciudad">Ciudad</label>
-    </div>
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="User_area" id="User_area" placeholder="Name">
-        <label for="User_area">Area</label>
-    </div>
-    <div class="form-floating mb-3">
         <input type="number" class="form-control" name="User_telefono" id="User_telefono" placeholder="Name">
         <label for="User_telefono">Telefono</label>
     </div>
@@ -43,6 +35,26 @@
     </div>
 
     <div class="form-floating mb-3 col-12">
+        <select class="form-select" aria-label="Id Parent" id="City_fk" name="City_fk" disabled>
+            <option value=NULL selected>Open this select City</option>
+                <?php if ($cities) : ?>
+                    <?php foreach ($cities as $obj) : ?>
+                        <option value="<?= $obj['City_id'] ?>"><?= $obj['City_name'] ?></option>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+        </select>
+    </div>
+    <div class="form-floating mb-3 col-12">
+        <select class="form-select" aria-label="Id Parent" id="Area_fk" name="Area_fk" disabled>
+            <option value=NULL selected>Open this select Area</option>
+                <?php if ($areas) : ?>
+                    <?php foreach ($areas as $obj) : ?>
+                        <option value="<?= $obj['Area_id'] ?>"><?= $obj['Area_name'] ?></option>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+        </select>
+    </div>
+    <div class="form-floating mb-3 col-12">
         <select class="form-select" aria-label="Id Parent" id="Roles_fk" name="Roles_fk" disabled>
             <option value=NULL selected>Open this select Role</option>
                 <?php if ($roles) : ?>
@@ -51,15 +63,15 @@
                     <?php endforeach; ?>
                 <?php endif; ?>
         </select>
-        </div>
-        <div class="form-floating mb-3 col-12">           
-            <select class="form-select" aria-label="Id Parent" id="User_status_fk" name="User_status_fk" disabled>
-                <option value=NULL selected>Open this select User Status</option>
-                    <?php if ($user_status) : ?>
-                        <?php foreach ($user_status as $obj) : ?>
-                            <option value="<?= $obj['User_status_id'] ?>"><?= $obj['User_status_name'] ?></option>
-                        <?php endforeach; ?>
-                    <?php endif; ?>
-            </select>            
-        </div>
+    </div>
+    <div class="form-floating mb-3 col-12">           
+        <select class="form-select" aria-label="Id Parent" id="User_status_fk" name="User_status_fk" disabled>
+            <option value=NULL selected>Open this select User Status</option>
+                <?php if ($user_status) : ?>
+                    <?php foreach ($user_status as $obj) : ?>
+                        <option value="<?= $obj['User_status_id'] ?>"><?= $obj['User_status_name'] ?></option>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+        </select>            
+    </div>
 </form>

@@ -33,14 +33,6 @@ class AddUsers extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => 20,
             ],
-            'User_ciudad' => [
-                'type' => 'VARCHAR',
-                'constraint' => 10,
-            ],
-            'User_area' => [
-                'type' => 'VARCHAR',
-                'constraint' => 10,
-            ],
             'User_telefono' => [
                 'type' => 'INT',
                 'constraint' => 20,
@@ -67,6 +59,18 @@ class AddUsers extends Migration
                 'unsigned' => true,
                 'null' => true,
             ],
+            'City_fk' => [
+                'type' => 'INT',
+                'constraint' => 11,
+                'unsigned' => true,
+                'null' => true,
+            ],
+            'Area_fk' => [
+                'type' => 'INT',
+                'constraint' => 11,
+                'unsigned' => true,
+                'null' => true,
+            ],
             'create_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => true,
@@ -78,9 +82,11 @@ class AddUsers extends Migration
             ],
         ]);
         $this->forge->addPrimaryKey('User_id');
+        $this->forge->createTable('users');
         $this->forge->addForeignKey('User_status_fk', 'user_status', 'User_status_id', 'CASCADE', 'SET NULL','fk_user_status');
         $this->forge->addForeignKey('Roles_fk', 'roles', 'Roles_id', 'CASCADE', 'SET NULL','fk_roles');
-        $this->forge->createTable('users');
+        $this->forge->addForeignKey('City_fk', 'cities', 'City_id', 'CASCADE', 'SET NULL','fk_city');
+        $this->forge->addForeignKey('Area_fk', 'areas', 'Area_id', 'CASCADE', 'SET NULL','fk_area');
     }
 
     public function down()

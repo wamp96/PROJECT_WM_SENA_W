@@ -26,8 +26,8 @@
                         <td><?php echo $obj['Element_nombre'];?></td>
                         <td><?php echo $obj['Element_imagen'];?></td>
                         <td><?php echo $obj['Element_serial'];?></td>
-                        <td><?php echo $obj['Element_marca'];?></td>
-                        <td><?php echo $obj['Element_modelo'];?></td>
+                        <td><?php echo $obj['Brand_name'];?></td>
+                        <td><?php echo $obj['Model_name'];?></td>
                         <td><?php echo $obj['Element_procesador'];?></td>
                         <td><?php echo $obj['Element_memoria_ram'];?></td>
                         <td><?php echo $obj['Element_disco'];?></td>
