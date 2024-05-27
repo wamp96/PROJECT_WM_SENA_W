@@ -1,5 +1,5 @@
 {
-  "name": "theseer/tokenizer",
+  "name": "wamp96/codeigniter_api",
   "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
   "license": "BSD-3-Clause",
   "authors": [
@@ -16,7 +16,8 @@
     "php": "^7.2 || ^8.0",
     "ext-xmlwriter": "*",
     "ext-dom": "*",
-    "ext-tokenizer": "*"
+    "ext-tokenizer": "*",
+    "firebase/php-jwt": "*"
   },
   "autoload": {
     "classmap": [
@@ -24,4 +25,3 @@
     ]
   }
 }
-

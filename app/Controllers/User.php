@@ -46,6 +46,7 @@ class User extends BaseController
         $this->data['cities'] = $this->cityModel->orderBy('City_id', 'ASC')->findAll();
         $this->data['areas'] = $this->areaModel->orderBy('Area_id', 'ASC')->findAll();
         return view('user/user_view', $this->data);
+        return $this->respond(['users'=> $users->findAll()], 200);
     }
 
     public function create()

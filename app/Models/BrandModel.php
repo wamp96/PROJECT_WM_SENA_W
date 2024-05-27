@@ -18,7 +18,13 @@ class BrandModel extends Model
 
 
     // Date
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
+    protected $createdField  = 'create_at';
+    protected $updatedField  = 'update_at';
+
+    public function getModelsByBrand($brandId)
+    {
+        $query = $this->db->query("CALL GetModelsByBrand(?)", [$brandId]);
+        return $query->getResultArray();
+    }
 
 }
