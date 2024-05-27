@@ -10,7 +10,7 @@ use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class permission extends BaseController 
+class Permission extends BaseController 
 {
 
     //Variables

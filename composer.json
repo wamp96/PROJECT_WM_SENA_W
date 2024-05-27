@@ -1,27 +1,43 @@
 {
-  "name": "wamp96/codeigniter_api",
-  "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-  "license": "BSD-3-Clause",
-  "authors": [
-    {
-      "name": "Arne Blankerts",
-      "email": "arne@blankerts.de",
-      "role": "Developer"
-    }
-  ],
+  "name": "codeigniter4/appstarter",
+  "description": "CodeIgniter4 starter app",
+  "license": "MIT",
+  "type": "project",
+  "homepage": "https://codeigniter.com",
   "support": {
-    "issues": "https://github.com/theseer/tokenizer/issues"
+      "forum": "https://forum.codeigniter.com/",
+      "source": "https://github.com/codeigniter4/CodeIgniter4",
+      "slack": "https://codeigniterchat.slack.com"
   },
   "require": {
-    "php": "^7.2 || ^8.0",
-    "ext-xmlwriter": "*",
-    "ext-dom": "*",
-    "ext-tokenizer": "*",
-    "firebase/php-jwt": "*"
+    "php": "^8.1",
+    "codeigniter4/framework": "^4.0",
+    "firebase/php-jwt": "^6.10"
+  },
+  "require-dev": {
+      "fakerphp/faker": "^1.9",
+      "mikey179/vfsstream": "^1.6",
+      "phpunit/phpunit": "^10.5.16"
   },
   "autoload": {
-    "classmap": [
-      "src/"
-    ]
+      "psr-4": {
+          "App\\": "app/"
+      },
+      "exclude-from-classmap": [
+          "**/Database/Migrations/**"
+      ]
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "Tests\\Support\\": "tests/_support"
+      }
+  },
+  "config": {
+      "optimize-autoloader": true,
+      "preferred-install": "dist",
+      "sort-packages": true
+  },
+  "scripts": {
+      "test": "phpunit"
   }
 }
