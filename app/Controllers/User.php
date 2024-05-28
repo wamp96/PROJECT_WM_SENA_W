@@ -11,6 +11,7 @@ use App\Models\UserStatusModel;
 use App\Models\CityModel;
 use App\Models\AreaModel;
 use CodeIgniter\Controller;
+use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\API\ResponseTrait;
 
 

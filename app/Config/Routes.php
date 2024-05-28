@@ -13,8 +13,8 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/','Home::index');
 
 
-$routes->group("api", function($routes){
-    $routes->post("register                                                                                                                     ", "Register::index");
+$routes->group("api", function ($routes){
+    $routes->post("register", "Register::index");
     $routes->post("login", "Login::index");
     $routes->get("users", "User::viewList",['filter' => 'authFilter']);
     $routes->get("elements", "Element::viewList",['filter' => 'authFilter']);
