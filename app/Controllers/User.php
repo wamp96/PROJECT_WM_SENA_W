@@ -11,13 +11,14 @@ use App\Models\UserStatusModel;
 use App\Models\CityModel;
 use App\Models\AreaModel;
 use CodeIgniter\Controller;
-use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\API\ResponseTrait;
 
 
 class User extends BaseController 
 {
 
-    //Variables
+    //Variables   
+    use ResponseTrait;
     private $primarykey;
     private $userModel;
     private $data;
@@ -50,7 +51,7 @@ class User extends BaseController
     }
 
     public function view(){
-        return $this->respond(['users'=>  $userModel->findAll()], 200);
+        return $this->respond(['users'=>  $this->userModel->findAll()], 200);
     }
 
 
