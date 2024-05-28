@@ -12,12 +12,14 @@ use App\Models\BrandModel;
 use App\Models\ElementStatusModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\API\ResponseTrait;
 
 
 class Element extends BaseController 
 {
 
     //Variables
+    use ResponseTrait;
     private $primarykey;
     private $elementModel;
     private $data;
@@ -46,6 +48,12 @@ class Element extends BaseController
         $this->data['models'] = $this->modelModel->orderBy('Model_id', 'ASC')->findAll();
         $this->data['element_status'] = $this->elementStatusModel->orderBy('Element_status_id', 'ASC')->findAll();
         return view('element/element_view', $this->data);
+    }
+
+
+    
+    public function viewList(){
+        return $this->respond(['elements'=>  $this->elementModel->findAll()], 200);
     }
 
     public function create()

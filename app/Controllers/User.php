@@ -50,7 +50,7 @@ class User extends BaseController
         
     }
 
-    public function view(){
+    public function viewList(){
         return $this->respond(['users'=>  $this->userModel->findAll()], 200);
     }
 
