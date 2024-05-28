@@ -15,7 +15,7 @@ class Register extends BaseController
         $rules = [
             'User_correo' => ['rules' => 'required|min_length[4]|max_length[255]|valid_email|is_unique[users.User_correo]'],            
             'User_password' => ['rules' => 'required|min_length[8]|max_length[255]'],
-            'confirm_password' => ['label' => 'confirm password', 'rules' => 'matches[password]']
+            'confirm_password' => ['label' => 'confirm password', 'rules' => 'matches[User_password]']
         ];
 
         if ($this->validate($rules)){

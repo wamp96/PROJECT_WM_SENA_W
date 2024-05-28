@@ -113,6 +113,7 @@ class ComposerStaticInit6d5908e98624fa6de65f68f701a9c29e
         'App\\Controllers\\Role' => __DIR__ . '/../..' . '/app/Controllers/Role.php',
         'App\\Controllers\\User' => __DIR__ . '/../..' . '/app/Controllers/User.php',
         'App\\Controllers\\UserStatus' => __DIR__ . '/../..' . '/app/Controllers/UserStatus.php',
+        'App\\Filters\\AuthFilter' => __DIR__ . '/../..' . '/app/Filters/AuthFilter.php',
         'App\\Models\\AreaModel' => __DIR__ . '/../..' . '/app/Models/AreaModel.php',
         'App\\Models\\BrandModel' => __DIR__ . '/../..' . '/app/Models/BrandModel.php',
         'App\\Models\\CategoryModel' => __DIR__ . '/../..' . '/app/Models/CategoryModel.php',

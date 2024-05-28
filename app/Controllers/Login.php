@@ -18,12 +18,15 @@ class Login extends BaseController
         $email = $this->request->getVar('User_correo');
         $password = $this->request->getVar('User_password');
         $user = $userModel->where('User_correo', $email)->first();
+        
         if (is_null($user)){
-            return $this->respond(['error' => 'Invalid username or password', 401]);
+            return $this->respond(['error' => 'Invalid username', 401]);
         }
-        $pwd_verify = password_verify($password, $user['password']);    
+        
+        $pwd_verify = password_verify($password, $user['User_password']);
+
         if(!$pwd_verify){
-            return $this->respond(['error' => 'Invalid username or password'],401);
+            return $this->respond(['error' => $user['User_password'],$password,$pwd_verify], 401);
         }
         $key = getenv('JWT_SECRET');
         $iat = time();
@@ -39,7 +42,7 @@ class Login extends BaseController
         $token = JWT::encode($payload, $key, 'HS256');
         $response = [
             'message' => 'Login successful',
-            'token' => $token,
+            'token' => $token
         ];
         return $this->respond($response, 200);
    }

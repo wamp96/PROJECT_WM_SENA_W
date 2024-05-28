@@ -9,6 +9,16 @@ use CodeIgniter\Router\RouteCollection;
 
 //GROUP CRUD----------------------------------------------------------------
 
+
+$routes->get('/','Home::index');
+
+
+$routes->group("api", function($routes){
+    $routes->post("register", "Register::index");
+    $routes->post("login", "Login::index");
+    $routes->get("users", "User::view", ['filter' => 'authFilter']);
+});
+
 $routes->group("userStatus", function($routes){
     $routes->get("/", "userStatus::index");
     $routes->get("show", "UserStatus::index");

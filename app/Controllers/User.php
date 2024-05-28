@@ -46,8 +46,13 @@ class User extends BaseController
         $this->data['cities'] = $this->cityModel->orderBy('City_id', 'ASC')->findAll();
         $this->data['areas'] = $this->areaModel->orderBy('Area_id', 'ASC')->findAll();
         return view('user/user_view', $this->data);
-        return $this->respond(['users'=> $users->findAll()], 200);
+        
     }
+
+    public function view(){
+        return $this->respond(['users'=>  $userModel->findAll()], 200);
+    }
+
 
     public function create()
     {
@@ -107,7 +112,7 @@ class User extends BaseController
                 'City_fk' => $this->request->getVar('City_fk'),
                 'Area_fk' => $this->request->getVar('Area_fk'),
                 'Roles_fk' => $this->request->getVar('Roles_fk'),
-                'User_status_fk' => $this->request->getVar('User_status_fk'),
+                'User_password' => password_hash($this->request->getVar('User_password'),PASSWORD_DEFAULT),   
                 'update_at' => $today                 
             ];
             if($this->userModel->update($id, $dataModel)){
