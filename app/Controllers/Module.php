@@ -78,16 +78,5 @@ class Module extends BaseController{
         }
         echo json_encode($data);
     }
-
-
-
-
 } 
-
-
-
-
-
-
-
 ?>

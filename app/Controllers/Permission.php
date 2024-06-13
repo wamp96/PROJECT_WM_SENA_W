@@ -6,6 +6,8 @@ namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
 use App\Models\PermissionModel;
+use App\Models\ProfileModel;
+use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -16,6 +18,8 @@ class Permission extends BaseController
     //Variables
     private $primarykey;
     private $PermissionModel;
+    private $roleModuleModel;
+    private $profileModel;
     private $data;
     private $model;
 
@@ -24,6 +28,8 @@ class Permission extends BaseController
     {
         $this->primarykey = "Permissions_id";
         $this->PermissionModel = new PermissionModel();
+        $this->roleModuleModel = new RoleModulesModel();
+        $this->profileModel = new ProfileModel();
         $this->data = [];
         $this->model = "Permissions";
     } 
@@ -33,6 +39,8 @@ class Permission extends BaseController
     {
         $this->data['title'] = "PERMISSION";
         $this->data[$this->model] = $this->PermissionModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data['profile'] = $this->profileModel->where('User_id_fk', (int) $this->getSessionIdUser()['User_id'])->first();
+        $this->data['userModules']= $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('Permissions/permission_view', $this->data);
     }
 

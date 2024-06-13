@@ -27,19 +27,11 @@ class Dashboard extends BaseController
 
     public function index()
     {
-        $this->data['title'] = 'Dashboard';
-        $this->data['dashboard'] = $this->dashboardModel->findAll();
-        $this->data['roleModules'] = $this->roleModulesModel->findAll();
-        $this->data['profile'] = $this->profileModel->where('User'));
-        echo view('templates/header', $this->data);
-        echo view('dashboard/index', $this->data);
-        echo view('templates/footer', $this->data);
+        $this->data['title'] = 'DASHBOARD';
+        $this->data['profile'] = $this->profileModel->where('User_id_fk',(int)$this->getSessionIdUser()['User_id'])->first();
+        $this->data['userModule'] = $this->roleModulesModel->sp_role_module_id((int)$this->getSessionIdUser()['Roles_fk']);
+        echo view('dashboard/dashboard-index', $this->data);        
     }
-
-
 }
-
-
-
 
 ?>
