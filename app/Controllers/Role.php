@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\RoleModel;
+use App\Models\ProfileModel;
+use App\Models\RoleModuleModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -10,16 +12,19 @@ class Role extends BaseController
 {
 
     private $primarykey;
-    private $RoleModel;
+    private $roleModel;
+    private $profileModel;
+    private $roleModuleModel;
     private $data;
     private $model;
-
 
     //Metodo Constructor
     public function __construct()
     {
         $this->primarykey = "Roles_id";
-        $this->RoleModel = new RoleModel();
+        $this->roleModuleModel = new RoleModuleModel();
+        $this->roleModel = new RoleModel();
+        $this->profileModel = new ProfileModel();
         $this->data = [];
         $this->model = "roles";
     }
@@ -27,7 +32,9 @@ class Role extends BaseController
     public function index()
     {
         $this->data['title'] = "ROLES";
-        $this->data[$this->model] = $this->RoleModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data[$this->model] = $this->roleModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data['profile'] = $this->profileModel->where('User_id_fk',(int) $this->getSessionIdUser()['User_id']).first();;
+        $this->data['userModule'] = $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);        
         return view('role/roles_view', $this->data);
     }
 
@@ -35,7 +42,6 @@ class Role extends BaseController
     {
         if($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
-
             if($this->RoleModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;

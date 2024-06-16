@@ -78,5 +78,71 @@ class Module extends BaseController{
         }
         echo json_encode($data);
     }
+
+    public function update()
+    {
+        if($this->request->isAJAX())
+        {
+            $today = data("y-m-d H:i:s");
+            $id = $this->request->getVar($this->primaryKey);
+            $dataModel = [
+                'Modules_name' => $this->request->getVar('Modules_name'),
+                'Modules_description' => $this->request->getVar('Modules_description'),
+                'Modules_route' => $this->request->getVar('Modules_route'),
+                'Modules_icon' => $this->request->getVar('Modules_icon'),
+                'Modules_submodule' => $this->request->getVar('Modules_submodule'),
+                'Modules_parent_module' => $this->request->getVar('Modules_parent_module'),
+                'update_at' => $today
+            ];
+            if($this->moduleModel->update($id, $dataModel)){
+                $data['message'] = 'Success';
+                $data['response'] = ResponseInterface::HTTP_OK;
+                $data['csrf'] = csrf_hash();
+            }else{
+                $data['message'] = 'Error';
+                $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
+                $data['data']='';
+            }
+        }else{
+            $data['message'] = 'Error';
+            $data['response'] = ResponseInterface::HTTP_CONFLICT;
+            $data['data']='';
+        }   
+        echo json_encode($dataModel);     
+    }
+
+    public function delete()
+    {
+        try{
+            if($this->moduleModel->where($this->primaryKey, $id)->delete($id)){
+                $data['message'] = 'Success';
+                $data['response'] = ResponseInterface::HTTP_OK;
+                $data['csrf'] = csrf_hash();
+            }else{
+                $data['message'] = 'Error AJAX';
+                $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
+                $data['data']='Error';
+            }
+        }catch(\Exception $e){
+            $data['message'] = $e;
+            $data['response'] = ResponseInterface::HTTP_CONFLICT;
+            $data['data']='Error';
+        }
+        echo json_encode($data);
+    }
+    public function getDataModel()
+    {
+        $data = [
+            'Modules_id' => $this->request->getVar('Modules_id'),
+            'Modules_name' => $this->request->getVar('Modules_name'),
+            'Modules_description' => $this->request->getVar('Modules_description'),
+            'Modules_route' => $this->request->getVar('Modules_route'),
+            'Modules_icon' => $this->request->getVar('Modules_icon'),
+            'Modules_submodule' => $this->request->getVar('Modules_submodule'),
+            'Modules_parent_module' => $this->request->getVar('Modules_parent_module'),
+            'update_at' => $this->request->getVar('update_at'),
+        ];
+        return $data;
+    }
 } 
 ?>

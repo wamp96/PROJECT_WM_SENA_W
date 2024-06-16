@@ -140,11 +140,10 @@ class Permission extends BaseController
             'Permissions_id' => $this->request->getVar('Permissions_id'),
             'Permissions_name' => $this->request->getVar('Permissions_name'),
             'Permissions_description' => $this->request->getVar('Permissions_description'),
+            'Permissions_icon' => $this->request->getVar('Permissions_icon'),
             'update_at' => $this->request->getVar('update_at')
         ];
         return $data;
     }
 }
-
-
 ?>
