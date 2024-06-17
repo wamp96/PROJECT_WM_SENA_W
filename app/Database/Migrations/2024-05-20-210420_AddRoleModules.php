@@ -40,7 +40,6 @@ class AddRoleModules extends Migration
         ]);
         $this->forge->addPrimaryKey('RoleModules_id');
         $this->forge->createTable('role_modules');
-
         $this->forge->addForeignKey('Roles_fk','roles','Roles_id','CASCADE','SET NULL', 'fk_role');
         $this->forge->addForeignKey('Modules_fk','modules','Modules_id','CASCADE','SET NULL', 'fk_module');
     }

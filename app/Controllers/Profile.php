@@ -26,7 +26,7 @@
         {
             $this->data['title'] = "PROFILE";
             if($this->request->isAjax()){
-                if($data[$this->model]=$this->profileModel->where('User_id_fk', $id)->first()){
+                if($data[$this->model]=$this->profileModel->where('User_fk', $id)->first()){
                     $data['message'] = 'Success';
                     $data['response'] = ResponseInterface::HTTP_OK;
                     $data['csrf'] = csrf_hash();
@@ -75,7 +75,7 @@
                     'Profile_email' => $this->request->getVar('Profile_email'),
                     'Profile_name' => $this->request->getVar('Profile_name'),
                     'Profile_photo' => $this->request->getVar('Profile_photo'),
-                    'User_id_fk' => $this->request->getVar('User_id_fk'),
+                    'User_fk' => $this->request->getVar('User_fk'),
                     'update_at' => $today
                 ];
 
@@ -126,7 +126,7 @@
                 'Profile_email' => $this->request->getVar('Profile_email'),
                 'Profile_name' => $this->request->getVar('Profile_name'),
                 'Profile_photo' => $this->request->getVar('Profile_photo'),
-                'User_id_fk' => $this->request->getVar('User_id_fk'),
+                'User_fk' => $this->request->getVar('User_fk'),
                 'update_at' => date('Y-m-d H:i:s')
             ];
         }

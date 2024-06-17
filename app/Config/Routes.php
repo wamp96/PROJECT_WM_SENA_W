@@ -91,3 +91,25 @@ $routes->group("requestStatus", function($routes){
     $routes->post("add","requestStatus::create");
     $routes->post("update","requestStatus::update");
 });
+
+//GROUP ROUTES
+$routes->group("profile",['filter' => 'AuthCheck'], function ($routes) {
+    $routes->get("show/(:num)", "Profile::index/$1");
+  });
+  
+  $routes->group("login", function ($routes) {
+    $routes->get("/", "Login::index",['filter' => 'AlreadyLoggedIn']);
+    $routes->get("show", "Login::index",['filter' => 'AlreadyLoggedIn']);
+    $routes->post("logIn", "Login::logIn");
+    $routes->post("singOff", "Login::singOff");
+    $routes->post("forgerPassword", "Login::forgerPassword");
+  });
+  
+  
+  $routes->group("dashboard", function ($routes) {
+    $routes->get("/", "Dashboard::index",['filter' => 'AuthCheck']);
+  
+  });
+  
+  $routes->get("/", "Login::index",['filter' => 'AlreadyLoggedIn']);
+  

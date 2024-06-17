@@ -13,6 +13,8 @@ use CodeIgniter\Filters\ForceHTTPS;
 use CodeIgniter\Filters\PageCache;
 use CodeIgniter\Filters\PerformanceMetrics;
 use CodeIgniter\Filters\Cors;
+use App\Filters\AuthCheckFilter;
+use App\Filters\AlreadyLoggedInFilter;
 
 class Filters extends BaseFilters
 {
@@ -31,7 +33,8 @@ class Filters extends BaseFilters
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-        'authFilter'    => \App\Filters\AuthFilter::class,
+        'AuthCheck' => AuthCheckFilter::class,
+        'AlreadyLoggedIn' => AlreadyLoggedInFilter::class,
         'cors'          => Cors::class,
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,

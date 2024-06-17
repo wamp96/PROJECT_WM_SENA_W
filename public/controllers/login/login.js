@@ -4,6 +4,7 @@ const formId = ['my-form', 'my-form-login'];
 const alertId = ['my-alert'];
 const modalId = 'my-modal';
 const model = 'roleModules';
+const preloadId = 'preloadId';
 const classEdit  = 'edit-input';
 const mainApp = new Main(modalId, formId, classEdit, preloadId);
 const mainAlert = new Alert(alertId);
@@ -18,7 +19,6 @@ function showForget(){
     mainApp.enableFormAll();
     mainApp.showModal();
 }
-
 
 /**
  * 
@@ -39,7 +39,6 @@ mainApp.getForm().addEventListener('submit', async function(event){
             }else{
                 alert('Error Send message change password')
             }
-
             mainApp.hiddenModal();
             mainApp.hiddenPreload();
         })

@@ -62,6 +62,6 @@ class AddModules extends Migration
 
     public function down()
     {
-        //
+        $this->forge->dropTable('modules');
     }
 }

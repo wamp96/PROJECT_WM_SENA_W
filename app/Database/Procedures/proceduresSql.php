@@ -59,3 +59,80 @@ INNER JOIN models AS MD ON
 ORDER BY
     EL.Element_id ASC;
 END$$
+
+----------------------------------------------------------------------------------------
+
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sp_permissions_module_id`$$
+
+CREATE DEFINER = `root`@`localhost` PROCEDURE `sp_permissions_module_id` (IN `roleModulesId` INT)   
+BEGIN
+SELECT  
+    CONCAT('permission_',PM.Permissions_fk) AS "permission", 1 AS 'Status',RM.Modules_fk AS Modules_id FROM permissions_modules AS PM
+INNER JOIN permissions P ON 
+    PM.Permissions_fk=P.Permissions_id
+INNER JOIN role_modules RM ON 
+    PM.RoleModules_fk=RM.RoleModules_id
+WHERE PM.RoleModules_fk=roleModulesId;
+END$$
+----------------------------------------------------------------------------------------
+
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sp_role_modules`$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_role_modules` ()   
+BEGIN
+SELECT 
+    RM.RoleModules_id,
+    RM.Modules_fk,
+    M.Modules_name,
+    RM.Roles_fk,
+    R.Roles_name,
+    RM.update_at
+FROM 
+    role_modules as RM
+INNER JOIN modules M ON 
+    RM.Modules_fk=M.Modules_id
+INNER JOIN roles R ON 
+    RM.Roles_fk=R.Roles_id;
+END$$
+----------------------------------------------------------------------------------------
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sp_role_modules_id`$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_role_modules_id` (IN `roleId` INT)   
+BEGIN
+SELECT 
+    RM.Modules_fk,
+     MO.Modules_name,
+     MO.Modules_route,
+     MO.Modules_icon,
+     MO.Modules_submodule,
+     MO.Modules_parent_module,
+      MO.Modules_description
+FROM 
+    role_modules as RM
+INNER JOIN modules MO ON 
+    RM.Modules_fk=MO.Modules_id
+WHERE RM.Roles_fk=roleId;
+END$$
+----------------------------------------------------------------------------------------
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sp_role_module_id`$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_role_module_id` (IN `roleId` INT)   
+BEGIN
+SELECT  
+    CONCAT('module_',RM.Modules_fk) AS "modules",
+    1 AS Status,
+    RM.Roles_fk AS Roles_id 
+FROM 
+    role_modules as RM
+INNER JOIN modules M ON RM.Modules_fk=M.Modules_id
+WHERE RM.Roles_fk=roleId;
+END$$
+----------------------------------------------------------------------------------------

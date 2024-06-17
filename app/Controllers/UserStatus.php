@@ -7,7 +7,7 @@ namespace App\Controllers;
 //Clases Utilizadas en este controlador
 use App\Models\UserStatusModel;
 use App\Models\ProfileModel;
-use App\Models\RoleModuleModel;
+use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -39,8 +39,8 @@ class UserStatus extends BaseController
     {
         $this->data['title'] = "USER STATUS";
         $this->data[$this->model] = $this->StatusModel->orderBy($this->primarykey, 'ASC')->findAll();
-        $this->data['profile'] = $this->profileModel->where('User_id_fk',(int)$this->getSessionIsUser()['User_id'])->first();
-        $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this-getSessionIdUser()['Roles_fk']);
+        $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
+        $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('userStatus/status_view', $this->data);
     }
 

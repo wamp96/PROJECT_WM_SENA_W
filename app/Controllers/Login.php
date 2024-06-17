@@ -14,22 +14,24 @@ class Login extends BaseController
     private $loginModel;
     private $data;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->loginModel = new LoginModel();
         $this->data = [];
     }
+
     public function index()
     {
-        $this -> loginModel = new LoginModel();
-        $this->data = [];
+        $this -> data['title'] = "LOGIN";
+        $this->data = ['login/login_view', $this->data];
     } 
 
     public function login()
     {
         if ($this->request->isAJAX()){
-            $email = $this->request->getVar('User_user');
+            $email = $this->request->getVar('User_correo');
             $password = $this->request->getVar('User_password');
-            $user = $this->loginModel->where('User_user', $email)->first();
+            $user = $this->loginModel->where('User_correo', $email)->first();
             if (is_null($user)) {
               $this->$this->data['message'] = 'Invalid username.';
               $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
@@ -73,8 +75,8 @@ class Login extends BaseController
     public function forgerPassword(){
         try{
             if ($this->request->isAJAX()){
-                $email = $this->request->getVar('User_user');
-                $user = $this->loginModel->where('User_user',$email)->first();
+                $email = $this->request->getVar('User_correo');
+                $user = $this->loginModel->where('User_correo',$email)->first();
                 if(is_null($user)){
                     $this->data[] = 'Error Ajax';
                     $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
