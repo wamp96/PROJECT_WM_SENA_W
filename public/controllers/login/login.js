@@ -12,7 +12,7 @@ const mainAlert = new Alert(alertId);
 var url = "";
 var method = "";
 var data = "";
-var resultFetch = "";
+var resultFetch = null;
 
 function showForget(){
     mainApp.resetForm();
@@ -66,8 +66,8 @@ mainApp.getForm(1).addEventListener('submit', async function(event){
         data = mainApp.getDataFormJson(1);
         resultFetch = getData(data, method, url);
         resultFetch.then(response => response.json())
+      
         .then(data => {
-
             if(data['response']==200){
                 alert("Login Success:" + data['message']);
                 location.assign('/dashboard');

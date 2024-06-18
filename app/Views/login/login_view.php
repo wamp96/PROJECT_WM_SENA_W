@@ -15,9 +15,9 @@
         <div class="row">
             <div class="col-6 mt-5 mx-auto">
                 <div class="card">
+                    <h2 class="card-title text-center"><?=$title?></h2>
                     <img src="../assets/img/logos/logo.png" class="card-img-top w-25 mx-auto" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-center"><?=$title?></h5>
                         <?php require_once('../app/Views/login/form.php');?>
                     </div>
                 </div>        
