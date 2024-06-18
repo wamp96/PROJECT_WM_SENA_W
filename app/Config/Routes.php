@@ -10,7 +10,7 @@ use CodeIgniter\Router\RouteCollection;
 //GROUP CRUD----------------------------------------------------------------
 
 
-$routes->get('/','Home::index');
+//$routes->get('/','Home::index');
 
 
 $routes->group("api", function ($routes){

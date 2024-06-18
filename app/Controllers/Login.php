@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\LoginModel;
 use App\Controllers\BaseController;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\Message;
@@ -23,10 +24,10 @@ class Login extends BaseController
     public function index()
     {
         $this -> data['title'] = "LOGIN";
-        $this->data = ['login/login_view', $this->data];
+        return view('login/login_view', $this->data);
     } 
 
-    public function login()
+    public function logIn()
     {
         if ($this->request->isAJAX()){
             $email = $this->request->getVar('User_correo');
