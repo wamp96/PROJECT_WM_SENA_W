@@ -53,8 +53,8 @@ class User extends BaseController
         $this->data[$this->model] = $this->userModel->sp_users();
         $this->data['roles'] = $this->roleModel->orderBy('Roles_id', 'ASC')->findAll();
         $this->data['user_status'] = $this->userStatusModel->orderBy('User_status_id', 'ASC')->findAll();
-        $this->data['profile'] = $this->profileModel->where('user_id_fk', (int)$this->getSessionIdUser()['User_id'])->first();
-        $this->data['userModules'] = $this-roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
+        //$this->data['profile'] = $this->profileModel->where('user_id_fk', (int)$this->getSessionIdUser()['User_id'])->first();
+        //$this->data['userModules'] = $this-roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         $this->data['cities'] = $this->cityModel->orderBy('City_id', 'ASC')->findAll();
         $this->data['areas'] = $this->areaModel->orderBy('Area_id', 'ASC')->findAll();
         return view('user/user_view', $this->data);

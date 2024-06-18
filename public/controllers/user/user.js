@@ -114,15 +114,13 @@ async function getData(data, method, url) {
             "X-Requested-With": "XMLHttpRequest"
             }
         }
-    debugger
     }
     return await fetch(url, parameters);
-    debugger
 }
 
 
 $(document).ready(function(){
-    $('#'+tableId).DataTable();
+    $('#'+ tableId).DataTable();
 });
 
 
@@ -137,14 +135,11 @@ mainApp.getForm().addEventListener('submit', async function (event) {
         url = URI_USER + LIST_CRUD[0];
         data = mainApp.getDataFormJson();
         resultFetch = getData(data, method, url);
-
-        debugger
         resultFetch.then(response => response.json())
     .then(data => {
         //show Modal
         mainApp.hiddenModal();
         //Reload View
-        debugger
         reloadPage();
     })
     .catch(error => {
@@ -173,8 +168,9 @@ mainApp.getForm().addEventListener('submit', async function (event) {
             //hidden Preload
             mainApp.hiddenPreload();
         })
-            
+            .finally();    
         }
+
     } else {
         alert("Data Validate");
         mainApp.resetForm();

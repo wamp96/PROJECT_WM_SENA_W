@@ -6,8 +6,8 @@ use CodeIgniter\Model;
 
 class LoginModel extends Model
 {
-    protected $table            = 'user';
-    protected $primaryKey       = 'id';
+    protected $table            = 'users';
+    protected $primaryKey       = 'User_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;

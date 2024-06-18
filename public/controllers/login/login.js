@@ -62,7 +62,7 @@ mainApp.getForm(1).addEventListener('submit', async function(event){
     if(mainApp.setValidateForm(1)){
         mainApp.showPreload();
         method = 'POST';
-        url = URI_LOGIN + 'login';
+        url = URI_LOGIN + 'logIn';
         data = mainApp.getDataFormJson(1);
         resultFetch = getData(data, method, url);
         resultFetch.then(response => response.json())

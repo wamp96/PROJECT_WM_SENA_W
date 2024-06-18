@@ -34,7 +34,7 @@ class Login extends BaseController
             $password = $this->request->getVar('User_password');
             $user = $this->loginModel->where('User_correo', $email)->first();
             if (is_null($user)) {
-              $this->$this->data['message'] = 'Invalid username.';
+              $this->data['message'] = 'Invalid username.';
               $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
               $this->data['data'] = '';
             }
