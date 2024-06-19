@@ -3,7 +3,8 @@
 const formId = ['my-form', 'my-form-login'];
 const alertId = ['my-alert'];
 const modalId = 'my-modal';
-const model = 'roleModules';
+const model ='data';
+//const model = 'roleModules';
 const preloadId = 'preloadId';
 const classEdit  = 'edit-input';
 const mainApp = new Main(modalId, formId, classEdit, preloadId);
@@ -33,8 +34,7 @@ mainApp.getForm().addEventListener('submit', async function(event){
         resultFetch = getData(data, method, url);
         resultFetch.then(response => response.json())
         .then(data => {
-
-            if(data['response']==200){
+            if(data[model]==200){
                 alert("Send message change password");
             }else{
                 alert('Error Send message change password')
@@ -90,7 +90,6 @@ mainApp.getForm(1).addEventListener('submit', async function(event){
 /**
  * 
  */
-
 async function getData(data, method, url){
     var parameters;
 

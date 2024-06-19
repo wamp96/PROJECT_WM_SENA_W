@@ -10,12 +10,19 @@
 </head>
 <body>
     <?php require_once('../app/Views/preload/preload.php');?>
-
-    <div class="container-fluid">
+    <style>
+         body, html {
+            height: 100%;
+        }
+        .card{
+            margin-top: 10%;
+        }
+    </style>
+    <div class="container-fluid ">
         <div class="row">
             <div class="col-6 mt-5 mx-auto">
                 <div class="card">
-                    <h2 class="card-title text-center"><?=$title?></h2>
+                    <h1 class="card-title text-center"><?=$title?></h1>
                     <img src="../assets/img/logos/logo.png" class="card-img-top w-25 mx-auto" alt="...">
                     <div class="card-body">
                         <?php require_once('../app/Views/login/form.php');?>
@@ -44,10 +51,7 @@
             </div>
         </div>
     </div>
-
     <?php require_once('../app/Views/assets/js/js.php')?>
-
-
     <script src="../controllers/login/login.js"></script>
 </body>
 </html>

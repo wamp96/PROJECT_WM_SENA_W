@@ -14,16 +14,18 @@ class Login extends BaseController
 
     private $loginModel;
     private $data;
+    private $model;
 
     public function __construct()
     {
         $this->loginModel = new LoginModel();
         $this->data = [];
+        $this->model = 'data';
     }
 
     public function index()
     {
-        $this -> data['title'] = "LOGIN";
+        $this -> data['title'] = "BIENVENIDO...";
         return view('login/login_view', $this->data);
     } 
 
@@ -36,13 +38,13 @@ class Login extends BaseController
             if (is_null($user)) {
               $this->data['message'] = 'Invalid username.';
               $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
-              $this->data['data'] = '';
+              $this->data[$this->model] = '';
             }
             $pwd_verify = password_verify($password, $user['User_password']);
             if (!$pwd_verify) {
               $this->data['message'] = 'Invalid password.';
               $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
-              $this->data['data'] = '';
+              $this->data[$this->model] = '';
             } else {
               $session = session();
               $this->data['message'] = 'Login successful';
@@ -53,7 +55,7 @@ class Login extends BaseController
         }else {
             $this->data['message'] = 'Error Ajax';
             $this->data['response'] = ResponseInterface::HTTP_CONFLICT;
-            $this->data['data'] = '';
+            $this->data[$this->model] = '';
         }
         echo json_encode($this->data);
     }
@@ -68,7 +70,7 @@ class Login extends BaseController
         }else{
             $this->data[] = 'Error Ajax';
             $this->data['response'] = ResponseInterface::HTTP_CONFLICT;
-            $this->data['data'] = '';
+            $this->data[$this->model] = '';
         }
         echo json_encode($this->data);
     }
@@ -81,16 +83,16 @@ class Login extends BaseController
                 if(is_null($user)){
                     $this->data[] = 'Error Ajax';
                     $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
-                    $this->data['data'] = '';
+                    $this->data[$this->model] = '';
                 }else{
                     $this->data[] = 'Error Ajax';
                     $this->data['response'] = ResponseInterface::HTTP_OK;
-                    $this->data['data'] = '';
+                    $this->data[$this->model] = '';
                 }
             }else{
                 $this->data['message'] = 'Error Ajax';
                 $this->data['response'] = ResponseInterface::HTTP_CONFLICT;
-                $this->data['data'] = '';
+                $this->data[$this->model] = '';
             }
         }catch(Exception $e){
             $this->data['message'] = $e->getMessage();
