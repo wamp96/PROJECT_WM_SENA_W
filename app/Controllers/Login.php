@@ -34,13 +34,13 @@ class Login extends BaseController
         if ($this->request->isAJAX()){
             $email = $this->request->getVar('User_correo');
             $password = $this->request->getVar('User_password');
-            $user = $this->loginModel->where('User_correo', $email)->first();
-            if (is_null($user)) {
+            $user = $this->loginModel->sp_get_user($email);
+            if (is_null($user[0])) {
               $this->data['message'] = 'Invalid username.';
               $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
               $this->data[$this->model] = '';
             }
-            $pwd_verify = password_verify($password, $user['User_password']);
+            $pwd_verify = password_verify($password, $user[0]['User_password']);
             if (!$pwd_verify) {
               $this->data['message'] = 'Invalid password.';
               $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
@@ -79,8 +79,8 @@ class Login extends BaseController
         try{
             if ($this->request->isAJAX()){
                 $email = $this->request->getVar('User_correo');
-                $user = $this->loginModel->where('User_correo',$email)->first();
-                if(is_null($user)){
+                $user = $this->loginModel->sp_get_user($email);
+                if(is_null($user[0])){
                     $this->data[] = 'Error Ajax';
                     $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
                     $this->data[$this->model] = '';
