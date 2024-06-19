@@ -19,5 +19,19 @@ class LoginModel extends Model
 
     // Dates
     protected $updatedField  = 'update_at';
-    protected $deletedField  = 'delete_at';
+    protected $deletedField  = 'create_at';
+
+    public function  sp_get_user($email)
+    {
+        try{
+            $sql = "SELECT * FROM users WHERE User_correo = '".$email."'";
+            $query = $this->db->query($sql);
+            $result = $query->getResultArray();
+
+        }catch(Exception $e){
+            $result = null;            
+        }
+        return $result;
+    }
+
 }
