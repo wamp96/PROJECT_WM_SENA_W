@@ -1,9 +1,9 @@
 <form id="my-form">
-    <input type="hidden" class="form-control" id="Element_id" name="Element_id" value=null>
+    <input type="hidden" class="form-control" id="Request_id" name="Request_id" value=null>
     <input type="hidden" class="form-control" id="update_at" name="update_at" value=null>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="Element_nombre" id="Element_nombre" placeholder="Name">
-            <label for="Element_nombre">Nombre</label>
+            <input type="text" class="form-control" name="Request_description" id="Request_description" placeholder="Name">
+            <label for="Element_nombre">Descripcion</label>
         </div>
         <div class="form-floating mb-3">
             <input type="text" class="form-control" name="Element_imagen" id="Element_imagen" placeholder="Name">

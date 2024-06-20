@@ -83,6 +83,9 @@ $routes->group("category", function($routes){
     $routes->post("update","category::update");
 });
 
+/**
+ * Routes for requestStatus
+ */
 $routes->group("requestStatus", function($routes){
     $routes->get("/", "requestStatus::index");
     $routes->get("show", "requestStatus::index");
@@ -90,6 +93,18 @@ $routes->group("requestStatus", function($routes){
     $routes->get("delete/(:num)","requestStatus::delete/$1");
     $routes->post("add","requestStatus::create");
     $routes->post("update","requestStatus::update");
+});
+
+/**
+ * Routes for request
+ */
+$routes->group("request", function($routes){
+    $routes->get("/", "request::index");
+    $routes->get("show", "request::index");
+    $routes->get("edit/(:num)","request::request/$1");
+    $routes->get("delete/(:num)","request::delete/$1");
+    $routes->post("add","request::create");
+    $routes->post("update","request::update");
 });
 
 //GROUP ROUTES

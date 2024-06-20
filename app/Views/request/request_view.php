@@ -48,7 +48,7 @@
                     </div>
                     <div class="modal-body">
                         <!--Form-->
-                        <?php require_once('../app/Views/element/form.php') ?>
+                        <?php require_once('../app/Views/request/form.php') ?>
                         <!--End Form-->
                     </div>
                     <div class="modal-footer">
@@ -64,6 +64,6 @@
         <?php require_once('../app/Views/assets/js/js.php') ?>
         <?php require_once('../app/Views/assets/js/dataTable.php') ?>
         <!--JS Controller-->
-        <script src="../controllers/element/element.js"></script>
+        <script src="../controllers/request/request.js"></script>
     </body>
 </html>

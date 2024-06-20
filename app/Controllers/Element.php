@@ -15,13 +15,17 @@ use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\API\ResponseTrait;
 
 
-class Element extends BaseController 
+class Element extends Controller 
 {
 
     //Variables
     use ResponseTrait;
     private $primarykey;
     private $elementModel;
+    private $elementStatusModel;
+    private $modelModel;
+    private $categoryModel;
+    private $brandModel;
     private $data;
     private $model;
 
@@ -77,7 +81,6 @@ class Element extends BaseController
             $data['data'] = '';
         }
         echo json_encode($dataModel);
-        console.log($dataModel);
     }
 
     public function singleElement($id = null)

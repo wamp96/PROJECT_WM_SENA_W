@@ -39,13 +39,13 @@ $getUser = $session->get(LOGGED_USER);
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       
-      <div class="modal-body">
+      <!-- <div class="modal-body">
         <form class="" id="my-modal_profile">
           <input type="hidden" class="form-control" id="Profile_id" name="Profile_id" value=null>
           <input type="hidden" class="form-control" id="User_fk" name="User_fk" value=null>
           <input type="hidden" class="form-control" id="update_at" name="update_at" value=null>
           <div class="form-floating mb-3">
-            <img src="<?= iseet($profile['Profile_photo'])?$profile['Profile_photo']: ''?>" alt="..." class="img-thumbnail w-100">
+            <img src="" alt="..." class="img-thumbnail w-100">
             <label for="Profile_photo">Photo</label>          
           </div>
           <div class="form-floating mb-3">
@@ -60,7 +60,7 @@ $getUser = $session->get(LOGGED_USER);
             <input type="text" class="form-control" name="Profile_name" id="Profile_name" placeholde="Name" value="<? isset($profile['Profile_name']) ? $profile['Profile_name']:''?>"required>
             <label for="Profile_name">Name</label>
           </div>      
-        </form> 
+        </form>  -->
 
       </div>
       <div class="modal-footer">
