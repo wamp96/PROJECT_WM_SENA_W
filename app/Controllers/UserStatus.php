@@ -12,7 +12,7 @@ use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class UserStatus extends BaseController 
+class UserStatus extends Controller 
 {
 
     //Variables

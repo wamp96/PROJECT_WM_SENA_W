@@ -12,7 +12,7 @@ class ProfileModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['Profile_email','Profile_name','Profile_photo','User_id_fk','update_at'];
+    protected $allowedFields    = ['Profile_email','Profile_name','Profile_photo','User_fk','update_at'];
 
     protected bool $allowEmptyInserts = false;
 

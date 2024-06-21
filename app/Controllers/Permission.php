@@ -9,7 +9,7 @@ use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class Permission extends BaseController 
+class Permission extends Controller 
 {
 
     
@@ -90,6 +90,7 @@ class Permission extends BaseController
             $dataModel=[
                 'Permissions_name' => $this->request->getVar('Permissions_name'),
                 'Permissions_description' => $this->request->getVar('Permissions_description'),
+                'Permissions_icon' => $this->request->getVar('Permissions_icon'),
                 'update_at' => $today                 
             ];
             if($this->PermissionModel->update($id, $dataModel)){

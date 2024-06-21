@@ -10,7 +10,7 @@ use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class Category extends BaseController 
+class Category extends Controller 
 {
 
     //Variables

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use Exception;
 
 class RoleModulesModel extends Model
 {
@@ -12,7 +13,7 @@ class RoleModulesModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['Roles_fk','Modules_fk','update_at'];
+    protected $allowedFields    = ['Modules_fk','Roles_fk','update_at'];
 
     protected bool $allowEmptyInserts = false;
     

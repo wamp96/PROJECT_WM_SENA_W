@@ -5,7 +5,7 @@
     use CodeIgniter\Controller;
     use CodeIgniter\HTTP\ResponseInterface;
 
-    class Profile extends BaseController
+    class Profile extends Controller
     {
         
         private $primaryKey;
@@ -100,7 +100,7 @@
         public function delete($id = null)
         {
             try{
-                if($this->profileModel->where($this->primaryKey, $id)->delete($id, $dataModel)){
+                if($this->profileModel->where($this->primaryKey, $id)->delete($id)){
                     $data['message'] = 'Success';
                     $data['response'] = ResponseInterface::HTTP_OK;
                     $data['data'] = 'OK';
@@ -127,7 +127,8 @@
                 'Profile_name' => $this->request->getVar('Profile_name'),
                 'Profile_photo' => $this->request->getVar('Profile_photo'),
                 'User_fk' => $this->request->getVar('User_fk'),
-                'update_at' => date('Y-m-d H:i:s')
+                'update_at' => $this->request->getVar('update_at'),
             ];
+            return $data;
         }
     }        

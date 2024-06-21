@@ -9,7 +9,7 @@ use App\Models\RoleModulesModel;
 use App\Models\ProfileModel;
 
 
-class Module extends BaseController{
+class Module extends Controller{
     private $primaryKey;
     private $moduleModel;
     private $profileModel;
@@ -30,13 +30,14 @@ class Module extends BaseController{
     public function index(){
         $this->data['title'] = "MODULOS";
         $this->data[$this->model] = $this->moduleModel->orderBy($this->primaryKey, 'ASC')->findAll();
-        $this->data['modulesParent'] = $this->ModuleModel->where('Modules_submodule', 0)->findAll();
+        $this->data['modulesParent'] = $this->moduleModel->where('Modules_submodule', 0)->findAll();
         $this->data['profile'] =  $this->profileModel->where('User_id_fk', (int)$this->getSessionIdUser()['User_id'])->first();
-        $this->data['userModules'] =  $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
+        $this->data['userModules'] =  $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('module/modules_view', $this->data);
     }
 
-    public function create(){
+    public function create()
+    {
         if ($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
 
@@ -61,7 +62,7 @@ class Module extends BaseController{
 
     public function singleModule($id = null)
     {
-        if($this->requst->isAJAX()){
+        if($this->request->isAJAX()){
             if($data[$this->model] = $this->moduleModel->where($this->primaryKey, $id)->first()){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
@@ -83,7 +84,7 @@ class Module extends BaseController{
     {
         if($this->request->isAJAX())
         {
-            $today = data("y-m-d H:i:s");
+            $today = date("Y-m-d H:i:s");
             $id = $this->request->getVar($this->primaryKey);
             $dataModel = [
                 'Modules_name' => $this->request->getVar('Modules_name'),
@@ -97,6 +98,7 @@ class Module extends BaseController{
             if($this->moduleModel->update($id, $dataModel)){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
+                $data['data'] = $dataModel;
                 $data['csrf'] = csrf_hash();
             }else{
                 $data['message'] = 'Error';
@@ -111,7 +113,7 @@ class Module extends BaseController{
         echo json_encode($dataModel);     
     }
 
-    public function delete()
+    public function delete($id = null)
     {
         try{
             if($this->moduleModel->where($this->primaryKey, $id)->delete($id)){
@@ -130,6 +132,8 @@ class Module extends BaseController{
         }
         echo json_encode($data);
     }
+
+    
     public function getDataModel()
     {
         $data = [

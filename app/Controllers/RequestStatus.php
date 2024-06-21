@@ -10,7 +10,7 @@ use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class RequestStatus extends BaseController 
+class RequestStatus extends Controller 
 {
 
     //Variables

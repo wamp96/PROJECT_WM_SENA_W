@@ -23,7 +23,7 @@ class RoleModule extends Controller
 
     public function __construct()
     {
-        $this->primaryKey = "Roles_id";
+        $this->primaryKey = "RoleModules_id";
         $this->roleModuleModel = new RoleModulesModel();
         $this->moduleModel = new ModuleModel();
         $this->roleModel = new RoleModel();
@@ -41,7 +41,7 @@ class RoleModule extends Controller
         $this->data['roles'] = $this->roleModel->orderBy('Roles_id', 'ASC')->findAll();
         $this->data['modules'] = $this->moduleModel->orderBy('Modules_id', 'ASC')->findAll();
         $this->data['permissions'] = $this->permissionModel->orderBy('Permissions_id', 'ASC')->findAll();
-        $this->data['profiles'] = $this->profileModel->where('User_id_fk',(int)$this->getSessionIdUser()['User_id'])->first();
+        $this->data['profiles'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('roleModule/roleModules_view', $this->data);
     }
@@ -73,7 +73,7 @@ class RoleModule extends Controller
     public function singleRoleModule($id = null)
     {
         if($this->request->isAJAX()){
-            if($data[$this->model] = $this->roleModuleModel->where($this->primarykey, $id)->first()){
+            if($data[$this->model] = $this->roleModuleModel->where($this->primaryKey, $id)->first()){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
@@ -136,7 +136,7 @@ class RoleModule extends Controller
     public function update(){
         if($this ->request->isAJAX()){
             $today = date("Y-m-d H:i:s");
-            $id = $this->request->getVar($this->primarykey);
+            $id = $this->request->getVar($this->primaryKey);
             $dataModel=[
                 'Modules_fk' => $this->request->getVar('Modules_fk'),
                 'Roles_fk' => $this->request->getVar('Roles_fk'),
@@ -163,7 +163,7 @@ class RoleModule extends Controller
     public function delete($id = null)
     {   
         try{
-            if($this->roleModuleModel->where($this->primarykey, $id)->delete($id)){
+            if($this->roleModuleModel->where($this->primaryKey, $id)->delete($id)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = "OK";
