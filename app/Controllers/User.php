@@ -14,14 +14,12 @@ use App\Models\CityModel;
 use App\Models\AreaModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
-use CodeIgniter\API\ResponseTrait;
 
 
 class User extends Controller 
 {
 
     //Variables   
-    use ResponseTrait;
     private $primarykey;
     private $userModel;
     private $roleModel;

@@ -2,7 +2,7 @@
 //CONSTANTES
 const formId = 'my-form';
 const modalId = 'my-modal';
-const model = 'Permissions';//por revisar
+const model = 'permissions';//por revisar
 const tableId = 'table-index';
 const preloadId = 'preloadId';
 const classEdit = 'edit-input';
@@ -157,7 +157,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
         }
     }else{
         alert("Data Validate");
-        //mainApp.resetForm();
+        mainApp.resetForm();
     }
 });
 
@@ -169,8 +169,8 @@ function reloadPage(){
   },500)
 }
 
-function action() {
-    mainApp.hiddenPreload();
-  };
+// function action() {
+//     mainApp.hiddenPreload();
+//   };
 
-document.addEventListener("DOMContentLoaded", action); 
+// document.addEventListener("DOMContentLoaded", action); 

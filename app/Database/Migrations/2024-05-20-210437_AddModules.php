@@ -16,31 +16,31 @@ class AddModules extends Migration
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'Module_name' => [
+            'Modules_name' => [
                 'type' => 'VARCHAR',
                 'constraint' => 255,
             ],
-            'Module_description' => [
+            'Modules_description' => [
                 'type' => 'VARCHAR',
                 'constraint' => 255,
             ],
-            'Module_route' => [
+            'Modules_route' => [
                 'type' => 'VARCHAR',
                 'constraint' => 80,
                 'null' => true,
             ],
-            'Module_icon' => [
+            'Modules_icon' => [
                 'type' => 'VARCHAR',
                 'constraint' => 80,
                 'null' => true,
             ],
-            'Module_submodule' => [
+            'Modules_submodule' => [
                 'type' => 'tinyint',
                 'constraint' => 3,
                 'null' => 0,
                 'default' => 0,
             ],
-            'Module_parent_module' => [
+            'Modules_parent_module' => [
                 'type' => 'VARCHAR',
                 'constraint' => 80,
                 'null' => true,

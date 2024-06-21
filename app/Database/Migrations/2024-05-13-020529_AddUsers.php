@@ -40,12 +40,12 @@ class AddUsers extends Migration
             'User_correo' => [
                 'type' => 'VARCHAR',
                 'unique' => true,
-                'constraint' => 40,
+                'constraint' => 255,
             ],
             'User_password' => [
                 'type' => 'VARCHAR',
                 'unique' => true,
-                'constraint' => 50,
+                'constraint' => 255,
             ],
             'Roles_fk' => [
                 'type' => 'INT',
@@ -84,7 +84,7 @@ class AddUsers extends Migration
         $this->forge->addPrimaryKey('User_id');
         $this->forge->createTable('users');
         $this->forge->addForeignKey('User_status_fk', 'user_status', 'User_status_id', 'CASCADE', 'SET NULL','fk_user_status');
-        $this->forge->addForeignKey('Roles_fk', 'roles', 'Roles_id', 'CASCADE', 'SET NULL','fk_roles');
+        $this->forge->addForeignKey('Roles_fk', 'roles', 'Roles_id', 'CASCADE', 'SET NULL','fk_user_role');
         $this->forge->addForeignKey('City_fk', 'cities', 'City_id', 'CASCADE', 'SET NULL','fk_city');
         $this->forge->addForeignKey('Area_fk', 'areas', 'Area_id', 'CASCADE', 'SET NULL','fk_area');
     }

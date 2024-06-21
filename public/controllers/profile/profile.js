@@ -1,26 +1,30 @@
 
-const formId = 'my-form';
-const modalId = 'my-modal';
-const model = 'users';
-const tableId = 'table-index';
+const formId1 = 'my-profile';
+const modalId1 = 'my-modal_profile';
+const model1 = 'profiles';
+const tableId1= 'table-index';
 const preloadId = 'preloadId';
 const classEdit = 'edit-input';
 const textConfirm = 'Press a button!\nEither OK or Cancel.';
 const btnSubmit = document.getElementById('btnSubmit');
-const mainApp = new Main(modalId, formId, classEdit, preloadId);
+const mainApp1 = new Main(modalId, formId, classEdit, preloadId);
+
 
 var insertUpdate = true;
 var url = "";
 var method = "";
-var data = "";
+var data = "";  
 var resultFetch = null;
 
-function show(id) {
-  mainApp.disabledFormAll();
-  mainApp.resetForm();
-  btnEnabled(true);
-  getDataId(id);
+
+function showProfile(id) {
+  //mainApp1.disabledFormAll();
+  //mainApp1.resetForm();
+  btnEnabled(false);
+  mainApp1.showModal();
+  //getDataId(id);
 }
+
 
 function add() {
   mainApp.enableFormAll();
@@ -29,6 +33,7 @@ function add() {
   btnEnabled(false);
   mainApp.showModal();
 }
+
 
 function edit(id) {
   mainApp.disabledFormEdit();
@@ -39,15 +44,16 @@ function edit(id) {
 }
 
 
-async function delete_(id) {
-  method = 'GET';
-  url = URI_USER + LIST_CRUD[3] + '/' + id;
+async function close() {
+  alert();
+  method = 'POST';
+  url = URI_LOGIN + 'singOff';
   data = "";
   if (confirm(textConfirm) == true) {
     resultFetch = getData(data, method, url);
     resultFetch.then(response => response.json())
       .then(data => {
-         reloadPage();
+         location.assign('/user');
       })
       .catch(error => {
         console.error(error);
@@ -107,7 +113,6 @@ async function getData(data, method, url) {
   return await fetch(url, parameters);
 }
 
-
 $(document).ready(function () {
   $('#' + tableId).DataTable();
 });
@@ -136,19 +141,14 @@ mainApp.getForm().addEventListener('submit', async function (event) {
       method = 'POST';
       url = URI_USER + LIST_CRUD[2];
       data = mainApp.getDataFormJson();
-      //console.log(data);
       resultFetch = getData(data, method, url);
       resultFetch.then(response => response.json())
         .then(data => {
-          //console.log(data);
-          //show Modal 
           mainApp.hiddenModal();
-          //Reload View
           reloadPage();
         })
         .catch(error => {
           console.error(error);
-          //hidden Preload 
           mainApp.hiddenPreload();
         })
         .finally();
@@ -159,11 +159,8 @@ mainApp.getForm().addEventListener('submit', async function (event) {
   }
 });
 
-
-
 function reloadPage() {
   setTimeout(function () {
-    //hidden Preload 
     mainApp.hiddenPreload();
     location.reload();
   }, 500);

@@ -15,19 +15,19 @@ class AddRoleModules extends Migration
                 'constraint' => 11,
                 'unsigned' => true,
                 'auto_increment' => true
-            ],
-            'Roles_fk' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'unsigned' => true,
-                'null' => true,
-            ],
+            ],            
             'Modules_fk' => [
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,                
                 'null' => true,
-            ],            
+            ],     
+            'Roles_fk' => [
+                'type' => 'INT',
+                'constraint' => 11,
+                'unsigned' => true,
+                'null' => true,
+            ],       
             'create_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => true,
@@ -40,7 +40,7 @@ class AddRoleModules extends Migration
         ]);
         $this->forge->addPrimaryKey('RoleModules_id');
         $this->forge->createTable('role_modules');
-        $this->forge->addForeignKey('Roles_fk','roles','Roles_id','CASCADE','SET NULL', 'fk_role');
+        $this->forge->addForeignKey('Roles_fk','roles','Roles_id','CASCADE','SET NULL', 'fk_roles');
         $this->forge->addForeignKey('Modules_fk','modules','Modules_id','CASCADE','SET NULL', 'fk_module');
     }
 

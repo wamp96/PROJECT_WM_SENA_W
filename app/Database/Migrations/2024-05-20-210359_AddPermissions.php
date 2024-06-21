@@ -25,6 +25,11 @@ class AddPermissions extends Migration
                 'constraint' => 300,
                 'null' => true,
             ],
+            'Permissions_icon' => [
+                'type' => 'VARCHAR',
+                'constraint' => 30,
+                'null' => true,
+            ],
             'create_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => true,

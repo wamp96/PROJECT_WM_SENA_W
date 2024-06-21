@@ -10,7 +10,7 @@ class AddPermissionsModules extends Migration
     public function up()
     {
         $this->forge->addField([
-            'Permissions_modules_id' => [
+            'PermissionsModules_id' => [
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
@@ -38,10 +38,10 @@ class AddPermissionsModules extends Migration
                 'null' => true,
             ],
         ]);    
-        $this->forge->addPrimaryKey('Permissions_modules_id');
+        $this->forge->addPrimaryKey('PermissionsModules_id');
         $this->forge->createTable('permissions_modules');
-        $this->forge->addForeignKey('RoleModules_fk','role_modules','RoleModules_id','CASCADE','SET NULL', 'fk_role_modules');
-        $this->forge->addForeignKey('Permissions_fk','permissions','Permissions_id','CASCADE','SET NULL', 'fk_permissions');
+        $this->forge->addForeignKey('RoleModules_fk','role_modules','RoleModules_id','CASCADE','SET NULL', 'fk_permissions_modules_modules');
+        $this->forge->addForeignKey('Permissions_fk','permissions','Permissions_id','CASCADE','SET NULL', 'fk_permissions_modules_permissions');
     }
 
     public function down()

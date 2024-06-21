@@ -1,5 +1,5 @@
-const formId = 'my form';
-const modalId = 'my modal';
+const formId = 'my-form';
+const modalId = 'my-modal';
 const model = 'modules';
 const tableId  = 'table-index';
 const preloadId = 'preloadId';
@@ -36,7 +36,6 @@ function edit(id){
     insertUpdate = false;
     btnEnabled(false);
     getDataId(id);
-    mainApp.showModal();//VALIDAR 
 }
 
 async function delete_(id){
@@ -72,7 +71,7 @@ async function getDataId(id){
         })
         .catch(error => {
             console.error(error);
-            mainApp.hiddenPreload();
+            mainApp.t();
         })
         .finally();
 }
@@ -144,7 +143,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
             resultFetch = getData(data, method, url);
             resultFetch.then(response => response.json())
             .then(data => {
-                console.log(data);
+                //console.log(data);
                 mainApp.hiddenModal();
                 reloadPage();
            })

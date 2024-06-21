@@ -23,8 +23,8 @@ function showForget() {
 
 mainApp.getForm().addEventListener('submit', async function (event) {
   event.preventDefault();
+
   if (mainApp.setValidateForm()) {
- 
     mainApp.showPreload();
     method = 'POST';
     url = URI_LOGIN + 'forgerPassword';
@@ -32,23 +32,19 @@ mainApp.getForm().addEventListener('submit', async function (event) {
     resultFetch = getData(data, method, url);
     resultFetch.then(response => response.json())
       .then(data => {
-
         if (data['response'] == 200) {
           alert("Send message change password");
         } else {
           alert("Error Send message change password");
         }
-     
         mainApp.hiddenModal();
         mainApp.hiddenPreload();
       })
       .catch(error => {
         console.error(error);
-
         mainApp.hiddenPreload();
       })
       .finally();
-
   } else {
     alert("Data Validate");
     mainApp.resetForm();
@@ -107,7 +103,6 @@ async function getData(data, method, url) {
       }
     }
   }  
-  console.log(parameters, url);
   return await fetch(url, parameters);
 }
 
