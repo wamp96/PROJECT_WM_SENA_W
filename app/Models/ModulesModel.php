@@ -12,7 +12,7 @@ class ModulesModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['Module_name','Module_description','Module_route','Module_icon','Module_submodule','Module_parent_module','update_at'];
+    protected $allowedFields    = ['Modules_name','Modules_description','Modules_route','Modules_icon','Modules_submodule','Modules_parent_module','update_at'];
 
     protected bool $allowEmptyInserts = false;
     

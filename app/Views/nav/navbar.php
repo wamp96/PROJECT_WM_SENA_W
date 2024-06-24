@@ -39,28 +39,29 @@ $getUser = $session->get(LOGGED_USER);
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       
-      <!-- <div class="modal-body">
-        <form class="" id="my-modal_profile">
+      <div class="modal-body">
+        <!--Form-->
+        <form id="my-modal_profile" class="">
           <input type="hidden" class="form-control" id="Profile_id" name="Profile_id" value=null>
           <input type="hidden" class="form-control" id="User_fk" name="User_fk" value=null>
           <input type="hidden" class="form-control" id="update_at" name="update_at" value=null>
           <div class="form-floating mb-3">
-            <img src="" alt="..." class="img-thumbnail w-100">
-            <label for="Profile_photo">Photo</label>          
+            <img src="<?= isset($profile['Profile_photo']) ? $profile['Profile_photo'] : '' ?>" class="img-thumbnail w-100" alt="...">
+            <label for="Profile_photo">Photo </label>
           </div>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="Profile_photo" id="Profile_photo" placeholde="Photo" value="<? isset($profile['Profile_photo']) ? $profile['Profile_photo']:''?>"required>
-            <label for="Profile_photo">Photo</label>
-          </div>      
+            <input type="text" class="form-control " id="Profile_photo" name="Profile_photo" placeholder="Photo" value="<?= isset($profile['Profile_photo']) ? $profile['Profile_photo'] : '' ?>" required>
+            <label for="Profile_photo">Photo </label>
+          </div>
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" name="Profile_email" id="Profile_email" placeholde="email" value="<? isset($profile['Profile_email']) ? $profile['Profile_email']:''?>"required>
+            <input type="email" class="form-control " id="Profile_email" name="Profile_email" placeholder="Email Address" value="<?= isset($profile['Profile_email']) ? $profile['Profile_email'] : '' ?>" required>
             <label for="Profile_email">Email Address</label>
-          </div>      
+          </div>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="Profile_name" id="Profile_name" placeholde="Name" value="<? isset($profile['Profile_name']) ? $profile['Profile_name']:''?>"required>
-            <label for="Profile_name">Name</label>
-          </div>      
-        </form>  -->
+            <input type="text" class="form-control " id="Profile_name" name="Profile_name" placeholder="Name" value="<?= isset($profile['Profile_name']) ? $profile['Profile_name'] : '' ?>" required>
+            <label for="Profile_name">Name </label>
+          </div>
+        </form>
 
       </div>
       <div class="modal-footer">

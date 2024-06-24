@@ -27,13 +27,13 @@ class Dashboard extends Controller
         $this->session = \Config\Services::session();
     }
 
-    public function index()
-    {
-        $this->data['title'] = 'DASHBOARD';
-        $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
-        $this->data['userModule'] = $this->roleModulesModel->sp_role_module_id((int)$this->getSessionIdUser()['Roles_fk']);
-        echo view('dashboard/dashboard_view', $this->data);        
-    }
+        public function index()
+        {
+            $this->data['title'] = 'DASHBOARD';
+            $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
+            $this->data['userModules'] = $this->roleModulesModel->sp_role_module_id((int)$this->getSessionIdUser()['Roles_fk']);
+            echo view('dashboard/dashboard_view', $this->data);        
+        }
 }
 
 ?>

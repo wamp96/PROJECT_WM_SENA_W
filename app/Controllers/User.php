@@ -55,7 +55,7 @@ class User extends Controller
         $this->data['user_status'] = $this->userStatusModel->orderBy('User_status_id', 'ASC')->findAll();
         $this->data['cities'] = $this->cityModel->orderBy('City_id', 'ASC')->findAll();
         $this->data['areas'] = $this->areaModel->orderBy('Area_id', 'ASC')->findAll();
-        $this->data['profile'] = $this->profileModel->where('user_id_fk', (int)$this->getSessionIdUser()['User_id'])->first();
+        $this->data['profile'] = $this->profileModel->where('user_fk', (int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('user/user_view', $this->data);
         
@@ -121,7 +121,6 @@ class User extends Controller
                 'User_apellido_materno' => $this->request->getVar('User_apellido_materno'),
                 'User_telefono' => $this->request->getVar('User_telefono'),
                 'User_correo' => $this->request->getVar('User_correo'),
-                'User_password' => $this->request->getVar('User_password'),
                 'City_fk' => $this->request->getVar('City_fk'),
                 'Area_fk' => $this->request->getVar('Area_fk'),
                 'Roles_fk' => $this->request->getVar('Roles_fk'),
