@@ -6,6 +6,8 @@ namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
 use App\Models\RequestStatusModel;
+use App\Models\ProfileModel;
+use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -16,6 +18,8 @@ class RequestStatus extends Controller
     //Variables
     private $primarykey;
     private $RequestStatusModel;
+    private $roleModuleModel;
+    private $profileModel;
     private $data;
     private $model;
 
@@ -24,6 +28,8 @@ class RequestStatus extends Controller
     {
         $this->primarykey = "Request_status_id";
         $this->RequestStatusModel = new RequestStatusModel();
+        $this->roleModuleModel = new RoleModulesModel();
+        $this->profileModel = new ProfileModel();
         $this->data = [];
         $this->model = "RequestStatus";
     } 
@@ -33,6 +39,8 @@ class RequestStatus extends Controller
     {
         $this->data['title'] = "REQUEST STATUS";
         $this->data[$this->model] = $this->RequestStatusModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data['profiles'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
+        $this->data['userModules'] = $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('requestStatus/status_view', $this->data);
     }
 

@@ -2,7 +2,7 @@
 //CONSTANTES
 const formId = 'my-form';
 const modalId = 'my-modal';
-const model = 'RequestStatus';
+const model = 'Request';
 const tableId = 'table-index';
 const preloadId = 'preloadId';
 const classEdit = 'edit-input';
@@ -45,7 +45,7 @@ function edit(id){
 //FUNCIONES ASINCRONICAS
 async function delete_(id){
     method = 'GET';
-    url = URI_REQUEST_STATUS + LIST_CRUD[3] + '/' + id;
+    url = URI_REQUEST + LIST_CRUD[3] + '/' + id;
     data = "";
     if(confirm(textConfirm) == true){
         resultFetch = getData(data , method, url);
@@ -65,7 +65,7 @@ async function delete_(id){
 
 async function getDataId(id){
     method = 'GET';
-    url = URI_REQUEST_STATUS + LIST_CRUD[1] + '/' + id;
+    url = URI_REQUEST + LIST_CRUD[1] + '/' + id;
     data = mainApp.getDataFormJson();
     console.log(data);
     resultFetch = getData(data , method, url);
@@ -126,7 +126,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
         mainApp.showPreload();
         if(insertUpdate){
             method = 'POST';
-            url = URI_REQUEST_STATUS + LIST_CRUD[0];
+            url = URI_REQUEST + LIST_CRUD[0];
             data = mainApp.getDataFormJson();
             resultFetch = getData(data, method, url);
             resultFetch.then(response => response.json())
@@ -142,7 +142,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
             .finally();
         }else{
             method = 'POST';
-            url = URI_REQUEST_STATUS + LIST_CRUD[2];
+            url = URI_REQUEST + LIST_CRUD[2];
             data = mainApp.getDataFormJson();
             resultFetch = getData(data, method, url);
             resultFetch.then(response => response.json())

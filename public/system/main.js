@@ -52,7 +52,7 @@ class Main{
         return this.myForm[position];
     }
 
-    disabledFormAll(){
+    disabledFormAll(position = 0){
         var elementsInput =this.myForm[position].querySelectorAll('input');
         var elementsSelect =this.myForm[position].querySelectorAll('select');
         for(let i = 0; i < elementsInput.length; i++) {

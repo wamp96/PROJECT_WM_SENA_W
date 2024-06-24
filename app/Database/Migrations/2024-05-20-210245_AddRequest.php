@@ -26,9 +26,14 @@ class AddRequest extends Migration
                 'null' => true,
                 'default' => new RawSql('CURRENT_TIMESTAMP'),
             ],
+            'Request_title' => [
+                'type' => 'VARCHAR',
+                'constraint' => 100,
+                'null' => true,
+            ],
             'Request_description' => [
                 'type' => 'VARCHAR',
-                'constraint' => 300,
+                'constraint' => 250,
                 'null' => true,
             ],
             'User_fk' => [

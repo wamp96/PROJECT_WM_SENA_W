@@ -70,7 +70,7 @@ $routes->group("brand", function($routes){
 $routes->group("role", function($routes){
     $routes->get("/", "role::index");
     $routes->get("show", "role::index");
-    $routes->get("edit/(:num)","role::singleRoles/$1");
+    $routes->get("edit/(:num)","role::singleRole/$1");
     $routes->get("delete/(:num)","role::delete/$1");
     $routes->post("add","role::create");
     $routes->post("update","role::update");

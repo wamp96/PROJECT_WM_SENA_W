@@ -12,7 +12,7 @@ class RequestModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['Request_id','Request_numero','Request_fecha','Request_description','User_fk','Element_fk','Request_status_fk','update_at'];
+    protected $allowedFields    = ['Request_id','Request_numero','Request_fecha','Request_title','Request_description','User_fk','Element_fk','Request_status_fk','update_at'];
 
     protected bool $allowEmptyInserts = false;
 
