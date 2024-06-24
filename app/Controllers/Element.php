@@ -14,14 +14,13 @@ use App\Models\ProfileModel;
 use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
-use CodeIgniter\API\ResponseTrait;
 
 
 class Element extends Controller 
 {
 
     //Variables
-    use ResponseTrait;
+
     private $primarykey;
     private $elementModel;
     private $elementStatusModel;
@@ -38,12 +37,12 @@ class Element extends Controller
     {
         $this->primarykey = "Element_id";
         $this->elementModel = new ElementModel();
-        $this->categoryModel = new CategoryModel();                
+        $this->categoryModel = new CategoryModel();    
+        $this->profileModel = new ProfileModel();
+        $this->roleModulesModel = new roleModulesModel();            
         $this->modelModel = new ModelModel();        
         $this->brandModel = new BrandModel();         
         $this->elementStatusModel = new ElementStatusModel();
-        $this->profileModel = new ProfileModel();
-        $this->roleModulesModel = new roleModulesModel();
         $this->data = [];
         $this->model = "elements";
     } 
@@ -63,10 +62,10 @@ class Element extends Controller
     }
 
 
-    
-    // public function viewList(){
-    //     return $this->respond(['elements'=>  $this->elementModel->findAll()], 200);
-    // }
+    /*
+    public function viewList(){
+        return $this->respond(['elements'=>  $this->elementModel->findAll()], 200);
+    }*/
 
     public function create()
     {
@@ -172,6 +171,7 @@ class Element extends Controller
 
     public function getDataModel(){
         $data =[
+            'Element_id' => $this->request->getVar('Element_id'),
             'Element_nombre' => $this->request->getVar('Element_nombre'),
             'Element_imagen' => $this->request->getVar('Element_imagen'),
             'Element_serial' => $this->request->getVar('Element_serial'),

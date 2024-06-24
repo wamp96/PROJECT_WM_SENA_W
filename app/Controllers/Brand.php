@@ -5,19 +5,19 @@
 namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
-use App\Models\CategoryModel;
+use App\Models\BrandModel;
 use App\Models\ProfileModel;
 use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class Category extends Controller 
+class Brand extends Controller 
 {
 
     //Variables
     private $primarykey;
-    private $CategoryModel;
+    private $brandModel;
     private $roleModulesModel;
     private $profileModel;
     private $data;
@@ -26,22 +26,22 @@ class Category extends Controller
     //Metodo Constructor
     public function __construct()
     {
-        $this->primarykey = "Category_id";
-        $this->CategoryModel = new CategoryModel();
+        $this->primarykey = "Brand_id";
         $this->profileModel = new ProfileModel();
         $this->roleModulesModel = new RoleModulesModel();
+        $this->brandModel = new BrandModel();
         $this->data = [];
-        $this->model = "Category";
+        $this->model = "cities";
     } 
 
     //Metodo index se inicia la vista y se establecen los parametros para enviar los datos en la vista del renderizado html
     public function index()
     {
-        $this->data['title'] = "CATEGORIES";
-        $this->data[$this->model] = $this->CategoryModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data['title'] = "BRAND";
+        $this->data[$this->model] = $this->brandModel->orderBy($this->primarykey, 'ASC')->findAll();
         $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
-        return view('category/category_view', $this->data);
+        return view('brand/brand_view', $this->data);
     }
 
     public function create()
@@ -49,7 +49,7 @@ class Category extends Controller
         if($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
 
-            if($this->CategoryModel->insert($dataModel)){
+            if($this->brandModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;
                 $data['data']=  $dataModel ;
@@ -67,10 +67,10 @@ class Category extends Controller
         echo json_encode($dataModel);
     }
 
-    public function singleCategory($id = null)
+    public function singleBrand($id = null)
     {
         if($this->request->isAJAX()){
-            if($data[$this->model] = $this->CategoryModel->where($this->primarykey, $id)->first()){
+            if($data[$this->model] = $this->brandModel->where($this->primarykey, $id)->first()){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
@@ -92,11 +92,11 @@ class Category extends Controller
             $today = date("Y-m-d H:i:s");
             $id = $this->request->getVar($this->primarykey);
             $dataModel=[
-                'Category_nombre' => $this->request->getVar('Category_nombre'),
-                'Category_descripcion' => $this->request->getVar('Category_descripcion'),
+                'Brand_name' => $this->request->getVar('Brand_name'),
+                'Brand_description' => $this->request->getVar('Brand_description'),
                 'update_at' => $today                 
             ];
-            if($this->CategoryModel->update($id, $dataModel)){
+            if($this->brandModel->update($id, $dataModel)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = $dataModel;
@@ -117,7 +117,7 @@ class Category extends Controller
     public function delete($id = null)
     {   
         try{
-            if($this->CategoryModel->where($this->primarykey, $id)->delete($id)){
+            if($this->brandModel->where($this->primarykey, $id)->delete($id)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = "OK";
@@ -137,14 +137,12 @@ class Category extends Controller
 
     public function getDataModel(){
         $data =[
-            'Category_id' => $this->request->getVar('Category_id'),
-            'Category_nombre' => $this->request->getVar('Category_nombre'),
-            'Category_descripcion' => $this->request->getVar('Category_descripcion'),
+            'Brand_id' => $this->request->getVar('Brand_id'),
+            'Brand_name' => $this->request->getVar('Brand_name'),
+            'Brand_description' => $this->request->getVar('Brand_description'),
             'update_at' => $this->request->getVar('update_at')
         ];
         return $data;
     }
 }
-
-
 ?>

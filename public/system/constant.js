@@ -13,5 +13,9 @@ const URI_ELEMENTS="/elementStatus/";
 const URI_REQUESTS="/requestStatus/";
 const URI_CATEGORY="/category/";
 const URI_LOGIN="/login/";
+const URI_CITY="/city/";
+const URI_AREA="/area/";
+const URI_BRAND="/brand/";
+const URI_MODEL="/model/";
 
 

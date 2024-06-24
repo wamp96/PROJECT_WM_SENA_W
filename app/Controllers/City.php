@@ -5,19 +5,19 @@
 namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
-use App\Models\CategoryModel;
+use App\Models\CityModel;
 use App\Models\ProfileModel;
 use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class Category extends Controller 
+class City extends Controller 
 {
 
     //Variables
     private $primarykey;
-    private $CategoryModel;
+    private $cityModel;
     private $roleModulesModel;
     private $profileModel;
     private $data;
@@ -26,22 +26,22 @@ class Category extends Controller
     //Metodo Constructor
     public function __construct()
     {
-        $this->primarykey = "Category_id";
-        $this->CategoryModel = new CategoryModel();
+        $this->primarykey = "City_id";
         $this->profileModel = new ProfileModel();
         $this->roleModulesModel = new RoleModulesModel();
+        $this->cityModel = new CityModel();
         $this->data = [];
-        $this->model = "Category";
+        $this->model = "cities";
     } 
 
     //Metodo index se inicia la vista y se establecen los parametros para enviar los datos en la vista del renderizado html
     public function index()
     {
-        $this->data['title'] = "CATEGORIES";
-        $this->data[$this->model] = $this->CategoryModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data['title'] = "CITIES";
+        $this->data[$this->model] = $this->cityModel->orderBy($this->primarykey, 'ASC')->findAll();
         $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
-        return view('category/category_view', $this->data);
+        return view('city/city_view', $this->data);
     }
 
     public function create()
@@ -49,7 +49,7 @@ class Category extends Controller
         if($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
 
-            if($this->CategoryModel->insert($dataModel)){
+            if($this->cityModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;
                 $data['data']=  $dataModel ;
@@ -67,10 +67,10 @@ class Category extends Controller
         echo json_encode($dataModel);
     }
 
-    public function singleCategory($id = null)
+    public function singleCity($id = null)
     {
         if($this->request->isAJAX()){
-            if($data[$this->model] = $this->CategoryModel->where($this->primarykey, $id)->first()){
+            if($data[$this->model] = $this->cityModel->where($this->primarykey, $id)->first()){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
@@ -92,11 +92,11 @@ class Category extends Controller
             $today = date("Y-m-d H:i:s");
             $id = $this->request->getVar($this->primarykey);
             $dataModel=[
-                'Category_nombre' => $this->request->getVar('Category_nombre'),
-                'Category_descripcion' => $this->request->getVar('Category_descripcion'),
+                'City_name' => $this->request->getVar('City_name'),
+                'City_description' => $this->request->getVar('City_description'),
                 'update_at' => $today                 
             ];
-            if($this->CategoryModel->update($id, $dataModel)){
+            if($this->cityModel->update($id, $dataModel)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = $dataModel;
@@ -117,7 +117,7 @@ class Category extends Controller
     public function delete($id = null)
     {   
         try{
-            if($this->CategoryModel->where($this->primarykey, $id)->delete($id)){
+            if($this->cityModel->where($this->primarykey, $id)->delete($id)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = "OK";
@@ -137,14 +137,12 @@ class Category extends Controller
 
     public function getDataModel(){
         $data =[
-            'Category_id' => $this->request->getVar('Category_id'),
-            'Category_nombre' => $this->request->getVar('Category_nombre'),
-            'Category_descripcion' => $this->request->getVar('Category_descripcion'),
+            'City_id' => $this->request->getVar('City_id'),
+            'City_name' => $this->request->getVar('City_name'),
+            'City_description' => $this->request->getVar('City_description'),
             'update_at' => $this->request->getVar('update_at')
         ];
         return $data;
     }
 }
-
-
 ?>

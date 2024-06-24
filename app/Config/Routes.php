@@ -29,6 +29,44 @@ $routes->group("userStatus", function($routes){
     $routes->post("update","UserStatus::update");
 });
 
+$routes->group("city", function($routes){
+  $routes->get("/", "City::index");
+  $routes->get("show", "City::index");
+  $routes->get("edit/(:num)","City::singleCity/$1");
+  $routes->get("delete/(:num)","City::delete/$1");
+  $routes->post("add","City::create");
+  $routes->post("update","City::update");
+});
+
+$routes->group("model", function($routes){
+  $routes->get("/", "Model::index");
+  $routes->get("show", "Model::index");
+  $routes->get("edit/(:num)","Model::singleModel/$1");
+  $routes->get("delete/(:num)","Model::delete/$1");
+  $routes->post("add","Model::create");
+  $routes->post("update","Model::update");
+});
+
+$routes->group("area", function($routes){
+  $routes->get("/", "Area::index");
+  $routes->get("show", "Area::index");
+  $routes->get("edit/(:num)","Area::singleArea/$1");
+  $routes->get("delete/(:num)","Area::delete/$1");
+  $routes->post("add","Area::create");
+  $routes->post("update","Area::update");
+});
+
+$routes->group("brand", function($routes){
+  $routes->get("/", "Brand::index");
+  $routes->get("show", "Brand::index");
+  $routes->get("edit/(:num)","Brand::singleBrand/$1");
+  $routes->get("delete/(:num)","Brand::delete/$1");
+  $routes->post("add","Brand::create");
+  $routes->post("update","Brand::update");
+});
+
+
+
 $routes->group("role", function($routes){
     $routes->get("/", "role::index");
     $routes->get("show", "role::index");
