@@ -107,6 +107,37 @@ $routes->group("request", function($routes){
     $routes->post("update","request::update");
 });
 
+$routes->group("module",['filter' => 'AuthCheck'],function($routes){
+    $routes->get("/", "Module::index");
+    $routes->get("show", "Module::index");
+    $routes->get("edit/(:num)", "Module::singleModule/$1");
+    $routes->get("delete/(:num)", "Module::delete/$1");
+    $routes->post("add", "Module::create");
+    $routes->post("update", "Module::update");
+  });
+
+  $routes->group("roleModule",['filter' => 'AuthCheck'],function($routes){
+    $routes->get("/", "RoleModule::index");
+    $routes->get("show", "RoleModule::index");
+    $routes->get("edit/(:num)", "RoleModule::singleRoleModule/$1");
+    $routes->get("editPermission/(:num)", "RoleModule::singlePermissionsModuleId/$1");
+    $routes->get("editModules/(:num)", "RoleModule::singleRoleModuleId/$1");
+    $routes->get("delete/(:num)", "RoleModule::delete/$1");
+    $routes->post("add", "RoleModule::create");
+    $routes->post("update", "RoleModule::update");
+  });
+  
+
+  $routes->group("permission",['filter' => 'AuthCheck'],function($routes){
+    $routes->get("/", "Permission::index");
+    $routes->get("show", "Permission::index");
+    $routes->get("edit/(:num)", "Permission::singlePermission/$1");
+    $routes->get("delete/(:num)", "Permission::delete/$1");
+    $routes->post("add", "Permission::create");
+    $routes->post("update", "Permission::update");
+  });
+  
+
 //GROUP ROUTES
 $routes->group("profile",['filter' => 'AuthCheck'], function ($routes) {
     $routes->get("show/(:num)", "Profile::index/$1");
