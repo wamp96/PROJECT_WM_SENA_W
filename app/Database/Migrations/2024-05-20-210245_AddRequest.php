@@ -36,6 +36,12 @@ class AddRequest extends Migration
                 'constraint' => 250,
                 'null' => true,
             ],
+            'Element_fk' => [
+                'type' => 'INT',
+                'constraint' => 11,
+                'unsigned' => true,
+                'null' => true,
+            ],
             'User_fk' => [
                 'type' => 'INT',
                 'constraint' => 11,

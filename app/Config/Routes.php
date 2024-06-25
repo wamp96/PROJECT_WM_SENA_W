@@ -137,12 +137,12 @@ $routes->group("requestStatus", function($routes){
  * Routes for request
  */
 $routes->group("request", function($routes){
-    $routes->get("/", "request::index");
-    $routes->get("show", "request::index");
-    $routes->get("edit/(:num)","request::request/$1");
-    $routes->get("delete/(:num)","request::delete/$1");
-    $routes->post("add","request::create");
-    $routes->post("update","request::update");
+    $routes->get("/", "Request::index");
+    $routes->get("show", "Request::index");
+    $routes->get("edit/(:num)","Request::request/$1");
+    $routes->get("delete/(:num)","Request::delete/$1");
+    $routes->post("add","Request::create");
+    $routes->post("update","Request::update");
 });
 
 $routes->group("module",['filter' => 'AuthCheck'],function($routes){

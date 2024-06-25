@@ -1,6 +1,7 @@
 <form id="my-form">
     <input type="hidden" class="form-control" id="Request_id" name="Request_id" value=null>
     <input type="hidden" class="form-control" id="update_at" name="update_at" value=null>
+    <input type="hidden" class="form-control" id="Element_fk" name="Element_fk" value=null>
     <input type="hidden" class="form-control" id="Request_fecha" name="Request_fecha" value=null>
         <div class="form-floating mb-3">
             <input type="text" class="form-control" name="Request_title" id="Request_title" placeholder="Name">

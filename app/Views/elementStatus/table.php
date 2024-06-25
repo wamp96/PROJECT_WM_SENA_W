@@ -9,8 +9,8 @@
             </tr>
         </thead>
         <tbody>
-            <?php if ($ElementStatus) : ?>
-                <?php foreach($ElementStatus as $obj) :  ?>
+            <?php if ($element_status) : ?>
+                <?php foreach($element_status as $obj) :  ?>
                     <tr class="text-center">
                         <td><?php echo $obj['Element_status_id'];?></td>
                         <td><?php echo $obj['Element_status_name'];?></td>

@@ -2,7 +2,7 @@
 //CONSTANTES
 const formId = 'my-form';
 const modalId = 'my-modal';
-const model = 'Request';
+const model = 'requests';
 const tableId = 'table-index';
 const preloadId = 'preloadId';
 const classEdit = 'edit-input';
@@ -109,7 +109,7 @@ async function getData(data, method, url){
             },
         }
     }
- 
+    console.log(url, parameters);
     return await fetch(url, parameters);
 }
 

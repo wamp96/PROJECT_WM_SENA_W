@@ -31,7 +31,7 @@ class ElementStatus extends Controller
         $this->profileModel = new ProfileModel();
         $this->roleModulesModel = new roleModulesModel();
         $this->data = [];
-        $this->model = "ElementStatus";
+        $this->model = "element_status";
     } 
 
     //Metodo index se inicia la vista y se establecen los parametros para enviar los datos en la vista del renderizado html
