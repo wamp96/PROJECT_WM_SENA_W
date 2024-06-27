@@ -1,4 +1,4 @@
-<div class="col-2" id="container-slider">
+<div id="container-slider">
   <div class="accordion accordion-flush" id="accordionApp">
     <?php
     $url = $_SERVER['REQUEST_URI'];
@@ -27,16 +27,16 @@
               if ($module['Modules_route'] == $getModuleUrl[0]) {
                 $selectActive = "active";
               }
-              $subModule = '<li class="list-group-item "><a class="list-group-item ' . $selectActive . ' list-group-item-action "  href="/' . $module['Modules_route'] . '" style="cursor: pointer; padding-left: 25px; font-size: 0.9em;"><i class="bi ' . $module['Modules_icon'] . '"> ' . $module['Modules_name'] . '</i></a></li>';
+              $subModule = '<li class="list-group-item "><a class="list-group-item ' . $selectActive . ' list-group-item-action "  href="/' . $module['Modules_route'] . '" style="cursor: pointer;"><i class="bi ' . $module['Modules_icon'] . '"> ' . $module['Modules_name'] . '</i></a></li>';
               for ($i = 0; $i < $modelsLength; $i++) :
-                $elements = $userModules[$i];
-                if (($getModuleId == $elements['Modules_parent_module']) && ($elements['Modules_submodule'] == 1)) {
+                $elem = $userModules[$i];
+                if (($getModuleId == $elem['Modules_parent_module']) && ($elem['Modules_submodule'] == 1)) {
                   $selectActive = "";
 
-                  if ($elements['Modules_route'] == $getModuleUrl[0]) {
+                  if ($elem['Modules_route'] == $getModuleUrl[0]) {
                     $selectActive = "active";
                   }
-                  $subModule = $subModule . '<li class="list-group-item ' . $selectActive . '"><a class="list-group-item list-group-item-action" href="/' . $elements['Modules_route'] . '" style="cursor: pointer; padding-left: 25px; font-size: 0.9em;"><i class="bi ' . $elements['Modules_icon'] . '"> ' . $elements['Modules_name'] . '</i></a></li>';
+                  $subModule = $subModule . '<li class="list-group-item ' . $selectActive . '"><a class="list-group-item list-group-item-action" href="/' . $elem['Modules_route'] . '" style="cursor: pointer; padding-left: 25px; font-size: 0.9em;"><i class="bi ' . $elem['Modules_icon'] . '"> ' . $elem['Modules_name'] . '</i></a></li>';
                 }
               endfor;
               echo ($subModule);
@@ -52,7 +52,6 @@
     endforeach; ?>
   </div>
 </div>
-
 
 
 

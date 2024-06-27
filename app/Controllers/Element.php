@@ -6,26 +6,30 @@ namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
 use App\Models\ElementModel;
+use App\Models\CategoryModel;
+use App\Models\ModelModel;
 use App\Models\BrandModel;
 use App\Models\ElementStatusModel;
-use App\Models\CategoryModel;
 use App\Models\ProfileModel;
 use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\API\ResponseTrait;
 
 
-class Element extends Controller 
+class Element extends BaseController 
 {
 
-    //Variables   
+    //Variables
+    use ResponseTrait;
     private $primarykey;
     private $elementModel;
-    private $brandModel;
     private $categoryModel;
+    private $modelModel;
+    private $brandModel;
     private $elementStatusModel;
-    private $roleModulesModel;
     private $profileModel;
+    private $roleModulesModel;
     private $data;
     private $model;
 
@@ -34,8 +38,9 @@ class Element extends Controller
     {
         $this->primarykey = "Element_id";
         $this->elementModel = new ElementModel();
-        $this->brandModel = new BrandModel();
-        $this->categoryModel = new CategoryModel();
+        $this->categoryModel = new CategoryModel();                
+        $this->modelModel = new ModelModel();        
+        $this->brandModel = new BrandModel();         
         $this->elementStatusModel = new ElementStatusModel();
         $this->profileModel = new ProfileModel();
         $this->roleModulesModel = new roleModulesModel();
@@ -48,20 +53,20 @@ class Element extends Controller
     {
         $this->data['title'] = "ELEMENTS";
         $this->data[$this->model] = $this->elementModel->sp_elements();
-        
-        $this->data['brands'] = $this->brandModel->orderBy('Brand_id', 'ASC')->findAll();
-        $this->data['element_status'] = $this->elementStatusModel->orderBy('Element_status_id', 'ASC')->findAll();
         $this->data['categories'] = $this->categoryModel->orderBy('Category_id', 'ASC')->findAll();
-        $this->data['profile'] = $this->profileModel->where('user_fk', (int)$this->getSessionIdUser()['User_id'])->first();        
+        $this->data['brands'] = $this->brandModel->orderBy('Brand_id', 'ASC')->findAll();
+        $this->data['models'] = $this->modelModel->orderBy('Model_id', 'ASC')->findAll();
+        $this->data['element_status'] = $this->elementStatusModel->orderBy('Element_status_id', 'ASC')->findAll();
+        $this->data['profile'] = $this->profileModel->where('user_fk', (int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
-        return view('element/element_view', $this->data);        
+        return view('element/element_view', $this->data);
     }
 
-    /*
+
+    
     public function viewList(){
-        return $this->respond(['element'=>  $this->elementModel->findAll()], 200);
+        return $this->respond(['elements'=>  $this->elementModel->findAll()], 200);
     }
-    */
 
     public function create()
     {
@@ -74,7 +79,7 @@ class Element extends Controller
                 $data['data']=  $dataModel ;
                 $data['csrf']= csrf_hash();
             }else{
-                $data['message'] = 'Error create user';
+                $data['message'] = 'Error create element';
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
@@ -94,7 +99,7 @@ class Element extends Controller
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
             }else{
-                $data['message'] = 'Error create user';
+                $data['message'] = 'Error create Element';
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
@@ -121,7 +126,10 @@ class Element extends Controller
                 'Element_stock' => $this->request->getVar('Element_stock'),
                 'Category_fk' => $this->request->getVar('Category_fk'),
                 'Element_status_fk' => $this->request->getVar('Element_status_fk'),
+                //
                 'Brand_fk' => $this->request->getVar('Brand_fk'),
+                'Model_Brand_fk' => $this->request->getVar('Model_Brand_fk'),
+                //
                 'update_at' => $today                 
             ];
             if($this->elementModel->update($id, $dataModel)){
@@ -130,12 +138,12 @@ class Element extends Controller
                 $data['data'] = $dataModel;
                 $data['csrf'] = csrf_hash();
             }else{
-                $data['message'] = 'Error create user' ;
+                $data['message'] = 'Error create Element' ;
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
         }else{
-            $data['message'] = 'Error create user' ;
+            $data['message'] = 'Error create Element' ;
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = '';
         }
@@ -156,7 +164,7 @@ class Element extends Controller
                 $data['data'] = 'error';
             }
         }catch(\Exception $e){
-            $data['message'] = 'Error create user' ;
+            $data['message'] = 'Error create Element' ;
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = 'Error';
         }
@@ -165,7 +173,6 @@ class Element extends Controller
 
     public function getDataModel(){
         $data =[
-            'Element_id' => $this->request->getVar('Element_id'),
             'Element_nombre' => $this->request->getVar('Element_nombre'),
             'Element_imagen' => $this->request->getVar('Element_imagen'),
             'Element_serial' => $this->request->getVar('Element_serial'),
@@ -176,13 +183,14 @@ class Element extends Controller
             'Element_stock' => $this->request->getVar('Element_stock'),
             'Category_fk' => $this->request->getVar('Category_fk'),
             'Element_status_fk' => $this->request->getVar('Element_status_fk'),
-            'Brand_fk' => $this->request->getVar('Brand_fk'),           
+            //
+            'Brand_fk' => $this->request->getVar('Brand_fk'),
+            'Model_Brand_fk' => $this->request->getVar('Model_Brand_fk'),
+            //
             'update_at' => $this->request->getVar('update_at'),     
         ];
-        echo '<pre>';
-var_dump($data);
-    echo '</pre>';
         return $data;
+
     }
 }
 

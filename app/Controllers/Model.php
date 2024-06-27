@@ -31,7 +31,7 @@ class Model extends Controller
         $this->roleModulesModel = new RoleModulesModel();
         $this->modelModel = new ModelModel();
         $this->data = [];
-        $this->model = "cities";
+        $this->model = "models";
     } 
 
     //Metodo index se inicia la vista y se establecen los parametros para enviar los datos en la vista del renderizado html

@@ -21,10 +21,11 @@
   <!--Container-->  
   <div class="container-fluid">
     <div class="row">
-      <!--Navbar Slider-->
+      <div class="col-2">
       <?php require_once('../app/Views/navSlider/navSlider.php') ?>
-      <!--End Navbar Slider-->
-      <div class="col">
+      </div>
+    
+      <div class="col-10">
         <h3><?= $title ?></h3>
         <button type="button" class="btn btn-primary btn-actions" title="Button new User Status" onclick="add()" style="font-size: 0.5em;">
         <i class="bi bi-plus-circle-fill"></i> </button>

@@ -9,8 +9,8 @@
             </tr>
         </thead>
         <tbody>
-            <?php if ($cities) : ?>
-                <?php foreach($cities as $obj) :  ?>
+            <?php if ($models) : ?>
+                <?php foreach($models as $obj) :  ?>
                     <tr class="text-center">
                         <td><?php echo $obj['Model_id'];?></td>
                         <td><?php echo $obj['Model_name'];?></td>

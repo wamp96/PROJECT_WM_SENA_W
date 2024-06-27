@@ -21,17 +21,20 @@
   <!--Container-->
   <div class="container-fluid">
     <div class="row">
+      <div class="col-2">
       <!--Navbar Slider-->
-      <?php require_once('../app/Views/navSlider/navSlider.php') ?>
+        <?php require_once('../app/Views/navSlider/navSlider.php') ?>
       <!--End Navbar Slider-->
-      <div class="col">
+      </div>
+      
+      <div class="col-10">
         <h3><?= $title ?></h3>
 
         <div class="row">
         <?php for($j=0;$j< count($userModules);$j++):?>
       
           <div class="col mt-2 mx-auto">
-            <div class="card" style="text-align:center; width: 18em;height: auto; margin: 0 auto; padding: 10px; position: relative;">
+            <div class="card text-white mb-3" style="background: #24253C; text-align:center; width: 18em;height: auto; margin: 0 auto; padding: 10px; position: relative;">
               <i class="bi <?= $userModules[$j]['Modules_icon'] ?>" style="font-size: 5em;text-align: center;"> </i>
 
               <div class="card-body">
@@ -52,6 +55,8 @@
   </div>
 
   <?php require_once('../app/Views/footer/footer.php') ?>
+ 
+  
 
 
 

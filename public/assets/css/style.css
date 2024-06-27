@@ -1,6 +1,6 @@
 body, html{
-    background-image:  linear-gradient(to top, #09203f 0%, #537895 100%);
-    height: 100%;
+    background: #1B1D31;  
+    font-family: "Poppins", sans-serif;
 }
 
 .btn-actions{
@@ -50,6 +50,90 @@ input[type="search"]{
     background-color: black;
     color: white;
     text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    margin: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#container-slider {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B2A41;
+    height: 100%;
+
+}
+
+.accordion-collapse {
+    background-color: #1B2A41; /* Cambia esto al color de fondo deseado */
+}
+
+.accordion-body {
+    background-color: #1B1D31; /* Cambia esto al color de fondo deseado */
+    color: #ffffff; /* Cambia esto al color de texto deseado */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #1B1D31; /* Cambia esto al color de fondo cuando el acordeón está abierto */
+    color: #ffffff; /* Cambia esto al color de texto cuando el acordeón está abierto */
+}
+
+
+.accordion {
+    flex-grow: 1; /* Para que el acordeón crezca y ocupe el espacio disponible */
+    overflow-y: auto; /* Habilita el scroll vertical si el contenido es demasiado largo */
+}
+
+.accordion-item {
+    margin-bottom: 5px; /* Espacio entre los elementos del acordeón */
+    border: none !important;
+}
+
+
+.accordion-button {
+    background-color: #1B2A41; /* Cambia esto al color de fondo deseado */
+    color: #ffffff; /* Cambia esto al color de texto deseado */
+}
+
+.accordion-button:hover {
+    background-color: #24253C; /* Cambia esto al color de fondo deseado */
+    color: #ffffff; /* Cambia esto al color de texto deseado */
+}
+.accordion-button .bi {
+    color: #ffffff; /* Cambia esto al color de icono deseado */
+}
+
+.accordion-button.active {
+    background-color: #1B1D31; /* Cambia esto al color de fondo activo deseado */
+    color: #ffffff; /* Cambia esto al color de texto activo deseado */
+}
+
+.accordion-button.active .bi {
+    color: #ffffff; /* Cambia esto al color de icono activo deseado */
+}
+
+.list-group-item.active {
+    background-color: #1B1D31; /* Cambia esto al color de fondo activo deseado */
+    color: #ffffff; /* Cambia esto al color de texto activo deseado */
+}
+
+.list-group-item {
+    background-color: #1B2A41; /* Cambia esto al color de fondo de los elementos de la lista */
+    color: #ffffff; /* Cambia esto al color de texto de los elementos de la lista */
+    border: none !important;
+}
+
+.list-group-item:hover {
+    background-color: #1B2A41 !important; /* Cambia esto al color de fondo al pasar el ratón */
+    color: #ffffff; /* Cambia esto al color de texto al pasar el ratón */
+}
+
+.list-group-item .bi {
+    color: #ffffff; /* Cambia esto al color de icono de los elementos de la lista */
 }
 
 

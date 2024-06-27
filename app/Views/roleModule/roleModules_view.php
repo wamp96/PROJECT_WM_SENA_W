@@ -21,10 +21,13 @@
   <!--Container-->  
   <div class="container-fluid">
     <div class="row">
+      <div class="col-2">
       <!--Navbar Slider-->
-      <?php require_once('../app/Views/navSlider/navSlider.php') ?>
+        <?php require_once('../app/Views/navSlider/navSlider.php') ?>
       <!--End Navbar Slider-->
-      <div class="col">
+      </div>
+      
+      <div class="col-10">
         <h3><?= $title ?></h3>
         <button type="button" class="btn btn-primary btn-actions" title="Button new User Status" onclick="add()" style="font-size: 0.5em;">
         <i class="bi bi-plus-circle-fill"></i> </button>
@@ -42,7 +45,7 @@
   <!--Modal-->
   <div class="modal fade" id="my-modal" tabindex="-1" aria-labelledby="my-modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
-      <div class="modal-content">
+      <div class="modal-content bg-dark text-white">
         <div class="modal-header">
           <h5 class="modal-title" id="my-modalLabel"><?= $title ?></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -62,8 +65,8 @@
   <!--End Modal-->
     <!--Modal -->
     <div class="modal fade" id="my-modalPermission" tabindex="-1" aria-labelledby="my-modalPermissionLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark text-white">
         <div class="modal-header">
           <h5 class="modal-title" id="my-modalLabel"><?= $titlePermissions ?></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

@@ -1,29 +1,28 @@
-
-<?php 
+<?php
 $session = session();
 $getUser = $session->get(LOGGED_USER);
 ?>
-
-<nav class="navbar navbar-expand-lg" style="background-color: #21367B;">
+<nav class="navbar navbar-expand-lg" style="background: #1B2A41;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="../assets/img/logos/logo.png" alt="" width="35px"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse d-flex flex-row-reverse bd-highlight" id="navbarSupportedContent">
+    <a class="navbar-brand" href="#"><img src="../assets/img/logos/logo.png" alt="" width="65px"></a>
+
+    <div class="d-flex flex-row-reverse bd-highlight" id="navbarSupportedContent">
       <div class="btn-group dropstart">
-        <button type="button" title="Profile" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <button type="button" title="Profile" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-person-circle"></i>    
         </button>    
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
           <li>
-            <a href="#" class="dropdown-item"><i class="bi bi-person-lines-fill"></i>Profile</a>
+            <a class="dropdown-item" href="#"><i class="bi bi-person-bounding-bo"></i> <?= $getUser['User_correo'] ?></a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#my-profile"><i class="bi bi-person-lines-fill"></i> Profile</a>
           </li>
           <li>
             <hr class="dropdown-divider">
           </li>
           <li>
-            <a href="#" class="dropdown-item"><i class="bi bi-box-arrow-left" style="color: red;"></i>Sing off</a>
+            <li><a class="dropdown-item " href="#" onclick="signOff()"><i class="bi bi-box-arrow-left" style="color: red;"></i> Sign off</a></li>
           </li>
         </ul>
       </div>  
@@ -35,15 +34,14 @@ $getUser = $session->get(LOGGED_USER);
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="my-modalLabel">Profile</h5>
+        <h5 class="modal-title" id="my-modalLabel">PROFILE</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      
       <div class="modal-body">
         <!--Form-->
         <form id="my-modal_profile" class="">
           <input type="hidden" class="form-control" id="Profile_id" name="Profile_id" value=null>
-          <input type="hidden" class="form-control" id="User_fk" name="User_fk" value=null>
+          <input type="hidden" class="form-control" id="User_id_fk" name="User_id_fk" value=null>
           <input type="hidden" class="form-control" id="update_at" name="update_at" value=null>
           <div class="form-floating mb-3">
             <img src="<?= isset($profile['Profile_photo']) ? $profile['Profile_photo'] : '' ?>" class="img-thumbnail w-100" alt="...">
@@ -62,11 +60,11 @@ $getUser = $session->get(LOGGED_USER);
             <label for="Profile_name">Name </label>
           </div>
         </form>
-
+        <!--End Form-->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" form="my-form" class="btn btn-primary">Save Data</button>
+        <button type="submit" form="my-form" id="btnSubmit" class="btn btn-primary">Send Data</button>
       </div>
     </div>
   </div>
