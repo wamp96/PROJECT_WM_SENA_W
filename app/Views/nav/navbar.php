@@ -4,7 +4,7 @@ $getUser = $session->get(LOGGED_USER);
 ?>
 <nav class="navbar navbar-expand-lg" style="background: #1B2A41;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="../assets/img/logos/logo.png" alt="" width="65px"></a>
+    <a class="navbar-brand text-light" href="#"><img src="../assets/img/logos/logo.png" alt="" width="65px">WM INVENTORY COMPANY OR BUSINNESS</a>
 
     <div class="d-flex flex-row-reverse bd-highlight" id="navbarSupportedContent">
       <div class="btn-group dropstart">

@@ -69,71 +69,71 @@ h3 {
 }
 
 .accordion-collapse {
-    background-color: #1B2A41; /* Cambia esto al color de fondo deseado */
+    background-color: #1B2A41; 
 }
 
 .accordion-body {
-    background-color: #1B1D31; /* Cambia esto al color de fondo deseado */
-    color: #ffffff; /* Cambia esto al color de texto deseado */
+    background-color: #1B1D31; 
+    color: #ffffff; 
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #1B1D31; /* Cambia esto al color de fondo cuando el acordeón está abierto */
-    color: #ffffff; /* Cambia esto al color de texto cuando el acordeón está abierto */
+    background-color: #1B1D31; 
+    color: #ffffff; 
 }
 
 
 .accordion {
-    flex-grow: 1; /* Para que el acordeón crezca y ocupe el espacio disponible */
-    overflow-y: auto; /* Habilita el scroll vertical si el contenido es demasiado largo */
+    flex-grow: 1; 
+    overflow-y: auto; 
 }
 
 .accordion-item {
-    margin-bottom: 5px; /* Espacio entre los elementos del acordeón */
+    margin-bottom: 5px; 
     border: none !important;
 }
 
 
 .accordion-button {
-    background-color: #1B2A41; /* Cambia esto al color de fondo deseado */
-    color: #ffffff; /* Cambia esto al color de texto deseado */
+    background-color: #1B2A41; 
+    color: #ffffff;
 }
 
 .accordion-button:hover {
-    background-color: #24253C; /* Cambia esto al color de fondo deseado */
-    color: #ffffff; /* Cambia esto al color de texto deseado */
+    background-color: #24253C;
+    color: #ffffff;
 }
 .accordion-button .bi {
-    color: #ffffff; /* Cambia esto al color de icono deseado */
+    color: #ffffff; 
 }
 
 .accordion-button.active {
-    background-color: #1B1D31; /* Cambia esto al color de fondo activo deseado */
-    color: #ffffff; /* Cambia esto al color de texto activo deseado */
+    background-color: #1B1D31; 
+    color: #ffffff; 
 }
 
 .accordion-button.active .bi {
-    color: #ffffff; /* Cambia esto al color de icono activo deseado */
+    color: #ffffff; 
 }
 
 .list-group-item.active {
-    background-color: #1B1D31; /* Cambia esto al color de fondo activo deseado */
-    color: #ffffff; /* Cambia esto al color de texto activo deseado */
+    background-color: #1B1D31; 
+    color: #ffffff; 
 }
 
 .list-group-item {
-    background-color: #1B2A41; /* Cambia esto al color de fondo de los elementos de la lista */
-    color: #ffffff; /* Cambia esto al color de texto de los elementos de la lista */
+    background-color: #1B2A41;
+    color: #ffffff; 
     border: none !important;
 }
 
 .list-group-item:hover {
-    background-color: #1B2A41 !important; /* Cambia esto al color de fondo al pasar el ratón */
-    color: #ffffff; /* Cambia esto al color de texto al pasar el ratón */
+    background-color: #1B2A41 !important;
+    color: #ffffff; 
 }
 
 .list-group-item .bi {
-    color: #ffffff; /* Cambia esto al color de icono de los elementos de la lista */
+    color: #ffffff; 
 }
 
 

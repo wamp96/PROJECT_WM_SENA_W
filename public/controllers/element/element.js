@@ -1,4 +1,4 @@
-
+//MANEJO DEL DOM 
 const formId = 'my-form';
 const modalId = 'my-modal';
 const model = 'elements';

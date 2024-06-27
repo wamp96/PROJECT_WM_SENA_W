@@ -17,5 +17,6 @@ const URI_CITY="/city/";
 const URI_AREA="/area/";
 const URI_BRAND="/brand/";
 const URI_MODEL="/model/";
+const URI_USER_ELEMENT="/userElement/";
 
 
