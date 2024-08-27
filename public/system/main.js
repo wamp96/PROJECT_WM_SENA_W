@@ -2,8 +2,30 @@
 class Main{
 
     constructor(modalId, formId, classEdit,preloadId){
-        this.myModal = new bootstrap.Modal(document.getElementById(modalId));
-        this.myForm = document.getElementById(formId);
+
+        var arrayModal =[];
+        var arrayForm =[];
+
+        if(Array.isArray(modalId)){
+            for (let i = 0; i < modalId.length; i++) {
+                arrayModal.push(new bootstrap.Modal(document.getElementById(modalId[i])));
+            }
+        } else{
+            arrayModal.push(new bootstrap.Modal(document.getElementById(modalId)));
+        }
+        this.myModal = arrayModal;
+        if(Array.isArray(formId)){
+            for(let i = 0; i < formId.length; i++) {
+                arrayForm.push(document.getElementById(formId[i]));
+            }
+        }else{
+            arrayForm.push(document.getElementById(formId));
+        }
+        this.myForm = arrayForm;
+
+        //this.myModal = new bootstrap.Modal(document.getElementById(modalId));
+        //this.myForm = document.getElementById(formId);
+
         this.classEdit = classEdit;
         this.elementJson = {};
         this.fromData = new FormData();
@@ -18,21 +40,21 @@ class Main{
         this.preload.style.display = "none";
     }
 
-    showModal(){
-        this.myModal.show();
+    showModal(position = 0){
+        this.myModal[position].show();
     }
 
-    hiddenModal(){
-        this.myModal.hide();
+    hiddenModal(position = 0){
+        this.myModal[position].hide();
     }
 
-    getForm(){
-        return this.myForm;
+    getForm(position = 0){
+        return this.myForm[position];
     }
 
     disabledFormAll(){
-        var elementsInput =this.myForm.querySelectorAll('input');
-        var elementsSelect =this.myForm.querySelectorAll('select');
+        var elementsInput =this.myForm[position].querySelectorAll('input');
+        var elementsSelect =this.myForm[position].querySelectorAll('select');
         for(let i = 0; i < elementsInput.length; i++) {
             elementsInput[i].disabled = true;
         }
@@ -41,9 +63,9 @@ class Main{
         }
     }
 
-    disabledFormEdit(){
-        var elementsInput =this.myForm.querySelectorAll('input');
-        var elementsSelect =this.myForm.querySelectorAll('select');
+    disabledFormEdit(position = 0){
+        var elementsInput =this.myForm[position].querySelectorAll('input');
+        var elementsSelect =this.myForm[position].querySelectorAll('select');
         for(let i = 0; i < elementsInput.length; i++) {
             if(elementsInput[i].classList.contains(this.classEdit)){
                 elementsInput[i].disabled = true;
@@ -61,9 +83,9 @@ class Main{
         }
     }
     
-    enableFormAll(){
-        var elementsInput =this.myForm.querySelectorAll('input');
-        var elementsSelect =this.myForm.querySelectorAll('select');
+    enableFormAll(position = 0){
+        var elementsInput =this.myForm[position].querySelectorAll('input');
+        var elementsSelect =this.myForm[position].querySelectorAll('select');
         for(let i = 0; i < elementsInput.length; i++) {
             elementsInput[i].disabled = false;
         }
@@ -72,20 +94,20 @@ class Main{
         }    
     }
     
-    resetForm(){
-      var elementsInput = document.querySelectorAll('input');
-      var elementsSelect = document.querySelectorAll('select');
+    resetForm(position = 0){
+      var elementsInput = this.myForm[position].querySelectorAll('input');
+      var elementsSelect = this.myForm[position].querySelectorAll('select');
         for (let i = 0; i < elementsInput.length; i++) {
             elementsInput[i].value= "";
         }
         for (let j = 0; j < elementsSelect.length; j++) {
             elementsInput[j].value= "";
         }
-        this.myForm.reset();
+        this.myForm[position].reset();
     }
 
-    getDataFormJson(){
-        var elementsForm = this.myForm.querySelectorAll('input, select');
+    getDataFormJson(position = 0){
+        var elementsForm = this.myForm[position].querySelectorAll('input, select');
         let getJson ={};
         elementsForm.forEach(function(element){
             if(element.id){
@@ -104,8 +126,8 @@ class Main{
         return getJson;    
     }
 
-    getDataFormData(){
-        var elementsForm = this.objForm.querySelectorAll('input, select');
+    getDataFormData(position = 0){
+        var elementsForm = this.objForm[position].querySelectorAll('input, select');
         elementsForm.forEach(function(element){
             if(element.id){
                 if(element.tagName === 'INPUT'){
@@ -122,21 +144,30 @@ class Main{
         return this.fromData;
     }
 
-    setDataFormJson(json){
-        let elements = this.myForm.querySelectorAll("input, select");
+    setDataFormJson(json,position = 0){
+        let elements = this.myForm[position].querySelectorAll("input, select");
+        let jsonKeys = Object.keys(json);
         for(let i = 0 ; i < elements.length; i++){
             if(elements[i].type === 'checkbox'){
-                document.getElementById(elements[i].id).checket = (json[elements[i].id]==0)?false:true;
+                if(jsonKeys.includes(elements[i].id)){
+                      elements[i].checked = (json[elements[i].id]==0)?false:true;
+                }                
+            }else if(elements[i].tagName === 'SELECT'){
+                if(jsonKeys.includes(elements[i].id)){
+                    elements[i].value = json[elements[i].id];
+                    elements[i].selected = true;
+                }
             }
             else{
-                document.getElementById(elements[i].id).value = json[elements[i].id];
-            }
-            
+                if(jsonKeys.includes(elements[i].id)){
+                    elements[i].value = json[elements[i].id];
+                }                
+            }            
         }
     }
 
-    setValidateForm(){
-        const objForm = this.myForm;
+    setValidateForm(position = 0){
+        const objForm = this.myForm[position];
         const inputs = objForm.querySelectorAll('input');
         const selects = objForm.querySelectorAll('select');
         let formValidate = true;

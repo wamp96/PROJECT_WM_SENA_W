@@ -7,7 +7,7 @@
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
-                <div class="accordion-body menu-slide" style="padding= 0;">
+                <div class="accordion-body menu-slide" style="padding : 0;">
                     <ul class="list-grop">
                         <li class="list-group-item"><a href="http://localhost:8080/user">USER</a></li>
                         <li class="list-group-item"><a href="http://localhost:8080/userStatus">USER STATUS</a></li>
@@ -22,7 +22,7 @@
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
-                <div class="accordion-body menu-slide" style="padding= 0;">
+                <div class="accordion-body menu-slide" style="padding : 0;">
                     <ul class="list-grop">
                         <li class="list-group-item"><a href="http://localhost:8080/element">ELEMENT</a></li>
                         <li class="list-group-item"><a href="http://localhost:8080/elementStatus">USER STATUS</a></li>
@@ -38,7 +38,7 @@
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
-                <div class="accordion-body menu-slide" style="padding= 0;">
+                <div class="accordion-body menu-slide" style="padding : 0;">
                     <ul class="list-grop">
                         <li class="list-group-item"><a href="#">User Status</a></li>
                         <li class="list-group-item"><a href="#">Role</a></li>
@@ -53,7 +53,7 @@
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
-                <div class="accordion-body menu-slide" style="padding= 0;">
+                <div class="accordion-body menu-slide" style="padding : 0;">
                     <ul class="list-grop">
                         <li class="list-group-item"><a href="#">User Status</a></li>
                         <li class="list-group-item"><a href="#">Role</a></li>

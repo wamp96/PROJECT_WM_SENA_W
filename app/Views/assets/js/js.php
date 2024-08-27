@@ -6,3 +6,5 @@
 <!--JS-->
 <script src="../system/constant.js"></script>
 <script src="../system/main.js"></script>
+<script src="../system/alert.js"></script>
+<script src="../system/script.js"></script>

@@ -10,7 +10,7 @@ use CodeIgniter\Router\RouteCollection;
 //GROUP CRUD----------------------------------------------------------------
 
 
-$routes->get('/','Home::index');
+//$routes->get('/','Home::index');
 
 
 $routes->group("api", function ($routes){
@@ -83,6 +83,9 @@ $routes->group("category", function($routes){
     $routes->post("update","category::update");
 });
 
+/**
+ * Routes for requestStatus
+ */
 $routes->group("requestStatus", function($routes){
     $routes->get("/", "requestStatus::index");
     $routes->get("show", "requestStatus::index");
@@ -91,3 +94,37 @@ $routes->group("requestStatus", function($routes){
     $routes->post("add","requestStatus::create");
     $routes->post("update","requestStatus::update");
 });
+
+/**
+ * Routes for request
+ */
+$routes->group("request", function($routes){
+    $routes->get("/", "request::index");
+    $routes->get("show", "request::index");
+    $routes->get("edit/(:num)","request::request/$1");
+    $routes->get("delete/(:num)","request::delete/$1");
+    $routes->post("add","request::create");
+    $routes->post("update","request::update");
+});
+
+//GROUP ROUTES
+$routes->group("profile",['filter' => 'AuthCheck'], function ($routes) {
+    $routes->get("show/(:num)", "Profile::index/$1");
+  });
+  
+  $routes->group("login", function ($routes) {
+    $routes->get("/", "Login::index",['filter' => 'AlreadyLoggedIn']);
+    $routes->get("show", "Login::index",['filter' => 'AlreadyLoggedIn']);
+    $routes->post("logIn", "Login::logIn");
+    $routes->post("singOff", "Login::singOff");
+    $routes->post("forgerPassword", "Login::forgerPassword");
+  });
+  
+  
+  $routes->group("dashboard", function ($routes) {
+    $routes->get("/", "Dashboard::index",['filter' => 'AuthCheck']);
+  
+  });
+  
+  $routes->get("/", "Login::index",['filter' => 'AlreadyLoggedIn']);
+  

@@ -1,49 +1,117 @@
 <?php
-
+   
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
-use CodeIgniter\API\ResponseTrait;
-use App\Models\UserModel;
-use \Firebase\JWT\JWT;
+use App\Models\LoginModel;
+use CodeIgniter\Controller;
+use CodeIgniter\HTTP\Message;
+use CodeIgniter\HTTP\ResponseInterface;
+use Exception;
 
-class Login extends BaseController
+
+class Login extends Controller
 {
+   
+  private $loginModel;
+  private $data;
 
-    use ResponseTrait;
+  
+  public function __construct()
+  {
+    $this->loginModel = new LoginModel();
+    $this->data = [];
+  }
 
-    public function index()
-    {
-        $userModel = new UserModel();
+
+  public function index()
+  {
+    $this->data['title'] = "BIENVENIDO";
+    return view('login/login_view', $this->data);
+  }
+
+
+  public function logIn()
+  {
+    
+      if ($this->request->isAJAX()) {      
+        try {
+          $email = $this->request->getVar('User_correo');
+          $password = $this->request->getVar('User_password');
+          $user = $this->loginModel->where('User_correo', $email)->first();
+          if (is_null($user)) {
+            $this->data['message'] = 'Invalid username.';
+            $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
+            $this->data['data'] = '';
+          }
+          $pwd_verify = password_verify($password, $user['User_password']);
+          if (!$pwd_verify) {
+            $this->data['message'] = 'Invalid password.';
+            $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
+            $this->data['data'] = '';
+          } else {
+            $session = session();
+            $this->data['message'] = 'Login successful';
+            $this->data['response'] = ResponseInterface::HTTP_OK;
+            $this->data['data'] = $user;
+            $session->set(LOGGED_USER,$user);
+          }
+        }catch (\Exception $e) {
+          $this->data['message'] = $e->getMessage();
+          $this->data['response'] = ResponseInterface::HTTP_CONFLICT;
+          $this->data['data'] = '';
+        }
+      } else {
+        $this->data['message'] = 'Error Ajax';
+        $this->data['response'] = ResponseInterface::HTTP_CONFLICT;
+        $this->data['data'] = '';
+      }    
+    echo json_encode($this->data);
+  }
+
+
+  public function singOff()
+  {
+    if ($this->request->isAJAX()) {
+      $session = session();
+      $this->data['message'] = 'Login successful';
+      $this->data['response'] = ResponseInterface::HTTP_OK;
+      $this->data['data'] = "";
+      $session->remove(LOGGED_USER);
+    } else {
+      $this->data['message'] = 'Error Ajax';
+      $this->data['response'] = ResponseInterface::HTTP_CONFLICT;
+      $this->data['data'] = '';
+    }
+  
+    echo json_encode($this->data);
+  }
+
+  
+  public function forgerPassword()
+  {
+    try {
+      if ($this->request->isAJAX()) {
         $email = $this->request->getVar('User_correo');
-        $password = $this->request->getVar('User_password');
-        $user = $userModel->where('User_correo', $email)->first();
-        
-        if (is_null($user)){
-            return $this->respond(['error' => 'Invalid username', 401]);
+        $user = $this->loginModel->where('User_correo', $email)->first();
+        if (is_null($user)) {
+          $this->data['message'] = 'Invalid username.';
+          $this->data['response'] = ResponseInterface::HTTP_UNAUTHORIZED;
+          $this->data['data'] = '';
+        } else {
+          $this->data['message'] = 'Send Message Change Password';
+          $this->data['response'] = ResponseInterface::HTTP_OK;
+          $this->data['data'] = "";
         }
-        
-        $pwd_verify = password_verify($password, $user['User_password']);
-
-        if(!$pwd_verify){
-            return $this->respond(['error' => $user['User_password'],$password,$pwd_verify], 401);
-        }
-        $key = getenv('JWT_SECRET');
-        $iat = time();
-        $exp = $iat + 3600;
-        $payload = array(
-            'iss' => "Issuser of the JWT",
-            'aud' => "Audience of the JWT",
-            'sub' => "Subject of the JWT",
-            'iat' => $iat,
-            'exp' => $exp,        
-            'User_correo' => $user['User_correo'],
-        );
-        $token = JWT::encode($payload, $key, 'HS256');
-        $response = [
-            'message' => 'Login successful',
-            'token' => $token
-        ];
-        return $this->respond($response, 200);
-   }
-} 
+      } else {
+        $this->data['message'] = 'Error Ajax';
+        $this->data['response'] = ResponseInterface::HTTP_CONFLICT;
+        $this->data['data'] = '';
+      }
+    } catch (Exception $e) {
+      $this->data['message'] = $e->getMessage();
+      $this->data['response'] = ResponseInterface::HTTP_CONFLICT;
+      $this->data['data'] = '';
+    }
+    return json_encode($this->data);
+  }
+}

@@ -6,16 +6,20 @@ namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
 use App\Models\UserStatusModel;
+use App\Models\ProfileModel;
+use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class UserStatus extends BaseController 
+class UserStatus extends Controller 
 {
 
     //Variables
     private $primarykey;
     private $StatusModel;
+    private $roleModulesModel;
+    private $profileModel;
     private $data;
     private $model;
 
@@ -23,6 +27,8 @@ class UserStatus extends BaseController
     public function __construct()
     {
         $this->primarykey = "User_status_id";
+        $this->profileModel = new ProfileModel();
+        $this->roleModulesModel = new RoleModulesModel();
         $this->StatusModel = new UserStatusModel();
         $this->data = [];
         $this->model = "UserStatus";
@@ -33,6 +39,8 @@ class UserStatus extends BaseController
     {
         $this->data['title'] = "USER STATUS";
         $this->data[$this->model] = $this->StatusModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
+        $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('userStatus/status_view', $this->data);
     }
 
@@ -137,6 +145,4 @@ class UserStatus extends BaseController
         return $data;
     }
 }
-
-
 ?>

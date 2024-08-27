@@ -180,4 +180,8 @@ class Controller
 
         $this->validator->setRules($rules, $messages);
     }
+    public function getSessionIdUser(){
+        $session = session();
+        return $session->get(LOGGED_USER);
+    }
 }

@@ -10,7 +10,7 @@ use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
 
-class ElementStatus extends BaseController 
+class ElementStatus extends Controller 
 {
 
     //Variables

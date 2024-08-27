@@ -8,20 +8,26 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\RoleModel;
 use App\Models\UserStatusModel;
+use App\Models\ProfileModel;
+use App\Models\RoleModulesModel;
 use App\Models\CityModel;
 use App\Models\AreaModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
-use CodeIgniter\API\ResponseTrait;
 
 
-class User extends BaseController 
+class User extends Controller 
 {
 
     //Variables   
-    use ResponseTrait;
     private $primarykey;
     private $userModel;
+    private $roleModel;
+    private $roleModulesModel;
+    private $cityModel;
+    private $areaModel;
+    private $profileModel;
+    private $userStatusModel;
     private $data;
     private $model;
 
@@ -31,6 +37,8 @@ class User extends BaseController
         $this->primarykey = "User_id";
         $this->userModel = new UserModel();
         $this->roleModel = new RoleModel();
+        $this->profileModel = new ProfileModel();
+        $this->roleModulesModel = new roleModulesModel();
         $this->userStatusModel = new UserStatusModel();
         $this->cityModel = new CityModel();
         $this->areaModel = new AreaModel();
@@ -47,14 +55,17 @@ class User extends BaseController
         $this->data['user_status'] = $this->userStatusModel->orderBy('User_status_id', 'ASC')->findAll();
         $this->data['cities'] = $this->cityModel->orderBy('City_id', 'ASC')->findAll();
         $this->data['areas'] = $this->areaModel->orderBy('Area_id', 'ASC')->findAll();
+        $this->data['profile'] = $this->profileModel->where('user_id_fk', (int)$this->getSessionIdUser()['User_id'])->first();
+        $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('user/user_view', $this->data);
         
     }
 
+    /*
     public function viewList(){
         return $this->respond(['users'=>  $this->userModel->findAll()], 200);
     }
-
+    */
 
     public function create()
     {

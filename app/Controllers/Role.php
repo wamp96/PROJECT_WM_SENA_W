@@ -3,23 +3,28 @@
 namespace App\Controllers;
 
 use App\Models\RoleModel;
+use App\Models\ProfileModel;
+use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class Role extends BaseController
+class Role extends Controller
 {
 
     private $primarykey;
-    private $RoleModel;
+    private $roleModel;
+    private $profileModel;
+    private $roleModuleModel;
     private $data;
     private $model;
-
 
     //Metodo Constructor
     public function __construct()
     {
         $this->primarykey = "Roles_id";
-        $this->RoleModel = new RoleModel();
+        $this->roleModuleModel = new RoleModulesModel();
+        $this->roleModel = new RoleModel();
+        $this->profileModel = new ProfileModel();
         $this->data = [];
         $this->model = "roles";
     }
@@ -27,7 +32,9 @@ class Role extends BaseController
     public function index()
     {
         $this->data['title'] = "ROLES";
-        $this->data[$this->model] = $this->RoleModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data[$this->model] = $this->roleModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data['profile'] = $this->profileModel->where('User_fk',(int) $this->getSessionIdUser()['User_id'])->first();;
+        $this->data['userModules'] = $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);        
         return view('role/roles_view', $this->data);
     }
 
@@ -35,8 +42,7 @@ class Role extends BaseController
     {
         if($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
-
-            if($this->RoleModel->insert($dataModel)){
+            if($this->roleModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;
                 $data['data']=  $dataModel ;
@@ -57,7 +63,7 @@ class Role extends BaseController
     public function singleRole($id = null)
     {
         if($this->request->isAJAX()){
-            if($data[$this->model] = $this->RoleModel->where($this->primarykey, $id)->first()){
+            if($data[$this->model] = $this->roleModel->where($this->primarykey, $id)->first()){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
@@ -84,7 +90,7 @@ class Role extends BaseController
                 'Roles_description' => $this->request->getVar('Roles_description'),
                 'update_at' => $today                 
             ];
-            if($this->RoleModel->update($id, $dataModel)){
+            if($this->roleModel->update($id, $dataModel)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = $dataModel;
@@ -105,7 +111,7 @@ class Role extends BaseController
     public function delete($id = null)
     {   
         try{
-            if($this->RoleModel->where($this->primarykey, $id)->delete($id)){
+            if($this->roleModel->where($this->primarykey, $id)->delete($id)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = "OK";
@@ -116,7 +122,7 @@ class Role extends BaseController
                 $data['data'] = 'error';
             }
         }catch(\Exception $e){
-            $data['message'] = 'Error create user' ;
+            $data['message'] = $e ;
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = 'Error';
         }

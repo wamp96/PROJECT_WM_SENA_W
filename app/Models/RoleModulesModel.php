@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use Exception;
 
 class RoleModulesModel extends Model
 {
@@ -12,7 +13,7 @@ class RoleModulesModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['Roles_fk','Modules_fk','update_at'];
+    protected $allowedFields    = ['Modules_fk','Roles_fk','update_at'];
 
     protected bool $allowEmptyInserts = false;
     
@@ -20,4 +21,53 @@ class RoleModulesModel extends Model
     // Dates
     protected $createdField  = 'create_at';
     protected $updatedField  = 'update_at';
+
+    public function sp_role_modules()
+    {
+        try {
+            $sql    = "CALL sp_role_modules();";
+            $query  = $this->db->query($sql);
+            $result = $query->getResultArray();
+        } catch (Exception $e) {
+            $result = null;
+        }
+
+        return $result;
+    }
+    public function sp_role_module_id($id)
+    {
+        try {
+            $sql    = "CALL sp_role_module_id(?);";
+            $query  = $this->db->query($sql,$id);
+            $result = $query->getResultArray();
+        } catch (Exception $e) {
+            $result = null;
+        }
+
+        return $result;
+    }
+    public function sp_role_modules_id($id)
+    {
+        try {
+            $sql    = "CALL sp_role_modules_id(?);";
+            $query  = $this->db->query($sql,$id);
+            $result = $query->getResultArray();
+        } catch (Exception $e) {
+            $result = null;
+        }
+
+        return $result;
+    }
+    public function sp_permissions_module_id($id)
+    {
+        try {
+            $sql    = "CALL sp_permissions_module_id(?);";
+            $query  = $this->db->query($sql,$id);
+            $result = $query->getResultArray();
+        } catch (Exception $e) {
+            $result = null;
+        }
+
+        return $result;
+    }
 }
