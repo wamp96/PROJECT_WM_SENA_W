@@ -52,7 +52,11 @@ class Main{
         return this.myForm[position];
     }
 
+<<<<<<< Updated upstream
     disabledFormAll(){
+=======
+    disabledFormAll(position = 0){
+>>>>>>> Stashed changes
         var elementsInput =this.myForm[position].querySelectorAll('input');
         var elementsSelect =this.myForm[position].querySelectorAll('select');
         for(let i = 0; i < elementsInput.length; i++) {

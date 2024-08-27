@@ -6,6 +6,8 @@ namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
 use App\Models\CategoryModel;
+use App\Models\ProfileModel;
+use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -15,7 +17,9 @@ class Category extends Controller
 
     //Variables
     private $primarykey;
-    private $CategoryModel;
+    private $categoryModel;
+    private $roleModulesModel;
+    private $profileModel;
     private $data;
     private $model;
 
@@ -23,16 +27,20 @@ class Category extends Controller
     public function __construct()
     {
         $this->primarykey = "Category_id";
-        $this->CategoryModel = new CategoryModel();
+        $this->categoryModel = new CategoryModel();
+        $this->profileModel = new ProfileModel();
+        $this->roleModulesModel = new RoleModulesModel();
         $this->data = [];
-        $this->model = "Category";
+        $this->model = "categories";
     } 
 
     //Metodo index se inicia la vista y se establecen los parametros para enviar los datos en la vista del renderizado html
     public function index()
     {
         $this->data['title'] = "CATEGORIES";
-        $this->data[$this->model] = $this->CategoryModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data[$this->model] = $this->categoryModel->orderBy($this->primarykey, 'ASC')->findAll();
+        $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
+        $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('category/category_view', $this->data);
     }
 
@@ -41,7 +49,7 @@ class Category extends Controller
         if($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
 
-            if($this->CategoryModel->insert($dataModel)){
+            if($this->categoryModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;
                 $data['data']=  $dataModel ;
@@ -62,7 +70,7 @@ class Category extends Controller
     public function singleCategory($id = null)
     {
         if($this->request->isAJAX()){
-            if($data[$this->model] = $this->CategoryModel->where($this->primarykey, $id)->first()){
+            if($data[$this->model] = $this->categoryModel->where($this->primarykey, $id)->first()){
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
@@ -88,7 +96,7 @@ class Category extends Controller
                 'Category_descripcion' => $this->request->getVar('Category_descripcion'),
                 'update_at' => $today                 
             ];
-            if($this->CategoryModel->update($id, $dataModel)){
+            if($this->categoryModel->update($id, $dataModel)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = $dataModel;
@@ -109,7 +117,7 @@ class Category extends Controller
     public function delete($id = null)
     {   
         try{
-            if($this->CategoryModel->where($this->primarykey, $id)->delete($id)){
+            if($this->categoryModel->where($this->primarykey, $id)->delete($id)){
                 $data['message'] = 'success' ;
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = "OK";

@@ -10,6 +10,8 @@ use App\Models\CategoryModel;
 use App\Models\ModelModel;
 use App\Models\BrandModel;
 use App\Models\ElementStatusModel;
+use App\Models\ProfileModel;
+use App\Models\RoleModulesModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\API\ResponseTrait;
@@ -22,10 +24,19 @@ class Element extends Controller
     use ResponseTrait;
     private $primarykey;
     private $elementModel;
+<<<<<<< Updated upstream
     private $elementStatusModel;
     private $modelModel;
     private $categoryModel;
     private $brandModel;
+=======
+    private $categoryModel;
+    private $modelModel;
+    private $brandModel;
+    private $elementStatusModel;
+    private $profileModel;
+    private $roleModulesModel;
+>>>>>>> Stashed changes
     private $data;
     private $model;
 
@@ -38,6 +49,8 @@ class Element extends Controller
         $this->modelModel = new ModelModel();        
         $this->brandModel = new BrandModel();         
         $this->elementStatusModel = new ElementStatusModel();
+        $this->profileModel = new ProfileModel();
+        $this->roleModulesModel = new roleModulesModel();
         $this->data = [];
         $this->model = "elements";
     } 
@@ -51,6 +64,8 @@ class Element extends Controller
         $this->data['brands'] = $this->brandModel->orderBy('Brand_id', 'ASC')->findAll();
         $this->data['models'] = $this->modelModel->orderBy('Model_id', 'ASC')->findAll();
         $this->data['element_status'] = $this->elementStatusModel->orderBy('Element_status_id', 'ASC')->findAll();
+        $this->data['profile'] = $this->profileModel->where('user_fk', (int)$this->getSessionIdUser()['User_id'])->first();
+        $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('element/element_view', $this->data);
     }
 
@@ -113,6 +128,7 @@ class Element extends Controller
                 'Element_serial' => $this->request->getVar('Element_serial'),
                 'Element_procesador' => $this->request->getVar('Element_procesador'),
                 'Element_memoria_ram' => $this->request->getVar('Element_memoria_ram'),
+                'Element_disco' => $this->request->getVar('Element_disco'),
                 'Element_valor' => $this->request->getVar('Element_valor'),
                 'Element_stock' => $this->request->getVar('Element_stock'),
                 'Category_fk' => $this->request->getVar('Category_fk'),
@@ -169,6 +185,7 @@ class Element extends Controller
             'Element_serial' => $this->request->getVar('Element_serial'),
             'Element_procesador' => $this->request->getVar('Element_procesador'),
             'Element_memoria_ram' => $this->request->getVar('Element_memoria_ram'),
+            'Element_disco' => $this->request->getVar('Element_disco'),
             'Element_valor' => $this->request->getVar('Element_valor'),
             'Element_stock' => $this->request->getVar('Element_stock'),
             'Category_fk' => $this->request->getVar('Category_fk'),

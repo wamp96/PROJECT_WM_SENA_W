@@ -1,40 +1,36 @@
 <form id="my-form">
     <input type="hidden" class="form-control" id="User_id" name="User_id" value=null>
     <input type="hidden" class="form-control" id="update_at" name="update_at" value=null>
-    <div class="form-floating mb-3">
+    <div class="input-group mb-3">
         <input type="number" class="form-control" name="User_documento" id="User_documento" placeholder="Numero de Documento">
-        <label for="User_documento">N_Documento</label>
+        <span class="input-group-text" id="User_documento2">@</span>
+        <input type="email" class="form-control" name="User_correo" id="User_correo" placeholder="Email">
+
     </div>
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="User_nombre" id="User_nombre" placeholder="Name">
-        <label for="User_nombre">Nombre</label>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="User_nombre2">Name</span>
+        <input type="text" class="form-control" name="User_nombre" id="User_nombre" >
+        <span class="input-group-text" id="User_apellido_paterno2">First Name</span>
+        <input type="text" class="form-control" name="User_apellido_paterno" id="User_apellido_paterno" >
+     
     </div>
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="User_apellido_paterno" id="User_apellido_paterno" placeholder="Name">
-        <label for="User_apellido_paterno">Apellido Paterno</label>
+   
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="User_apellido_materno2">Last Name</span>
+        <input type="text" class="form-control" name="User_apellido_materno" id="User_apellido_materno" >
+        <span class="input-group-text" id="User_telefono2">Phone</span>
+        <input type="number" class="form-control" name="User_telefono" id="User_telefono">
+        
     </div>
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="User_apellido_materno" id="User_apellido_materno" placeholder="Name">
-        <label for="User_apellido_materno">Apellido Materno</label>
-    </div>
-    <div class="form-floating mb-3">
-        <input type="number" class="form-control" name="User_telefono" id="User_telefono" placeholder="Name">
-        <label for="User_telefono">Telefono</label>
-    </div>
-    <div class="form-floating mb-3">
-        <input type="email" class="form-control" name="User_correo" id="User_correo" placeholder="Name">
-        <label for="User_correo">Correo</label>
-    </div>
-    <div class="form-floating mb-3">
-        <input type="password" class="form-control" name="User_password" id="User_password" placeholder="Name">
-        <label for="User_password">Password</label>
-    </div>
-    <div class="form-floating mb-3">
-        <input type="password" class="form-control " id="Repeat_password" name="Repeat_password" placeholder="Repeat Password" required>
-        <label for="Repeat_password">Repeat Password </label>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="User_password2">Password</span>
+        <input type="password" class="form-control" name="User_password" id="User_password" placeholder="*****">
+        <span class="input-group-text" id="Repeat_password2">Repeat Password</span>
+        <input type="password" class="form-control " id="Repeat_password" name="Repeat_password" placeholder="*****" required>
+        
     </div>
 
-    <div class="form-floating mb-3 col-12">
+    <div class="input-group mb-3">
         <select class="form-select" aria-label="Id Parent" id="City_fk" name="City_fk" disabled>
             <option value=NULL selected>Open this select City</option>
                 <?php if ($cities) : ?>
@@ -43,8 +39,6 @@
                     <?php endforeach; ?>
                 <?php endif; ?>
         </select>
-    </div>
-    <div class="form-floating mb-3 col-12">
         <select class="form-select" aria-label="Id Parent" id="Area_fk" name="Area_fk" disabled>
             <option value=NULL selected>Open this select Area</option>
                 <?php if ($areas) : ?>
@@ -54,7 +48,8 @@
                 <?php endif; ?>
         </select>
     </div>
-    <div class="form-floating mb-3 col-12">
+
+    <div class="input-group mb-3">
         <select class="form-select" aria-label="Id Parent" id="Roles_fk" name="Roles_fk" disabled>
             <option value=NULL selected>Open this select Role</option>
                 <?php if ($roles) : ?>
@@ -63,8 +58,6 @@
                     <?php endforeach; ?>
                 <?php endif; ?>
         </select>
-    </div>
-    <div class="form-floating mb-3 col-12">           
         <select class="form-select" aria-label="Id Parent" id="User_status_fk" name="User_status_fk" disabled>
             <option value=NULL selected>Open this select User Status</option>
                 <?php if ($user_status) : ?>
@@ -72,6 +65,6 @@
                         <option value="<?= $obj['User_status_id'] ?>"><?= $obj['User_status_name'] ?></option>
                     <?php endforeach; ?>
                 <?php endif; ?>
-        </select>            
+        </select>  
     </div>
 </form>

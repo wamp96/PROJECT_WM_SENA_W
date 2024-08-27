@@ -1,13 +1,24 @@
+<<<<<<< Updated upstream
 
 const formId1 = 'my-profile';
 const modalId1 = 'my-modal_profile';
 const model1 = 'profiles';
 const tableId1= 'table-index';
+=======
+const formId1 = 'my-profile';
+const modalId1 = 'my-modal_profile';
+const model1 = 'profiles';
+const tableId= 'table-index';
+>>>>>>> Stashed changes
 const preloadId = 'preloadId';
 const classEdit = 'edit-input';
 const textConfirm = 'Press a button!\nEither OK or Cancel.';
 const btnSubmit = document.getElementById('btnSubmit');
+<<<<<<< Updated upstream
 const mainApp1 = new Main(modalId, formId, classEdit, preloadId);
+=======
+const mainApp = new Main(modalId1, formId1, classEdit, preloadId);
+>>>>>>> Stashed changes
 
 
 var insertUpdate = true;
@@ -18,11 +29,19 @@ var resultFetch = null;
 
 
 function showProfile(id) {
+<<<<<<< Updated upstream
   //mainApp1.disabledFormAll();
   //mainApp1.resetForm();
   btnEnabled(false);
   mainApp1.showModal();
   //getDataId(id);
+=======
+  mainApp.disabledFormAll();
+  mainApp.resetForm();
+  btnEnabled(false);
+  mainApp.showModal();
+  getDataId(id);
+>>>>>>> Stashed changes
 }
 
 
@@ -72,6 +91,10 @@ async function getDataId(id) {
   resultFetch = getData(data, method, url);
   resultFetch.then(response => response.json())
     .then(data => {
+<<<<<<< Updated upstream
+=======
+      console.log(data);
+>>>>>>> Stashed changes
       mainApp.setDataFormJson(data[model]);
       mainApp.showModal();
       mainApp.hiddenPreload();

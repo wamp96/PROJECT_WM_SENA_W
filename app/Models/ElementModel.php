@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use Exception;
 
 class ElementModel extends Model
 {
@@ -12,7 +13,7 @@ class ElementModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['Element_id','Element_nombre','Element_imagen','Element_serial','Element_procesador','Element_memoria_ram','Element_disco','Element_valor','Element_stock','Category_fk','Element_status_fk','Brand_fk','update_at'];
+    protected $allowedFields    = ['Element_nombre','Element_imagen','Element_serial','Element_procesador','Element_memoria_ram','Element_disco','Element_valor','Element_stock','Category_fk','Element_status_fk','Brand_fk','update_at'];
 
     protected bool $allowEmptyInserts = false;
     
@@ -32,7 +33,6 @@ class ElementModel extends Model
             $result = null;
         }
         return $result;
-
     }
     
 }

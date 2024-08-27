@@ -132,7 +132,81 @@ SELECT
     RM.Roles_fk AS Roles_id 
 FROM 
     role_modules as RM
+<<<<<<< Updated upstream
 INNER JOIN modules M ON RM.Modules_fk=M.Modules_id
 WHERE RM.Roles_fk=roleId;
 END$$
 ----------------------------------------------------------------------------------------
+=======
+INNER JOIN modules M 
+ON RM.Modules_fk=M.Modules_id
+WHERE RM.Roles_fk=roleId;
+END$$
+----------------------------------------------------------------------------------------
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_request_id` (IN `requestId` INT)   
+BEGIN
+    SELECT 
+        us.User_id, 
+        CONCAT(us.User_nombre, ' ', us.User_apellido_paterno, ' ', us.User_apellido_materno) AS "Full Name", 
+        re.Request_id, 
+        re.Request_title, 
+        re.Request_description, 
+        re.Request_status_fk, 
+        re.Request_fecha 
+    FROM 
+        users AS us 
+    INNER JOIN 
+        requests AS re 
+    INNER JOIN request_status ES ON
+        re.Request_status_fk = ES.Request_status_id 
+    ON 
+        us.User_id = re.User_fk
+    WHERE 
+        us.User_id = userId;
+END
+----------------------------------------------------------------------------------------
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_requests` ()   
+BEGIN
+SELECT 
+        us.User_id, 
+        CONCAT(us.User_nombre, ' ', us.User_apellido_paterno, ' ', us.User_apellido_materno) AS "Full Name", 
+        re.Request_id, 
+        re.Request_title, 
+        re.Request_description, 
+        re.Request_status_fk, 
+        re.Request_fecha 
+    FROM 
+        requests AS re
+    INNER JOIN users AS us 
+	ON re.User_fk = us.User_id
+    INNER JOIN request_status as rs
+	ON re.Request_status_fk = rs.Request_status_id;
+END
+---------------------------------------------------------------------------------------------------
+
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sp_users_elements_id`$$
+
+CREATE DEFINER = `root`@`localhost` PROCEDURE `sp_users_elements_id` (IN `userID` INT)   
+BEGIN
+SELECT 
+	ue.User_element_id,
+	CONCAT(us.User_nombre, ' ', us.User_apellido_paterno, ' ', us.User_apellido_materno) AS "Full Name", 
+	us.User_documento,
+us.Area_fk,
+    el.Element_id,
+    el.Element_nombre,
+    el.Element_serial,
+	ue.User_element_fecha,
+	ar.Area_name
+FROM user_elements AS ue
+INNER JOIN users AS us
+ON ue.User_fk = us.User_id
+INNER JOIN elements AS el
+ON ue.Element_fk = el.Element_id
+INNER JOIN areas AS ar
+ON us.Area_fk = ar.Area_id
+WHERE us.User_id = userID;
+END$$
+>>>>>>> Stashed changes

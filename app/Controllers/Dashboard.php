@@ -16,7 +16,10 @@ class Dashboard extends Controller
     private $roleModulesModel;
     private $profileModel;
     private $data;
+<<<<<<< Updated upstream
     private $session;
+=======
+>>>>>>> Stashed changes
 
     public function __construct()
     {
@@ -24,6 +27,7 @@ class Dashboard extends Controller
         $this->roleModulesModel = new RoleModulesModel();
         $this->profileModel = new ProfileModel();
         $this->data = [];
+<<<<<<< Updated upstream
         $this->session = \Config\Services::session();
     }
 
@@ -34,6 +38,17 @@ class Dashboard extends Controller
         $this->data['userModule'] = $this->roleModulesModel->sp_role_module_id((int)$this->getSessionIdUser()['Roles_fk']);
         echo view('dashboard/dashboard_view', $this->data);        
     }
+=======
+    }
+
+        public function index()
+        {
+            $this->data['title'] = 'DASHBOARD';
+            $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
+            $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
+            echo view('dashboard/dashboard_view', $this->data);        
+        }
+>>>>>>> Stashed changes
 }
 
 ?>

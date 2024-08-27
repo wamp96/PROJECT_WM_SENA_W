@@ -20,4 +20,26 @@ class UserElementModel extends Model
     protected $createdField  = 'create_at';
     protected $updatedField  = 'update_at';
 
+    public function sp_users_elements()
+    {
+        try{
+            $sql = "CALL sp_users_elements();";
+            $query = $this->db->query($sql);
+            $result = $query->getResultArray();
+        }catch(Exception $e){
+            $result = null;
+        }
+        return $result;
+    }
+    public function sp_users_elements_id($id)
+    {
+        try{
+            $sql = "CALL sp_users_elements_id(?);";
+            $query = $this->db->query($sql,$id);
+            $result = $query->getResultArray();
+        }catch(Exception $e){
+            $result = null;
+        }
+        return $result;
+    }
 }

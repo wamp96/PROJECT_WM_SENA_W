@@ -15,11 +15,11 @@
                 <th scope="col">Stock</th>
                 <th scope="col">Categoria</th>
                 <th scope="col">Estado</th>
-                <th scope="col">Action</th>                
+                <th scope="col">Acción</th>                
             </tr>
         </thead>
         <tbody>
-            <?php if ($elements) : ?>
+            <?php if (!empty($elements)) : ?>
                 <?php foreach($elements as $obj) :  ?>
                     <tr class="text-center">
                         <td><?php echo $obj['Element_id'];?></td>
@@ -44,11 +44,15 @@
                         </td>
                     </tr>                
                 <?php endforeach ?>
+            <?php else: ?>
+                <tr>
+                    <td colspan="14">No elements found</td>
+                </tr>
             <?php endif ?>
         </tbody>
         <tfoot class="table-dark">
             <tr class="text-center">    
-            <th scope="col">#</th>
+                <th scope="col">#</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Imagen</th>
                 <th scope="col">Serial</th>
@@ -61,7 +65,7 @@
                 <th scope="col">Stock</th>
                 <th scope="col">Categoria</th>
                 <th scope="col">Estado</th>
-                <th scope="col">Action</th>    
+                <th scope="col">Acción</th>    
             </tr>
         </tfoot>
     </table>

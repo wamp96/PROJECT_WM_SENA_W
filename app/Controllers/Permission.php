@@ -35,7 +35,11 @@ class Permission extends Controller
     {
         $this->data['title'] = "PERMISSION";
         $this->data[$this->model] = $this->PermissionModel->orderBy($this->primarykey, 'ASC')->findAll();
+<<<<<<< Updated upstream
         $this->data['profile'] = $this->profileModel->where('User_id_fk', (int) $this->getSessionIdUser()['User_id'])->first();
+=======
+        $this->data['profile'] = $this->profileModel->where('User_fk', (int) $this->getSessionIdUser()['User_id'])->first();
+>>>>>>> Stashed changes
         $this->data['userModules']= $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('Permissions/permission_view', $this->data);
     }

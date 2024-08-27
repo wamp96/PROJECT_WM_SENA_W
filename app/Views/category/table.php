@@ -9,8 +9,8 @@
             </tr>
         </thead>
         <tbody>
-            <?php if ($Category) : ?>
-                <?php foreach($Category as $obj) :  ?>
+            <?php if ($categories) : ?>
+                <?php foreach($categories as $obj) :  ?>
                     <tr class="text-center">
                         <td><?php echo $obj['Category_id'];?></td>
                         <td><?php echo $obj['Category_nombre'];?></td>
