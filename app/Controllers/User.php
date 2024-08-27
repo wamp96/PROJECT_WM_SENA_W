@@ -55,11 +55,7 @@ class User extends Controller
         $this->data['user_status'] = $this->userStatusModel->orderBy('User_status_id', 'ASC')->findAll();
         $this->data['cities'] = $this->cityModel->orderBy('City_id', 'ASC')->findAll();
         $this->data['areas'] = $this->areaModel->orderBy('Area_id', 'ASC')->findAll();
-<<<<<<< Updated upstream
-        $this->data['profile'] = $this->profileModel->where('user_id_fk', (int)$this->getSessionIdUser()['User_id'])->first();
-=======
         $this->data['profile'] = $this->profileModel->where('user_fk', (int)$this->getSessionIdUser()['User_id'])->first();
->>>>>>> Stashed changes
         $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('user/user_view', $this->data);
         

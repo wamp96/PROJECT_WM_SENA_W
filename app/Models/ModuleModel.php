@@ -3,10 +3,6 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-<<<<<<< Updated upstream
-use Exception;
-=======
->>>>>>> Stashed changes
 
 class ModuleModel extends Model
 {
@@ -19,18 +15,8 @@ class ModuleModel extends Model
     protected $allowedFields    = ['Modules_name','Modules_description','Modules_route','Modules_icon','Modules_submodule','Modules_parent_module','update_at'];
 
     protected bool $allowEmptyInserts = false;
-<<<<<<< Updated upstream
-
-    // Dates
-
-    protected $createdField  = 'create_at';
-    protected $updatedField  = 'update_at';
-
-   
-=======
     
     // Dates
     protected $createdField  = 'create_at';
     protected $updatedField  = 'update_at';
->>>>>>> Stashed changes
 }

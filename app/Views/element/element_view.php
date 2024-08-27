@@ -40,7 +40,7 @@
         <!--End Footer-->
 
         <!--Modal-->
-        <div class="modal fade" id="my-modal" aria-labelledby="my-modalLabel" aria-hidden="true">
+        <div class="modal fade" id="my-modal" tabindex="-1" aria-labelledby="my-modalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">

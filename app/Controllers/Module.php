@@ -31,11 +31,7 @@ class Module extends Controller{
         $this->data['title'] = "MODULOS";
         $this->data[$this->model] = $this->moduleModel->orderBy($this->primaryKey, 'ASC')->findAll();
         $this->data['modulesParent'] = $this->moduleModel->where('Modules_submodule', 0)->findAll();
-<<<<<<< Updated upstream
-        $this->data['profile'] =  $this->profileModel->where('User_id_fk', (int)$this->getSessionIdUser()['User_id'])->first();
-=======
         $this->data['profile'] =  $this->profileModel->where('User_fk', (int)$this->getSessionIdUser()['User_id'])->first();
->>>>>>> Stashed changes
         $this->data['userModules'] =  $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('module/modules_view', $this->data);
     }

@@ -1,22 +1,13 @@
 const textConfirmSignOff = 'Press a Button!\nEither OK or Cancel.';
-<<<<<<< Updated upstream
-function singOff(){
-    method = 'POST';
-    url = URI_LOGIN + 'singOff';
-=======
 function signOff(){
     method = 'POST';
     url = URI_LOGIN + 'signOff';
->>>>>>> Stashed changes
     data = "";
     if (confirm(textConfirmSignOff)== true){
         resultFetch = getData(data, method,url);
         resultFetch.then(response => response.json())
             .then(data => {
-<<<<<<< Updated upstream
-=======
                 debugger;
->>>>>>> Stashed changes
                 location.assign('/login');
             })
             .catch(error=>{

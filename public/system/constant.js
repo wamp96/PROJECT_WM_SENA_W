@@ -13,14 +13,11 @@ const URI_ELEMENTS="/elementStatus/";
 const URI_REQUEST_STATUS="/requestStatus/";
 const URI_CATEGORY="/category/";
 const URI_LOGIN="/login/";
-<<<<<<< Updated upstream
-=======
 const URI_CITY="/city/";
 const URI_AREA="/area/";
 const URI_BRAND="/brand/";
 const URI_MODEL="/model/";
 const URI_USER_ELEMENT="/userElement/";
 
->>>>>>> Stashed changes
 
 

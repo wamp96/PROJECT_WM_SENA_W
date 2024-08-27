@@ -37,11 +37,7 @@ class RoleModule extends Controller
     {
         $this->data['title'] = "ROLE MODULES";
         $this->data['titlePermissions'] = "MODULE PERMISSIONS";
-<<<<<<< Updated upstream
-        $this->data[$this->model] = $this->roleModuleModel->orderBy($this->primaryKey, 'ASC')->findAll();
-=======
         $this->data[$this->model] = $this->roleModuleModel->sp_role_modules();
->>>>>>> Stashed changes
         $this->data['roles'] = $this->roleModel->orderBy('Roles_id', 'ASC')->findAll();
         $this->data['modules'] = $this->moduleModel->orderBy('Modules_id', 'ASC')->findAll();
         $this->data['permissions'] = $this->permissionModel->orderBy('Permissions_id', 'ASC')->findAll();

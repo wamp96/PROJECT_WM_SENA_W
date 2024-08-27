@@ -11,11 +11,6 @@ use CodeIgniter\Router\RouteCollection;
 
 
 //$routes->get('/','Home::index');
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
 $routes->group("api", function ($routes){
   $routes->post("register", "Register::index");
   $routes->post("login", "Login::index");
@@ -212,71 +207,6 @@ $routes->group("permission", function($routes){
   $routes->post("update","Permission::update");
 });
 
-<<<<<<< Updated upstream
-$routes->group("elementStatus", function($routes){
-    $routes->get("/", "elementStatus::index");
-    $routes->get("show", "elementStatus::index");
-    $routes->get("edit/(:num)","elementStatus::singleElementStatus/$1");
-    $routes->get("delete/(:num)","elementStatus::delete/$1");
-    $routes->post("add","elementStatus::create");
-    $routes->post("update","elementStatus::update");
-});
-
-$routes->group("category", function($routes){
-    $routes->get("/", "category::index");
-    $routes->get("show", "category::index");
-    $routes->get("edit/(:num)","category::singleCategory/$1");
-    $routes->get("delete/(:num)","category::delete/$1");
-    $routes->post("add","category::create");
-    $routes->post("update","category::update");
-});
-
-/**
- * Routes for requestStatus
- */
-$routes->group("requestStatus", function($routes){
-    $routes->get("/", "requestStatus::index");
-    $routes->get("show", "requestStatus::index");
-    $routes->get("edit/(:num)","requestStatus::RequestStatus/$1");
-    $routes->get("delete/(:num)","requestStatus::delete/$1");
-    $routes->post("add","requestStatus::create");
-    $routes->post("update","requestStatus::update");
-});
-
-/**
- * Routes for request
- */
-$routes->group("request", function($routes){
-    $routes->get("/", "request::index");
-    $routes->get("show", "request::index");
-    $routes->get("edit/(:num)","request::request/$1");
-    $routes->get("delete/(:num)","request::delete/$1");
-    $routes->post("add","request::create");
-    $routes->post("update","request::update");
-});
-
-//GROUP ROUTES
-$routes->group("profile",['filter' => 'AuthCheck'], function ($routes) {
-    $routes->get("show/(:num)", "Profile::index/$1");
-  });
-  
-  $routes->group("login", function ($routes) {
-    $routes->get("/", "Login::index",['filter' => 'AlreadyLoggedIn']);
-    $routes->get("show", "Login::index",['filter' => 'AlreadyLoggedIn']);
-    $routes->post("logIn", "Login::logIn");
-    $routes->post("singOff", "Login::singOff");
-    $routes->post("forgerPassword", "Login::forgerPassword");
-  });
-  
-  
-  $routes->group("dashboard", function ($routes) {
-    $routes->get("/", "Dashboard::index",['filter' => 'AuthCheck']);
-  
-  });
-  
-  $routes->get("/", "Login::index",['filter' => 'AlreadyLoggedIn']);
-  
-=======
   // $routes->group("permission",['filter' => 'AuthCheck'],function($routes){
   //   $routes->get("/", "Permission::index");
   //   $routes->get("show", "Permission::index");
@@ -286,4 +216,3 @@ $routes->group("profile",['filter' => 'AuthCheck'], function ($routes) {
   //   $routes->post("update", "Permission::update");
   // });
   $routes->get("/", "Login::index",['filter' => 'AlreadyLoggedIn']);
->>>>>>> Stashed changes

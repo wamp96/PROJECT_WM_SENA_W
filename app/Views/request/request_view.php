@@ -28,11 +28,7 @@
                     <button type="button" class="btn btn-primary btn-actions" title="Button new User Status" onclick="add()" style="font-size: 0.5em;">
                     <i class="bi bi-plus-circle-fill"></i> </button>
                     <!--Container Table-->
-<<<<<<< Updated upstream
-                    <?php require_once('../app/Views/element/table.php') ?>
-=======
                     <?php require_once('../app/Views/request/table.php') ?>
->>>>>>> Stashed changes
                     <!--End Container Table-->
                 </div>
             </div>

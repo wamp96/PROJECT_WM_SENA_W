@@ -6,12 +6,6 @@ namespace App\Controllers;
 
 //Clases Utilizadas en este controlador
 use App\Models\RequestModel;
-<<<<<<< Updated upstream
-use CodeIgniter\Controller;
-use CodeIgniter\HTTP\ResponseInterface;
-use CodeIgniter\API\ResponseTrait;
-
-=======
 use App\Models\RoleModulesModel;
 use App\Models\RequestStatusModel;
 use App\Models\ProfileModel;
@@ -19,7 +13,6 @@ use CodeIgniter\Controller;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\CLI\Console;
->>>>>>> Stashed changes
 
 class Request extends Controller 
 {
@@ -28,12 +21,9 @@ class Request extends Controller
     use ResponseTrait;
     private $primarykey;
     private $requestModel;
-<<<<<<< Updated upstream
-=======
     private $requestStatusModel;
     private $roleModuleModel;
     private $profileModel;
->>>>>>> Stashed changes
     private $data;
     private $model;
 
@@ -42,12 +32,9 @@ class Request extends Controller
     {
         $this->primarykey = "Request_id";
         $this->requestModel = new RequestModel();
-<<<<<<< Updated upstream
-=======
         $this->requestStatusModel = new RequestStatusModel();
         $this->roleModuleModel = new RoleModulesModel();
         $this->profileModel = new ProfileModel();
->>>>>>> Stashed changes
         $this->data = [];
         $this->model = "requests";
     } 
@@ -56,12 +43,6 @@ class Request extends Controller
     public function index()
     {
         $this->data['title'] = "REQUEST";
-<<<<<<< Updated upstream
-        $this->data[$this->model] = $this->requestModel->sp_request();
-        return view('request/request_view', $this->data);
-    }
-
-=======
         $this->data[$this->model] = $this->requestModel->sp_requests();
         $this->data['request_status'] = $this->requestStatusModel->orderBy('Request_status_id', 'ASC')->findAll();
         $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
@@ -77,7 +58,6 @@ class Request extends Controller
         $this->data['userModules'] = $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('request/request_view', $this->data);
     }
->>>>>>> Stashed changes
 
     
     public function viewList(){
@@ -104,10 +84,7 @@ class Request extends Controller
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = '';
         }
-<<<<<<< Updated upstream
-=======
         var_dump($data);
->>>>>>> Stashed changes
         echo json_encode($dataModel);
     }
 
@@ -136,12 +113,8 @@ class Request extends Controller
             $today = date("Y-m-d H:i:s");
             $id = $this->request->getVar($this->primarykey);
             $dataModel=[
-<<<<<<< Updated upstream
-                'Request_fecha' => $this->request->getVar('Request_fecha'),
-=======
                 'Request_fecha' => $today ,
                 'Request_title' => $this->request->getVar('Request_title'),
->>>>>>> Stashed changes
                 'Request_description' => $this->request->getVar('Request_description'),
                 'User_fk' => $this->request->getVar('User_fk'),
                 'Element_fk' => $this->request->getVar('Element_fk'),
@@ -190,15 +163,9 @@ class Request extends Controller
     public function getDataModel(){
         $data=[
             'Request_fecha' => $this->request->getVar('Request_fecha'),
-<<<<<<< Updated upstream
-            'Request_description' => $this->request->getVar('Request_description'),
-            'User_fk' => $this->request->getVar('User_fk'),
-            'Element_fk' => $this->request->getVar('Element_fk'),
-=======
             'Request_title' => $this->request->getVar('Request_title'),
             'Request_description' => $this->request->getVar('Request_description'),
             'User_fk' => $this->request->getVar('User_fk'),
->>>>>>> Stashed changes
             'Request_status_fk' => $this->request->getVar('Request_status_fk'),
             'update_at' => $this->request->getVar('update_at'),                  
         ];

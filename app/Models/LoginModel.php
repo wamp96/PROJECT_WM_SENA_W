@@ -20,9 +20,6 @@ class LoginModel extends Model
     protected $updatedField  = 'update_at';
     protected $deletedField  = 'create_at';
 
-<<<<<<< Updated upstream
-}
-=======
     public function sp_get_user($email)
     {
         try{
@@ -37,4 +34,3 @@ class LoginModel extends Model
     }
 }
 
->>>>>>> Stashed changes

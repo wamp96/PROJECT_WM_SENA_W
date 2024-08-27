@@ -1,11 +1,6 @@
 body, html{
-<<<<<<< Updated upstream
-    background-image:  linear-gradient(to top, #09203f 0%, #537895 100%);
-    height: 100%;
-=======
     background: #1B1D31;  
     font-family: "Poppins", sans-serif;
->>>>>>> Stashed changes
 }
 
 .btn-actions{

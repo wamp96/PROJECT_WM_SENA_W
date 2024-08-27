@@ -132,12 +132,6 @@ SELECT
     RM.Roles_fk AS Roles_id 
 FROM 
     role_modules as RM
-<<<<<<< Updated upstream
-INNER JOIN modules M ON RM.Modules_fk=M.Modules_id
-WHERE RM.Roles_fk=roleId;
-END$$
-----------------------------------------------------------------------------------------
-=======
 INNER JOIN modules M 
 ON RM.Modules_fk=M.Modules_id
 WHERE RM.Roles_fk=roleId;
@@ -209,4 +203,3 @@ INNER JOIN areas AS ar
 ON us.Area_fk = ar.Area_id
 WHERE us.User_id = userID;
 END$$
->>>>>>> Stashed changes

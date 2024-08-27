@@ -17,26 +17,19 @@ use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\API\ResponseTrait;
 
 
-class Element extends Controller 
+class Element extends BaseController 
 {
 
     //Variables
     use ResponseTrait;
     private $primarykey;
     private $elementModel;
-<<<<<<< Updated upstream
-    private $elementStatusModel;
-    private $modelModel;
-    private $categoryModel;
-    private $brandModel;
-=======
     private $categoryModel;
     private $modelModel;
     private $brandModel;
     private $elementStatusModel;
     private $profileModel;
     private $roleModulesModel;
->>>>>>> Stashed changes
     private $data;
     private $model;
 

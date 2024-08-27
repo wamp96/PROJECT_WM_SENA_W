@@ -7,9 +7,5 @@
 <script src="../system/constant.js"></script>
 <script src="../system/main.js"></script>
 <script src="../system/alert.js"></script>
-<<<<<<< Updated upstream
-<script src="../system/script.js"></script>
-=======
 <script src="../system/script.js"></script>
 <!-- <script src="../controllers/profile/profile.js"></script> -->
->>>>>>> Stashed changes
