@@ -1,0 +1,112 @@
+CRITICAL - 2024-05-12 19:23:09 --> BadMethodCallException: Call to undefined method App\Models\ProfileModel::ordenBy
+[Method: GET, Route: profiles-list]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profile.php(12): CodeIgniter\Model->__call('ordenBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-12 19:36:29 --> BadMethodCallException: Call to undefined method App\Models\ProfileModel::ordenBy
+[Method: GET, Route: profiles-list]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profile.php(12): CodeIgniter\Model->__call('ordenBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-12 19:45:29 --> BadMethodCallException: Call to undefined method App\Models\ProfileModel::ordenBy
+[Method: GET, Route: profiles-list]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profile.php(12): CodeIgniter\Model->__call('ordenBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-12 19:47:29 --> BadMethodCallException: Call to undefined method App\Models\ProfileModel::ordenBy
+[Method: GET, Route: profiles-list]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profile.php(12): CodeIgniter\Model->__call('ordenBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-12 19:47:31 --> BadMethodCallException: Call to undefined method App\Models\ProfileModel::ordenBy
+[Method: GET, Route: profiles-list]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profile.php(12): CodeIgniter\Model->__call('ordenBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-12 19:47:34 --> BadMethodCallException: Call to undefined method App\Models\ProfileModel::ordenBy
+[Method: GET, Route: profiles-list]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profile.php(12): CodeIgniter\Model->__call('ordenBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-12 19:48:19 --> BadMethodCallException: Call to undefined method App\Models\ProfileModel::ordenBy
+[Method: GET, Route: profiles-list]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profile.php(12): CodeIgniter\Model->__call('ordenBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-12 19:48:22 --> BadMethodCallException: Call to undefined method App\Models\ProfileModel::ordenBy
+[Method: GET, Route: profiles-list]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profile.php(12): CodeIgniter\Model->__call('ordenBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-12 19:51:03 --> BadMethodCallException: Call to undefined method App\Models\ProfileModel::ordenBy
+[Method: GET, Route: profiles-list]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profile.php(12): CodeIgniter\Model->__call('ordenBy', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')
+CRITICAL - 2024-05-12 20:17:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "edit_view, $data.php"
+[Method: GET, Route: edit-view/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_view, $data.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_view, $data', [], true)
+ 3 APPPATH\Controllers\Profile.php(38): view('edit_view, $data')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->singleProfile('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Codeigniter_Crud\\crud_v2\\public\\index.php')

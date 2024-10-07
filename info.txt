@@ -1,0 +1,40 @@
+
+.accordion {
+    display: block !important;
+  }
+  
+  @media (min-width: 168px) {
+    .accordion {
+      display: flex !important;
+      flex-direction: row !important;
+      margin: 20px !important;
+    }
+  
+    .accordion-item {
+      flex: 1 !important;
+      margin-right: 10px !important; /* Espacio entre los items, ajusta según sea necesario */
+    }
+  
+    .accordion-header {
+      display: block !important;
+    }
+  
+    .accordion-button {
+      display: block !important;
+      width: 100% !important;
+      text-align: center !important; /* Centrar el texto del botón */
+    }
+  
+    .accordion-collapse {
+      position: absolute;
+      left: 0 !important;
+      top: 100% !important;
+      width: 100% !important;
+      z-index: 1 !important;
+    }
+  
+    .accordion-item:hover .accordion-collapse {
+      display: block !important;
+    }
+  }
+  
