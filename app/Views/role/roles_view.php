@@ -15,27 +15,18 @@
   <!--Preload -->
   <?php require_once('../app/Views/preload/preload.php') ?>
   <!--End Preload -->
-  <!--Navbar-->
-  <?php require_once('../app/Views/nav/navbar.php') ?>
-  <!--End Navbar-->
-  <!--Container-->  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-2">
-      <?php require_once('../app/Views/navSlider/navSlider.php') ?>
-      </div>
-  
-      <div class="col-10">
-        <h3><?= $title ?></h3>
-        <button type="button" class="btn btn-primary btn-actions" title="Button new User Status" onclick="add()" style="font-size: 0.5em;">
-        <i class="bi bi-plus-circle-fill"></i> </button>
-        <!--Container Table-->
+  <div class="wrapper">
+    <?php require_once('../app/Views/navSlider/navSlider.php') ?>
+    <div class=" main">
+      <?php require_once('../app/Views/nav/navbar.php') ?>
+      <!--Container Table-->
+      <div class="tableWrapper">
         <?php require_once('../app/Views/role/table.php') ?>
-        <!--End Container Table-->
       </div>
+
+      <!--End Container Table-->
     </div>
   </div>
-  <!--End Container-->
   <!--Footer-->
   <?php require_once('../app/Views/footer/footer.php') ?>
   <!--End Footer-->

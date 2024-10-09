@@ -15,34 +15,24 @@
   <!--Preload -->
   <?php require_once('../app/Views/preload/preload.php') ?>
   <!--End Preload -->
-  <!--Navbar-->
-  <?php require_once('../app/Views/nav/navbar.php') ?>
-  <!--End Navbar-->
-  <!--Container-->  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-2">
+    <div class="wrapper">
       <!--Navbar Slider-->
-        <?php require_once('../app/Views/navSlider/navSlider.php') ?>
+      <?php require_once('../app/Views/navSlider/navSlider.php') ?>
       <!--End Navbar Slider-->
-      </div>
-      
-      <div class="col-10">
-        <h3><?= $title ?></h3>
-        <button type="button" class="btn btn-primary btn-actions" title="Button new User Status" onclick="add()" style="font-size: 0.5em;">
-        <i class="bi bi-plus-circle-fill"></i> </button>
-        <!--Container Table-->
-        <?php require_once('../app/Views/roleModule/table.php') ?>
-        <!--End Container Table-->
+      <div class=" main">
+        <!--Navbar-->
+        <?php require_once('../app/Views/nav/navbar.php') ?>
+        <!--End Navbar-->
+        <div class="tableWrapper">
+          <?php require_once('../app/Views/roleModule/table.php') ?>
+        </div>
       </div>
     </div>
-  </div>
-  <!--End Container-->
-  <!--Footer-->
-  <?php require_once('../app/Views/footer/footer.php') ?>
-  <!--End Footer-->
 
-  <!--Modal-->
+
+
+
+    <!--Modal-->
   <div class="modal fade" id="my-modal" tabindex="-1" aria-labelledby="my-modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content bg-dark text-white">

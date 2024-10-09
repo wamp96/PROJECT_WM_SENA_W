@@ -175,7 +175,7 @@ $routes->group("request", function($routes){
   $routes->post("update","Request::update");
 });
 
-$routes->group("module",['filter' => 'AuthCheck'],function($routes){
+$routes->group("module",function($routes){
   $routes->get("/", "Module::index");
   $routes->get("show", "Module::index");
   $routes->get("edit/(:num)", "Module::singleModule/$1");
@@ -184,7 +184,7 @@ $routes->group("module",['filter' => 'AuthCheck'],function($routes){
   $routes->post("update", "Module::update");
 });
 
-$routes->group("roleModule",['filter' => 'AuthCheck'],function($routes){
+$routes->group("roleModule",function($routes){
   $routes->get("/", "RoleModule::index");
   $routes->get("show", "RoleModule::index");
   $routes->get("edit/(:num)", "RoleModule::singleRoleModule/$1");

@@ -22,6 +22,7 @@ function getUserStatusClass($statusName) {
 <div class="body1">
     <main class="table1">
         <section class="table__header">
+        <button type="button" class="btn btn-primary btn-actions" title="Button new User Status" onclick="add()" style="font-size: 0.5em;"><i class="bi bi-plus-circle-fill"></i></button>
             <h1><?= $title ?></h1>
             <div class="input-g">
                 <input type="search" placeholder="Search Data...">
