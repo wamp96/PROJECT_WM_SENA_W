@@ -128,17 +128,17 @@ class User extends Controller
                 'update_at' => $today                 
             ];
             if($this->userModel->update($id, $dataModel)){
-                $data['message'] = 'success' ;
+                $data['message'] = '200: Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = $dataModel;
                 $data['csrf'] = csrf_hash();
             }else{
-                $data['message'] = 'Error create user' ;
+                $data['message'] = '204: Error create user' ;
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
         }else{
-            $data['message'] = 'Error create user' ;
+            $data['message'] = '409: Error create user' ;
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = '';
         }

@@ -1,4 +1,3 @@
-
 <aside id="sidebar">
     <div class="d-flex">
         <button id="toggle-btn" type="button">
@@ -54,5 +53,4 @@
         endforeach; ?>
 
     </ul>
-    
 </aside>

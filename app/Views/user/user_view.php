@@ -28,10 +28,6 @@
                         <!--End Container Table-->
                     </div>
                 </div>
-            
-                
-        
-    
 
         <!--Modal-->
         <div class="modal fade" id="my-modal" tabindex="-1" aria-labelledby="my-modalLabel" aria-hidden="true">
