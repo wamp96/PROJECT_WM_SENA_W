@@ -1,7 +1,7 @@
 <aside id="sidebar">
     <div class="d-flex">
         <button id="toggle-btn" type="button">
-            <img src="../assets/img/logos/logo.png" alt="">
+            <img class="p-1" src="../assets/img/logos/logo.png" alt="">
         </button>
     </div>
     <ul class="sidebar-nav">

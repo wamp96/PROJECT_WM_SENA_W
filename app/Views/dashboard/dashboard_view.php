@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--CSS-->
-  <?php require_once ('../app/Views/assets/css/css.php') ?>
+  <?php require_once('../app/Views/assets/css/css.php') ?>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
   <!--Title-->
   <title><?= $title ?></title>
@@ -13,14 +13,14 @@
 
 <body>
   <!--Preload -->
-  <?php require_once ('../app/Views/preload/preload.php') ?>
+  <?php require_once('../app/Views/preload/preload.php') ?>
   <!--End Preload -->
 
   <!--Container-->
   <div class="wrapper">
-    <?php require_once ('../app/Views/navSlider/navSlider.php') ?>
+    <?php require_once('../app/Views/navSlider/navSlider.php') ?>
     <div class=" main">
-      <?php require_once ('../app/Views/nav/navbar.php') ?>
+      <?php require_once('../app/Views/nav/navbar.php') ?>
       <h3 class="title"><?= $title ?></h3>
 
       <div class="row">
@@ -48,7 +48,7 @@
       </div>
     </div>
   </div>
-  
+
 
 
 
@@ -56,8 +56,8 @@
 
 
   <!--JS-->
-  <?php require_once ('../app/Views/assets/js/js.php') ?>
-  <?php require_once ('../app/Views/assets/js/dataTable.php') ?>
+  <?php require_once('../app/Views/assets/js/js.php') ?>
+  <?php require_once('../app/Views/assets/js/dataTable.php') ?>
   <!--JS Controller-->
   <script src="../controllers/dashboard/dashboard.js"></script>
 </body>
