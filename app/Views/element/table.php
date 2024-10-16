@@ -60,23 +60,7 @@
                         </tr>
                     <?php endif ?>
                 </tbody>
-                <tfoot class="table-dark">
-                    <tr class="text-center">
-                        <th scope="col">#</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Imagen</th>
-                        <th scope="col">Serial</th>
-                        <th scope="col">Marca</th>
-                        <th scope="col">Modelo</th>
-                        <th scope="col">Procesador</th>
-                        <th scope="col">RAM</th>
-                        <th scope="col">DISCO</th>
-                        <th scope="col">Valor</th>
-                        <th scope="col">Stock</th>
-                        <th scope="col">Categoria</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Acción</th>
-                    </tr>
-                </tfoot>
             </table>
+        </section>
+    </main> 
 </div>

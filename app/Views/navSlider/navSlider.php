@@ -31,7 +31,7 @@
                             if ($module['Modules_route'] == $getModuleUrl[0]) {
                                 $selectActive = "active";
                             }
-                            $subModule = '<li class="sidebar-item ' . $selectActive . '"><a class="sidebar-link2 sidebar-link "  href="/' . $module['Modules_route'] . '"><i class="bi ' . $module['Modules_icon'] . '"><span> ' . $module['Modules_name'] . '</span></i></a></li>';
+                            $subModule = '<li class="sidebar-item ' . $selectActive . '"><a class="sidebar-link2 sidebar-link "  href="/' . $module['Modules_route'] . '"><i style="color:thistle;" class="bi ' . $module['Modules_icon'] . '"><span style="color:thistle;"> ' . $module['Modules_name'] . '</span></i></a></li>';
                             for ($i = 0; $i < $modelsLength; $i++):
                                 $elem = $userModules[$i];
                                 if (($getModuleId == $elem['Modules_parent_module']) && ($elem['Modules_submodule'] == 1)) {
@@ -40,7 +40,7 @@
                                     if ($elem['Modules_route'] == $getModuleUrl[0]) {
                                         $selectActive = "active";
                                     }
-                                    $subModule = $subModule . '<li class="sidebar-item ' . $selectActive . '"><a class="sidebar-link2 sidebar-link" href="/' . $elem['Modules_route'] . '"><i class="bi ' . $elem['Modules_icon'] . '"><span> ' . $elem['Modules_name'] . '</span></i></a></li>';
+                                    $subModule = $subModule . '<li class="sidebar-item ' . $selectActive . '"><a class="sidebar-link2 sidebar-link" href="/' . $elem['Modules_route'] . '"><i style="color:thistle;" class="bi ' . $elem['Modules_icon'] . '"><span style="color:thistle;"> ' . $elem['Modules_name'] . '</span></i></a></li>';
                                 }
                             endfor;
                             echo ($subModule);
