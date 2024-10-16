@@ -16,9 +16,6 @@ function getUserStatusClass($statusName) {
 
 
 ?>
-
-
-
 <div class="body1">
     <main class="table1">
         <section class="table__header">

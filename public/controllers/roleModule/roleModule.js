@@ -51,7 +51,6 @@ async function getDataModuleId(id, idRoleModule) {
   resultFetch = getData(data, method, url);
   resultFetch.then(response => response.json())
     .then(data => {
-      //console.log(data);
       ///Set data form 
       let newJson = convertJson(data[model]);
       newJson.Roles_id = id;
@@ -69,6 +68,8 @@ async function getDataModuleId(id, idRoleModule) {
     })
     .finally();
 }
+
+
 
 
 function editPermissions(id, idRoleModule) {

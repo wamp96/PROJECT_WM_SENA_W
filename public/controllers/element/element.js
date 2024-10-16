@@ -15,7 +15,7 @@ var method = "";
 var data = "";
 var resultFetch = null;
 
-function show(id) {
+function show(id) { 
   mainApp.disabledFormAll();
   mainApp.resetForm();
   btnEnabled(true);

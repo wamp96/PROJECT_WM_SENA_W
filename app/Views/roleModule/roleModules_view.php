@@ -30,8 +30,6 @@
     </div>
 
 
-
-
     <!--Modal-->
   <div class="modal fade" id="my-modal" tabindex="-1" aria-labelledby="my-modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
@@ -53,6 +51,7 @@
     </div>
   </div>
   <!--End Modal-->
+
     <!--Modal -->
     <div class="modal fade" id="my-modalPermission" tabindex="-1" aria-labelledby="my-modalPermissionLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

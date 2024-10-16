@@ -32,7 +32,7 @@
                                 style="font-size: 0.5em;"><i class="bi bi-eye-fill"></i>
                             </button>
                             <button type="button" title="Button Show User Status" 
-                                onclick="editPermissions(<?php echo $obj['Modules_fk']; ?>,<?php echo $obj['RoleModules_id']; ?>)" class="btn btn-warning btn-action"
+                                onclick="editModules(<?php echo $obj['Modules_fk']; ?>,<?php echo $obj['RoleModules_id']; ?>)" class="btn btn-warning btn-action"
                                 style="font-size: 0.5em;"><i class="bi bi-pencil-square"
                                 style="color:white"></i>
                             </button>

@@ -62,8 +62,6 @@ class Element extends BaseController
         return view('element/element_view', $this->data);
     }
 
-
-    
     public function viewList(){
         return $this->respond(['elements'=>  $this->elementModel->findAll()], 200);
     }
@@ -190,9 +188,6 @@ class Element extends BaseController
             'update_at' => $this->request->getVar('update_at'),     
         ];
         return $data;
-
     }
 }
-
-
 ?>

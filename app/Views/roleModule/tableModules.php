@@ -25,7 +25,7 @@
             <td><i class="bi <?php echo $obj['Modules_icon']; ?>"></i></td>
             <td>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="module_<?=$obj['Modules_id']; ?>">
+                <input class="form-check-input" type="checkbox" value="" id="module_<?=$obj['Modules_id']; ?>"> 
                 <label class="form-check-label" for="module_<?=$obj['Modules_id']; ?>">
                 Select Module
                 </label>
