@@ -15,7 +15,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\CLI\Console;
 
-class Request extends Controller 
+class Request extends BaseController 
 {
 
     //Variables
@@ -46,7 +46,12 @@ class Request extends Controller
     public function index()
     {
         $this->data['title'] = "REQUEST";
-        $this->data[$this->model] = $this->requestModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
+        //$this->data[$this->model] = $this->requestModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->findAll();
+        $this->data[$this->model] = $this->requestModel
+        ->select('requests.*, request_status.Request_status_name') // Asegúrate de incluir los campos necesarios
+        ->join('request_status', 'requests.Request_status_fk = request_status.Request_status_id', 'left') // Ajusta según tu relación
+        ->where('User_fk', (int)$this->getSessionIdUser()['User_id'])
+        ->findAll();
         $this->data['elements'] = $this->elementModel->orderBy('Element_id', 'ASC')->findAll();
         $this->data['request_status'] = $this->requestStatusModel->orderBy('Request_status_id', 'ASC')->findAll();
         $this->data['profiles'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
@@ -68,7 +73,7 @@ class Request extends Controller
             if($this->requestModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;
-                $data['data']=  $dataModel ;
+                $data['data']=  $dataModel;
                 $data['csrf']= csrf_hash();
             }else{
                 $data['message'] = 'Error create element';
@@ -169,6 +174,4 @@ class Request extends Controller
         return $data;
     }
 }
-
-
 ?>
