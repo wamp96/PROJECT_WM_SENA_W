@@ -67,10 +67,10 @@ async function getDataId(id){
     method = 'GET';
     url = URI_REQUEST_STATUS + LIST_CRUD[1] + '/' + id;
     data = mainApp.getDataFormJson();
-    console.log(data);
     resultFetch = getData(data , method, url);
     resultFetch.then(response => response.json())
         .then(data => {
+            console.log("Fetched Data:", data);
             mainApp.setDataFormJson(data[model]);
             mainApp.showModal();
             mainApp.hiddenPreload();
@@ -109,7 +109,6 @@ async function getData(data, method, url){
             },
         }
     }
- 
     return await fetch(url, parameters);
 }
 
@@ -133,7 +132,6 @@ mainApp.getForm().addEventListener('submit', async function (event){
            .then(data => {
                 mainApp.hiddenModal();
                 reloadPage();
-                debugger
            })
            .catch(error => {
                 console.log(error);
@@ -159,7 +157,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
         }
     }else{
         alert("Data Validate");
-        //mainApp.resetForm();
+        mainApp.resetForm();
     }
 });
 

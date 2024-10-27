@@ -31,7 +31,7 @@ class Brand extends Controller
         $this->roleModulesModel = new RoleModulesModel();
         $this->brandModel = new BrandModel();
         $this->data = [];
-        $this->model = "cities";
+        $this->model = "brand";
     } 
 
     //Metodo index se inicia la vista y se establecen los parametros para enviar los datos en la vista del renderizado html

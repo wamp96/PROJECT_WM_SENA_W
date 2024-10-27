@@ -1,4 +1,3 @@
-
 //CONSTANTES
 const formId = 'my-form';
 const modalId = 'my-modal';
@@ -18,7 +17,7 @@ var data = "";
 var resultFetch = null;
 
 
-//FUNCIONES
+//FUNCION VER
 function show(id){
     mainApp.disabledFormAll();
     mainApp.resetForm();
@@ -26,6 +25,7 @@ function show(id){
     getDataId(id);
 }
 
+//FUNCION AGREGAR
 function add(){
     mainApp.enableFormAll();
     mainApp.resetForm();
@@ -34,6 +34,7 @@ function add(){
     mainApp.showModal();
 }
 
+//FUNCION EDITAR
 function edit(id){
     mainApp.disabledFormEdit();
     mainApp.resetForm();
@@ -42,7 +43,7 @@ function edit(id){
     getDataId(id);
 }
 
-//FUNCIONES ASINCRONICAS
+//FUNCIONES DATA POR ID 
 async function delete_(id){
     method = 'GET';
     url = URI_STATUS + LIST_CRUD[3] + '/' + id;
@@ -51,7 +52,6 @@ async function delete_(id){
         resultFetch = getData(data , method, url);
         resultFetch.then(response => response.json())
         .then(data => {
-            //console.log(data);
             reloadPage();
         })
         .catch(error => {
@@ -70,6 +70,7 @@ async function getDataId(id){
     resultFetch = getData(data , method, url);
     resultFetch.then(response => response.json())
         .then(data => {
+            console.log("Fetched Data:", data[model], "response",method, url);
             mainApp.setDataFormJson(data[model]);
             mainApp.showModal();
             mainApp.hiddenPreload();
@@ -108,16 +109,12 @@ async function getData(data, method, url){
             },
         }
     }
- 
     return await fetch(url, parameters);
 }
-
 
 $(document).ready(function(){
     $('#'+tableId).DataTable();
 });
-
-
 
 mainApp.getForm().addEventListener('submit', async function (event){
     event.preventDefault();
@@ -145,7 +142,6 @@ mainApp.getForm().addEventListener('submit', async function (event){
             resultFetch = getData(data, method, url);
             resultFetch.then(response => response.json())
             .then(data => {
-                console.log(data);
                 mainApp.hiddenModal();
                 reloadPage();
            })
