@@ -74,6 +74,7 @@ class RequestStatus extends Controller
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
+                console.log($data);
             }else{
                 $data['message'] = 'Error create request status';
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;

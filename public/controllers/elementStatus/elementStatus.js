@@ -2,7 +2,7 @@
 //CONSTANTES
 const formId = 'my-form';
 const modalId = 'my-modal';
-const model = 'ElementStatus';
+const model = 'element_status';
 const tableId = 'table-index';
 const preloadId = 'preloadId';
 const classEdit = 'edit-input';
@@ -67,10 +67,10 @@ async function getDataId(id){
     method = 'GET';
     url = URI_ELEMENTS + LIST_CRUD[1] + '/' + id;
     data = mainApp.getDataFormJson();
-    console.log(data);
     resultFetch = getData(data , method, url);
     resultFetch.then(response => response.json())
         .then(data => {
+            console.log(data);
             mainApp.setDataFormJson(data[model]);
             mainApp.showModal();
             mainApp.hiddenPreload();

@@ -106,6 +106,17 @@ $routes->group("element", function($routes){
   $routes->post("update","element::update");
 });
 
+
+//--------------------------------------ROUTES CRUD USERELEMENT----------------------------------------------------------------
+$routes->group("userElement", function($routes){
+  $routes->get("/", "userElement::index");
+  $routes->get("show", "userElement::index");
+  $routes->get("edit/(:num)","userElement::singleUserElement/$1");
+  $routes->get("delete/(:num)","userElement::delete/$1");
+  $routes->post("add","userElement::create");
+  $routes->post("update","userElement::update");
+});
+
 //ROUTES CRUD MODEL----------------------------------------------------------------
 $routes->group("model", function($routes){
   $routes->get("/", "Model::index");

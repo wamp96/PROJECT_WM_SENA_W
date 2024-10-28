@@ -2,7 +2,7 @@
 //CONSTANTES
 const formId = 'my-form';
 const modalId = 'my-modal';
-const model = 'brands';
+const model = 'brand';
 const tableId = 'table-index';
 const preloadId = 'preloadId';
 const classEdit = 'edit-input';

@@ -1,0 +1,680 @@
+INFO - 2024-10-23 00:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:01:14 --> ErrorException: Undefined variable $users
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\userElement_view.php on line 39.
+ 1 APPPATH\Views\userElement\userElement_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 5 APPPATH\Controllers\UserElement.php(43): view('userElement/userElement_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 00:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 00:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:11:53 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 00:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:12:12 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:13:18 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 20.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 00:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:14:18 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:17:33 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 18.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:19:39 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 00:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:20:28 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 00:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:20:32 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:24:59 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:25:58 --> ErrorException: Uninitialized string offset 1
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\table.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 1', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 17)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:28:46 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:32:49 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 00:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:36:42 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:45:06 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 00:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 00:52:35 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(53): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:37:41 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:37:47 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:38:03 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:38:29 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:38:30 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:38:31 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:38:31 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:38:33 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:38:33 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:39:24 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 01:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 01:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 01:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:56:20 --> ErrorException: Undefined array key 0
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 15.
+ 1 APPPATH\Views\request\table.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 15)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:56:29 --> ErrorException: Undefined array key 3
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 15.
+ 1 APPPATH\Views\request\table.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 15)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:56:31 --> ErrorException: Undefined array key 3
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 15.
+ 1 APPPATH\Views\request\table.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 15)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 01:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 01:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 01:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 01:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 01:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:58:56 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 01:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 01:59:59 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 23:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-23 23:40:02 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'api_proyecto', 3306, '', 0)
+#1 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\app\Models\LoginModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\app\Controllers\Login.php(37): App\Models\LoginModel->sp_get_user('wamoreno57@gmai...')
+#5 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Login->logIn()
+#6 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\app\Models\LoginModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#3 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\app\Controllers\Login.php(37): App\Models\LoginModel->sp_get_user('wamoreno57@gmai...')
+#4 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Login->logIn()
+#5 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\PROYECTO_V4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-10-23 23:40:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: POST, Route: login/logIn]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\LoginModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE User_correo=\'wamoreno57@gmail.com\'')
+ 3 APPPATH\Controllers\Login.php(37): App\Models\LoginModel->sp_get_user('wamoreno57@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->logIn()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 23:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 23:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 23:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 23:41:00 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 23:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 23:43:50 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 23:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 23:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 23:45:55 --> ErrorException: Uninitialized string offset 1
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\table.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 1', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 16)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 23:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 23:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 23:46:43 --> ErrorException: Uninitialized string offset 1
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\table.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 1', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 17)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 23:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 23:47:20 --> Error: Undefined constant "Request_fecha"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 23:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 23:47:30 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 23:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-23 23:49:53 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 17.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-23 23:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-23 23:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

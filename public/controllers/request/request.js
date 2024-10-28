@@ -67,7 +67,6 @@ async function getDataId(id){
     method = 'GET';
     url = URI_REQUEST + LIST_CRUD[1] + '/' + id;
     data = mainApp.getDataFormJson();
-    console.log(data);
     resultFetch = getData(data , method, url);
     resultFetch.then(response => response.json())
         .then(data => {
@@ -109,7 +108,6 @@ async function getData(data, method, url){
             },
         }
     }
-    console.log(url, parameters);
     return await fetch(url, parameters);
 }
 
@@ -128,6 +126,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
             method = 'POST';
             url = URI_REQUEST + LIST_CRUD[0];
             data = mainApp.getDataFormJson();
+            console.log(data);
             resultFetch = getData(data, method, url);
             resultFetch.then(response => response.json())
            .then(data => {
@@ -147,7 +146,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
             resultFetch = getData(data, method, url);
             resultFetch.then(response => response.json())
             .then(data => {
-                console.log(data);
+                //console.log(data);
                 mainApp.hiddenModal();
                 reloadPage();
            })
@@ -159,7 +158,7 @@ mainApp.getForm().addEventListener('submit', async function (event){
         }
     }else{
         alert("Data Validate");
-        //mainApp.resetForm();
+        mainApp.resetForm();
     }
 });
 

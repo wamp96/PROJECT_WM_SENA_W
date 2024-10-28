@@ -1,0 +1,291 @@
+INFO - 2024-10-24 00:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:04:47 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 16.
+ 1 APPPATH\Views\request\request_view.php(31): require_once()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 5 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:08:20 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 20.
+ 1 APPPATH\Views\request\table.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 20)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:08:21 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 20.
+ 1 APPPATH\Views\request\table.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 20)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:08:24 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 20.
+ 1 APPPATH\Views\request\table.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 20)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:12:04 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 21.
+ 1 APPPATH\Views\request\table.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 21)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:12:26 --> ErrorException: Array to string conversion
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 21.
+ 1 APPPATH\Views\request\table.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 21)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:12:33 --> ErrorException: Array to string conversion
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 21.
+ 1 APPPATH\Views\request\table.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 21)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:23:24 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 22.
+ 1 APPPATH\Views\request\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 22)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:24:03 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 22.
+ 1 APPPATH\Views\request\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 22)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:27:57 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 22.
+ 1 APPPATH\Views\request\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 22)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:27:58 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 22.
+ 1 APPPATH\Views\request\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 22)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:27:58 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 22.
+ 1 APPPATH\Views\request\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 22)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:28:18 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 22.
+ 1 APPPATH\Views\request\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 22)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:33:42 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 22.
+ 1 APPPATH\Views\request\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 22)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:33:43 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 22.
+ 1 APPPATH\Views\request\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 22)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-24 00:33:44 --> ErrorException: Undefined array key "Request_status_name"
+[Method: GET, Route: request]
+in APPPATH\Views\request\table.php on line 22.
+ 1 APPPATH\Views\request\table.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Request_status_name"', 'C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php', 22)
+ 2 APPPATH\Views\request\request_view.php(31): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\app\\Views\\request\\request_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('request/request_view', [], true)
+ 6 APPPATH\Controllers\Request.php(54): view('request/request_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Request->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Request))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\PROYECTO_V4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-10-24 00:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 00:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 01:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 01:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 01:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 01:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 01:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 01:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 01:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-24 01:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

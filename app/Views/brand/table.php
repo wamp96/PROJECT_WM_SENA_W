@@ -19,8 +19,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php if ($cities) : ?>
-                        <?php foreach ($cities as $obj) :  ?>
+                    <?php if ($brand) : ?>
+                        <?php foreach ($brand as $obj) :  ?>
                             <tr class="text-center">
                                 <td><?php echo $obj['Brand_id']; ?></td>
                                 <td><?php echo $obj['Brand_name']; ?></td>
