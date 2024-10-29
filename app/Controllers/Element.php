@@ -70,7 +70,7 @@ class Element extends BaseController
     {
         if($this->request->isAJAX()){
             $dataModel = $this->getDataModel();
-
+            console.log(json_encode($dataModel));
             if($this->elementModel->insert($dataModel)){
                 $data['message']= 'success';
                 $data['response']= ResponseInterface::HTTP_OK;
@@ -124,10 +124,8 @@ class Element extends BaseController
                 'Element_stock' => $this->request->getVar('Element_stock'),
                 'Category_fk' => $this->request->getVar('Category_fk'),
                 'Element_status_fk' => $this->request->getVar('Element_status_fk'),
-                //
                 'Brand_fk' => $this->request->getVar('Brand_fk'),
-                'Model_Brand_fk' => $this->request->getVar('Model_Brand_fk'),
-                //
+                'Model_id' => $this->request->getVar('Model_id'),
                 'update_at' => $today                 
             ];
             if($this->elementModel->update($id, $dataModel)){
@@ -181,10 +179,8 @@ class Element extends BaseController
             'Element_stock' => $this->request->getVar('Element_stock'),
             'Category_fk' => $this->request->getVar('Category_fk'),
             'Element_status_fk' => $this->request->getVar('Element_status_fk'),
-            //
             'Brand_fk' => $this->request->getVar('Brand_fk'),
-            'Model_Brand_fk' => $this->request->getVar('Model_Brand_fk'),
-            //
+            'Model_id' => $this->request->getVar('Model_id'),
             'update_at' => $this->request->getVar('update_at'),     
         ];
         return $data;

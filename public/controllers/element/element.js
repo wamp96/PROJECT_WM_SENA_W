@@ -66,6 +66,7 @@ async function getDataId(id) {
   resultFetch = getData(data, method, url);
   resultFetch.then(response => response.json())
     .then(data => {
+      console.log(data);
       mainApp.setDataFormJson(data[model]);
       mainApp.showModal();
       mainApp.hiddenPreload();

@@ -44,7 +44,7 @@
                                 <td><?php echo $obj['Element_valor']; ?></td>
                                 <td><?php echo $obj['Element_stock']; ?></td>
                                 <td><?php echo $obj['Category_nombre']; ?></td>
-                                <td><?php echo $obj['Element_status_name']; ?></td>
+                                <td><?php echo $obj['Element_status_name'];?></td>
                                 <td>
                                     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                         <button type="button" title="Button Show User Status" onclick="show(<?php echo $obj['Element_id']; ?>)" class="btn btn-success btn-action" style="font-size: 0.5em;"><i class="bi bi-eye-fill"></i></button>

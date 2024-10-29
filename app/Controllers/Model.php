@@ -140,6 +140,7 @@ class Model extends Controller
             'Model_id' => $this->request->getVar('Model_id'),
             'Model_name' => $this->request->getVar('Model_name'),
             'Model_description' => $this->request->getVar('Model_description'),
+            'Brand_fk' => $this->request->getVar('Brand_fk'),
             'update_at' => $this->request->getVar('update_at')
         ];
         return $data;
