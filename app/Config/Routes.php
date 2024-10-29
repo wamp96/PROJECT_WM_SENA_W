@@ -156,6 +156,9 @@ $routes->group("category", function($routes){
   $routes->post("update","category::update");
 });
 
+/**
+ * Routes for userElement
+ */
 $routes->group("userElement", function($routes){
   $routes->post("assignElement","UserElement::assignElement");
 });
