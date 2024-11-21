@@ -1,0 +1,58 @@
+INFO - 2024-11-19 01:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 01:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 01:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-19 01:42:42 --> mysqli_sql_exception: PROCEDURE api_proyecto.sp_elements does not exist in C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL sp_element...', 0)
+#1 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_element...')
+#2 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_element...')
+#3 C:\PROJECT_WM_SENA_W\app\Models\ElementModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_element...')
+#4 C:\PROJECT_WM_SENA_W\app\Controllers\Element.php(55): App\Models\ElementModel->sp_elements()
+#5 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Element->index()
+#6 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Element))
+#7 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\PROJECT_WM_SENA_W\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_S...')
+#12 {main}
+CRITICAL - 2024-11-19 01:42:42 --> CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE api_proyecto.sp_elements does not exist
+[Method: GET, Route: element]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\ElementModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_elements();')
+ 2 APPPATH\Controllers\Element.php(55): App\Models\ElementModel->sp_elements()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Element->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Element))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-19 01:42:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE api_proyecto.sp_elements does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_elements();')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_elements();')
+ 3 APPPATH\Models\ElementModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_elements();')
+ 4 APPPATH\Controllers\Element.php(55): App\Models\ElementModel->sp_elements()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Element->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Element))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-19 01:42:42 --> [Caused by] mysqli_sql_exception: PROCEDURE api_proyecto.sp_elements does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL sp_elements();', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_elements();')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_elements();')
+ 4 APPPATH\Models\ElementModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_elements();')
+ 5 APPPATH\Controllers\Element.php(55): App\Models\ElementModel->sp_elements()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Element->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Element))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-19 01:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
