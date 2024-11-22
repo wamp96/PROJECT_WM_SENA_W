@@ -7,6 +7,16 @@ use CodeIgniter\Router\RouteCollection;
  */
 //$routes->get('/', 'Home::index');
 
+//Landing Page_______________________________________________________
+
+$routes->get('/landingpage', 'LandingPageController::index');
+$routes->get('/landingpage/create', 'LandingPageController::create');
+$routes->post('/landingpage/create', 'LandingPageController::create');
+$routes->get('/landingpage/edit/(:segment)', 'LandingPageController::update/$1');
+$routes->post('/landingpage/update/(:segment)', 'LandingPageController::update/$1');
+
+
+
 //GROUP CRUD----------------------------------------------------------------
 
 

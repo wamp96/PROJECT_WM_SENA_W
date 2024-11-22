@@ -1,0 +1,246 @@
+INFO - 2024-11-14 00:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 00:08:17 --> ErrorException: Undefined array key "User_id"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\userElement_view.php on line 40.
+ 1 APPPATH\Views\userElement\userElement_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_id"', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 5 APPPATH\Controllers\UserElement.php(49): view('userElement/userElement_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 00:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 00:08:57 --> ErrorException: Undefined variable $elements
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\userElement_view.php on line 49.
+ 1 APPPATH\Views\userElement\userElement_view.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $elements', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 5 APPPATH\Controllers\UserElement.php(49): view('userElement/userElement_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 00:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 00:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 00:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 00:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 00:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 00:15:18 --> ErrorException: Undefined variable $UserStatus
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\table.php on line 12.
+ 1 APPPATH\Views\userElement\table.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserStatus', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php', 12)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(51): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 00:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 00:17:54 --> ErrorException: Undefined variable $userElements
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\table.php on line 16.
+ 1 APPPATH\Views\userElement\table.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userElements', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php', 16)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(51): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 00:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 00:24:56 --> ErrorException: Undefined variable $userElements
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\table.php on line 16.
+ 1 APPPATH\Views\userElement\table.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userElements', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php', 16)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(49): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 00:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 00:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 00:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 00:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 00:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 01:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 01:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 01:41:41 --> ErrorException: Undefined variable $users
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 10.
+ 1 APPPATH\Views\userElement\form.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 10)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(42): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 01:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 01:52:39 --> ErrorException: Undefined variable $users
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 10.
+ 1 APPPATH\Views\userElement\form.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 10)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(43): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 01:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 01:54:45 --> ErrorException: Undefined array key "Full_Name"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 12.
+ 1 APPPATH\Views\userElement\form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Full_Name"', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 12)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(46): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 01:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 01:58:23 --> ErrorException: Undefined array key "User_document"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 12.
+ 1 APPPATH\Views\userElement\form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_document"', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 12)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(46): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 02:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 02:00:05 --> ErrorException: Undefined array key "User_document"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 12.
+ 1 APPPATH\Views\userElement\form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_document"', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 12)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(48): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 02:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 02:02:33 --> ErrorException: Undefined array key "User_id"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 12.
+ 1 APPPATH\Views\userElement\form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_id"', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 12)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(47): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 02:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 02:03:11 --> ErrorException: Undefined array key "User_id"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 12.
+ 1 APPPATH\Views\userElement\form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_id"', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 12)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(47): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 02:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 02:03:22 --> ErrorException: Undefined array key "User_id"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 12.
+ 1 APPPATH\Views\userElement\form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_id"', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 12)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(47): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-14 02:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 02:03:39 --> ErrorException: Undefined array key "User_id"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 12.
+ 1 APPPATH\Views\userElement\form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_id"', 'C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 12)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(47): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')

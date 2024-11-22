@@ -1,0 +1,63 @@
+INFO - 2024-11-10 03:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-10 03:27:48 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\app\Models\LoginModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\app\Controllers\Login.php(37): App\Models\LoginModel->sp_get_user('santiagosalaman...')
+#5 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Login->logIn()
+#6 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ADSO_SENA_VII-project_v4\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-10 03:27:48 --> CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+[Method: POST, Route: login/logIn]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\LoginModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE User_correo=\'santiagosalamanca65@gmail.com\'')
+ 2 APPPATH\Controllers\Login.php(37): App\Models\LoginModel->sp_get_user('santiagosalamanca65@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->logIn()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-10 03:27:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM users WHERE User_correo=\'santiagosalamanca65@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM users WHERE User_correo=\'santiagosalamanca65@gmail.com\'')
+ 3 APPPATH\Models\LoginModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE User_correo=\'santiagosalamanca65@gmail.com\'')
+ 4 APPPATH\Controllers\Login.php(37): App\Models\LoginModel->sp_get_user('santiagosalamanca65@gmail.com')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->logIn()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-10 03:27:48 --> [Caused by] mysqli_sql_exception: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM users WHERE User_correo=\'santiagosalamanca65@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM users WHERE User_correo=\'santiagosalamanca65@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM users WHERE User_correo=\'santiagosalamanca65@gmail.com\'')
+ 4 APPPATH\Models\LoginModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE User_correo=\'santiagosalamanca65@gmail.com\'')
+ 5 APPPATH\Controllers\Login.php(37): App\Models\LoginModel->sp_get_user('santiagosalamanca65@gmail.com')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->logIn()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ADSO_SENA_VII-project_v4\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-10 03:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 03:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 03:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 04:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 04:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 04:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 04:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 04:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
