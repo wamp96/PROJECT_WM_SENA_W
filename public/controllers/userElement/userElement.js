@@ -14,13 +14,15 @@ var method = "";
 var data = "";
 var resultFetch = null;
 
+// Mostrar detalles del elemento
 function show(id) {
   mainApp.disabledFormAll();
   mainApp.resetForm();
   btnEnabled(true);
-  getUserElementData(id);  // Cambié el nombre de la función a `getUserElementData` para ser más específico.
+  getUserElementData(id);
 }
 
+// Función para agregar un nuevo elemento
 function add() {
   mainApp.enableFormAll();
   mainApp.resetForm();
@@ -29,127 +31,127 @@ function add() {
   mainApp.showModal();
 }
 
+// Función para editar un elemento existente
 function edit(id) {
   mainApp.disabledFormEdit();
   mainApp.resetForm();
   insertUpdate = false;
   btnEnabled(false);
-  getUserElementData(id); // Cambié el nombre de la función a `getUserElementData` para ser más específico.
+  getUserElementData(id);
 }
 
+// Función para eliminar un elemento
 async function delete_(id) {
-  method = 'GET';
-  url = URI_USER_ELEMENT + LIST_CRUD[3] + '/' + id;
-  data = "";
-  if (confirm(textConfirm) == true) {
-    resultFetch = getData(data, method, url);
-    resultFetch.then(response => response.json())
-      .then(data => {
-        reloadPage();
-      })
-      .catch(error => {
-        console.error(error);
-        mainApp.hiddenPreload();
-      })
-      .finally();
+  if (confirm(textConfirm)) {
+    url = `${URI_USER_ELEMENT}${LIST_CRUD[3]}/${id}`;
+    method = 'GET';
+    data = "";
+
+    try {
+      const response = await getData(data, method, url);
+      const result = await response.json();
+      reloadPage();
+    } catch (error) {
+      console.error(error);
+      mainApp.hiddenPreload();
+    }
   }
 }
 
+// Obtener datos del elemento de usuario
 async function getUserElementData(id) {
+  url = `${URI_USER_ELEMENT}/getElementDetails/${id}`;
   method = 'GET';
-  url = URI_USER_ELEMENT + '/getElementDetails/' + id; // Ruta modificada para obtener los detalles del usuario y el elemento.
-  data = mainApp.getDataFormJson();
-  resultFetch = getData(data, method, url);
-  resultFetch.then(response => response.json())
-    .then(data => {
-      mainApp.setDataFormJson(data[model]);
+  data = "";
+
+  try {
+    const response = await getData(data, method, url);
+    const result = await response.json();
+    if (result.success) {
+      mainApp.setDataFormJson(result.userElement);
       mainApp.showModal();
       mainApp.hiddenPreload();
-    })
-    .catch(error => {
-      console.error(error);
-      mainApp.hiddenPreload();
-    })
-    .finally();
+    }
+  } catch (error) {
+    console.error(error);
+    mainApp.hiddenPreload();
+  }
 }
 
+// Función para habilitar/deshabilitar el botón de envío
 function btnEnabled(type) {
   btnSubmit.disabled = type;
 }
 
+// Función para obtener datos usando fetch
 async function getData(data, method, url) {
-  var parameters;
-  mainApp.showPreload();
-  if (method == "GET") {
-    parameters = {
-      method: method,
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-      }
-    };
-  } else {
-    parameters = {
-      method: method,
-      body: JSON.stringify(data),
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-      }
-    };
+  let parameters = {
+    method: method,
+    headers: {
+      "Content-Type": "application/json",
+      "X-Requested-With": "XMLHttpRequest"
+    }
+  };
+
+  if (method !== 'GET') {
+    parameters.body = JSON.stringify(data);
   }
-  return await fetch(url, parameters);
+
+  mainApp.showPreload();
+  try {
+    return await fetch(url, parameters);
+  } catch (error) {
+    console.error(error);
+    mainApp.hiddenPreload();
+    throw error;
+  }
 }
 
-$(document).ready(function () {
-  $('#' + tableId).DataTable();
-});
-
-mainApp.getForm().addEventListener('submit', async function (event) {
-  event.preventDefault();
-  if (mainApp.setValidateForm()) {
-    mainApp.showPreload();
-    if (insertUpdate) {
-      method = 'POST';
-      url = URI_USER_ELEMENT + '/assign';  // Nueva URL para asignar un elemento a un usuario
-      data = mainApp.getDataFormJson();
-      console.log(data);
-      resultFetch = getData(data, method, url);
-      resultFetch.then(response => response.json())
-        .then(data => {
-          mainApp.hiddenModal();
-          reloadPage();
-        })
-        .catch(error => {
-          console.error(error);
-          mainApp.hiddenPreload();
-        })
-        .finally();
-    } else {
-      method = 'POST';
-      url = URI_USER_ELEMENT + '/updateElementAssignment';  // URL para actualizar la asignación
-      data = mainApp.getDataFormJson();
-      resultFetch = getData(data, method, url);
-      resultFetch.then(response => response.json())
-        .then(data => {
-          mainApp.hiddenModal();
-          reloadPage();
-        })
-        .catch(error => {
-          console.error(error);
-          mainApp.hiddenPreload();
-        })
-        .finally();
-    }
-  } else {
-    alert("Data Validate");
-    mainApp.resetForm();
-  }
-});
-
+// Recargar la página después de la operación
 function reloadPage() {
   setTimeout(function () {
     mainApp.hiddenPreload();
     location.reload();
   }, 500);
 }
+
+// Enviar el formulario (Crear o Editar)
+async function submitForm(data, isEdit) {
+  const method = 'POST';
+  const url = isEdit ? `${URI_USER_ELEMENT}/update` : `${URI_USER_ELEMENT}/assign`;
+
+  try {
+    const response = await getData(data, method, url);
+    const result = await response.json();
+    if (result.success) {
+      alert('Operation successful!');
+      reloadPage();
+    } else {
+      alert(result.message || 'An error occurred.');
+    }
+  } catch (error) {
+    alert('An error occurred while processing the request.');
+    console.error(error);
+  }
+}
+
+
+
+
+// Manejo del envío del formulario
+mainApp.getForm().addEventListener('submit', async function (event) {
+  event.preventDefault();
+  if (mainApp.setValidateForm()) {
+      const formData = mainApp.getDataFormJson();
+      console.log('Form data:', formData);  // Asegúrate de que los valores estén presentes
+
+      const isEdit = !insertUpdate;
+
+      await submitForm(formData, isEdit);
+  } else {
+      alert('Please complete all required fields.');
+  }
+});
+
+
+

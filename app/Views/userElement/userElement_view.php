@@ -45,10 +45,6 @@
                     <?php require_once('../app/Views/userElement/form.php') ?>
                     <!--End Form--> 
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" form="my-form" id="btnSubmit" class="btn btn-primary">Send Data</button>
-                </div>
             </div>
         </div>
     </div>
@@ -56,7 +52,6 @@
 
 
 
-    <?php require_once('../app/Views/footer/footer.php') ?>
 
 
 

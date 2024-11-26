@@ -45,40 +45,61 @@ class UserElement extends Controller
     }
 
     public function index()
-    {
-        $this->data['title'] = "USER ELEMENTS";
-        $this->data[$this->model] = $this->userElementModel->orderBy($this->primarykey, 'ASC')->findAll();
-        $this->data['profile'] = $this->profileModel->where('User_fk', (int)$this->getSessionIdUser()['User_id'])->first();
-        $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
+{
+    // Título de la página
+    $data['title'] = 'User Elements';
 
-        // Obtener usuarios y elementos para el formulario
-        $this->data['users'] = $this->userModel->findAll(); // Asegúrate de que 'profileModel' tenga la relación correcta con los usuarios
-        $this->data['elements'] = $this->elementModel->findAll(); // O el modelo adecuado para los elementos
+    // Obtener los datos usando el procedimiento almacenado
+    $data['user_elements'] = $this->userElementModel->getUserElementDetails();
 
-        return view('userElement/userElement_view', $this->data);
-    }
+    // Obtener el perfil del usuario (opcional)
+    $data['profile'] = $this->profileModel->where('User_fk', (int)$this->getSessionIdUser()['User_id'])->first();
+
+    // Obtener los módulos del usuario
+    $data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
+
+    // Obtener los módulos del usuario
+    $data['users'] = $this->userModel->findAll();
+
+    $data['elements'] = $this->elementModel->findAll();
+
+    // Pasar los datos a la vista
+    return view('userElement/userElement_view', $data);
+}
+
+
+
+
+
+
 
     public function assignElementToUser()
     {
-        $userElementModel = new UserElementModel();
+        $data = $this->getDataModel();  // Usar getDataModel para obtener los datos
 
-        $data = [
-            'User_fk' => $this->request->getPost('User_fk'), // ID del usuario
-            'Element_fk' => $this->request->getPost('Element_fk'), // ID del elemento
-            'User_element_fecha' => $this->request->getPost('User_element_fecha'), // Fecha de asignación
-            'create_at' => $this->request->getPost('create_at'), // Fecha de creación
-            'update_at' => $this->request->getPost('update_at')  // Fecha de actualización
-        ];
+        // Verificar que los valores no sean nulos
+        if (empty($data['User_fk']) || empty($data['Element_fk'])) {
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'User_fk and Element_fk are required.'
+            ]);
+        }
 
-        // Guardar la asignación en la base de datos
-        if ($userElementModel->insert($data)) {
-            // Redirigir o mostrar mensaje de éxito
-            return redirect()->to('/success');
+        if ($this->userElementModel->insert($data)) {
+            return $this->response->setJSON([
+                'success' => true,
+                'message' => 'Element assigned successfully!'
+            ]);
         } else {
-            // En caso de error
-            return redirect()->back()->with('error', 'There was an error assigning the element.');
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Failed to assign element. Please try again.'
+            ]);
         }
     }
+
+
+
 
     public function create()
     {
@@ -96,6 +117,26 @@ class UserElement extends Controller
             'elements' => $elements,
         ]);
     }
+
+    public function getElementDetails($id)
+    {
+        $userElement = $this->userElementModel
+            ->where('User_element_id', $id)
+            ->first();
+
+        if ($userElement) {
+            return $this->response->setJSON([
+                'success' => true,
+                'userElement' => $userElement
+            ]);
+        } else {
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Element assignment not found.'
+            ]);
+        }
+    }
+
 
 
 

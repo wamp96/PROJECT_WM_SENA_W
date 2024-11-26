@@ -15,39 +15,39 @@
   <!--Preload -->
   <?php require_once('../app/Views/preload/preload.php') ?>
   <!--End Preload -->
-
+  <?php require_once('../app/Views/nav/navbar.php') ?>
   <!--Container-->
-  <div class="wrapper">
-    <?php require_once('../app/Views/navSlider/navSlider.php') ?>
-    <div class=" main">
-      <?php require_once('../app/Views/nav/navbar.php') ?>
-      <h3 class="title"><?= $title ?></h3>
-
-      <div class="row">
-        <?php for ($j = 0; $j < count($userModules); $j++): ?>
-
-          <div class="col mt-2 mx-auto">
-            <div class="card text-white mb-3"
-              style="background: #24253C; text-align:center; width: 18em;height: auto; margin: 0 auto; padding: 10px; position: relative;">
-              <i class="bi <?= $userModules[$j]['Modules_icon'] ?>" style="font-size: 5em;text-align: center;"> </i>
-
-              <div class="card-body">
-                <h5 class="card-title"><?= $userModules[$j]['Modules_name'] ?></h5>
-                <p class="card-text"><?= $userModules[$j]['Modules_description'] ?></p>
-                <div class="btn-group mx-auto w-100" role="group" aria-label="Basic mixed styles example">
-                  <a href="<?= $userModules[$j]['Modules_route'] ?>/show" class="btn btn-warning"><i
-                      class="bi bi-clipboard-data-fill"></i></a>
-                  <a href="<?= $userModules[$j]['Modules_route'] ?>" class="btn btn-success"><i
-                      class="bi <?= $userModules[$j]['Modules_icon'] ?>"> </i></a>
+  
+    <div class="wrapper">
+      <?php require_once('../app/Views/navSlider/navSlider.php') ?>
+      <div class="main">
+        <h3 class="title"><?= $title ?></h3>
+        <div class="row g-4"> <!-- Gaps entre las columnas -->
+          <?php for ($j = 0; $j < count($userModules); $j++): ?>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="card text-white mb-3"
+                style="background: #24253C; text-align: center; width: 100%; max-width: 18em; padding: 10px;">
+                <i class="bi <?= $userModules[$j]['Modules_icon'] ?>" style="font-size: 5em; text-align: center;"></i>
+                <div class="card-body">
+                  <h5 class="card-title"><?= $userModules[$j]['Modules_name'] ?></h5>
+                  <p class="card-text"><?= $userModules[$j]['Modules_description'] ?></p>
+                  <div class="btn-group mx-auto w-100" role="group" aria-label="Basic mixed styles example">
+                    <a href="<?= $userModules[$j]['Modules_route'] ?>/show" class="btn btn-warning">
+                      <i class="bi bi-clipboard-data-fill"></i>
+                    </a>
+                    <a href="<?= $userModules[$j]['Modules_route'] ?>" class="btn btn-success">
+                      <i class="bi <?= $userModules[$j]['Modules_icon'] ?>"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-        <?php endfor; ?>
+          <?php endfor; ?>
+        </div>
       </div>
     </div>
-  </div>
+
+
 
 
 

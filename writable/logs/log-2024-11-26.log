@@ -1,0 +1,596 @@
+CRITICAL - 2024-11-26 00:41:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "userElement/index.php"
+[Method: GET, Route: userElement]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('userElement/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/index', [], true)
+ 3 APPPATH\Controllers\UserElement.php(30): view('userElement/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 00:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 00:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 00:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-26 00:42:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "userElement/index.php"
+[Method: GET, Route: userElement]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('userElement/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/index', [], true)
+ 3 APPPATH\Controllers\UserElement.php(30): view('userElement/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-26 00:42:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "userElement/index.php"
+[Method: GET, Route: userElement]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('userElement/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/index', [], true)
+ 3 APPPATH\Controllers\UserElement.php(30): view('userElement/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 00:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-26 00:42:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "userElement/index.php"
+[Method: GET, Route: userElement]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('userElement/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/index', [], true)
+ 3 APPPATH\Controllers\UserElement.php(30): view('userElement/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-26 00:43:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "userElement/index.php"
+[Method: GET, Route: userElement]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('userElement/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/index', [], true)
+ 3 APPPATH\Controllers\UserElement.php(30): view('userElement/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 00:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 00:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-26 00:43:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "userElement/index.php"
+[Method: GET, Route: userElement]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('userElement/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/index', [], true)
+ 3 APPPATH\Controllers\UserElement.php(30): view('userElement/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 00:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 00:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 00:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 00:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 01:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 01:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-26 01:04:11 --> ErrorException: Undefined array key "Element_code"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\table.php on line 37.
+ 1 APPPATH\Views\userElement\table.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Element_code"', 'C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php', 37)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 01:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-26 01:42:32 --> ErrorException: Undefined array key "Element_code"
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\table.php on line 37.
+ 1 APPPATH\Views\userElement\table.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Element_code"', 'C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php', 37)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+ERROR - 2024-11-26 01:48:52 --> mysqli_sql_exception: Unknown column 'elements.Element_code' in 'field list' in C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `user_el...', 0)
+#1 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_el...')
+#2 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_el...')
+#3 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `user_el...', Array, false)
+#4 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\PROJECT_WM_SENA_W\app\Controllers\UserElement.php(57): CodeIgniter\BaseModel->findAll()
+#7 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\UserElement->index()
+#8 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+#9 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\PROJECT_WM_SENA_W\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_S...')
+#14 {main}
+CRITICAL - 2024-11-26 01:48:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'elements.Element_code' in 'field list'
+[Method: GET, Route: userElement]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\UserElement.php(57): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-26 01:48:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'elements.Element_code' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\UserElement.php(57): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-26 01:48:52 --> [Caused by] mysqli_sql_exception: Unknown column 'elements.Element_code' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UserElement.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+ERROR - 2024-11-26 01:50:46 --> mysqli_sql_exception: Unknown column 'elements.Element_code' in 'field list' in C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `user_el...', 0)
+#1 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_el...')
+#2 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_el...')
+#3 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `user_el...', Array, false)
+#4 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\PROJECT_WM_SENA_W\app\Controllers\UserElement.php(57): CodeIgniter\BaseModel->findAll()
+#7 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\UserElement->index()
+#8 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+#9 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\PROJECT_WM_SENA_W\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\PROJECT_WM_SENA_W\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_S...')
+#14 {main}
+CRITICAL - 2024-11-26 01:50:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'elements.Element_code' in 'field list'
+[Method: GET, Route: userElement]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\UserElement.php(57): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-26 01:50:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'elements.Element_code' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\UserElement.php(57): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-26 01:50:46 --> [Caused by] mysqli_sql_exception: Unknown column 'elements.Element_code' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `user_elements`.*, `elements`.`Element_code`
+FROM `user_elements`
+LEFT JOIN `elements` ON `elements`.`Element_id` = `user_elements`.`Element_fk`
+ORDER BY `User_element_id` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UserElement.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 01:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-26 01:50:59 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 37.
+ 1 APPPATH\Views\userElement\table.php(37): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 01:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-26 01:52:35 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 01:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-26 01:52:52 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+WARNING - 2024-11-26 01:52:52 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 02:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-26 02:07:41 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+WARNING - 2024-11-26 02:07:41 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 02:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-26 02:07:55 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+WARNING - 2024-11-26 02:07:55 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 02:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-26 02:08:27 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+WARNING - 2024-11-26 02:08:27 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 02:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-26 02:10:37 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+WARNING - 2024-11-26 02:10:37 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 02:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-26 02:10:51 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+WARNING - 2024-11-26 02:10:51 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\userElement\table.php on line 33.
+ 1 APPPATH\Views\userElement\table.php(33): strtotime(null)
+ 2 APPPATH\Views\userElement\userElement_view.php(29): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\table.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(68): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-26 02:13:45 --> ErrorException: Undefined array key "User_nombre"
+[Method: GET, Route: userElement]
+in APPPATH\Controllers\UserElement.php on line 61.
+ 1 APPPATH\Controllers\UserElement.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_nombre"', 'C:\\PROJECT_WM_SENA_W\\app\\Controllers\\UserElement.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-26 02:17:47 --> ErrorException: Undefined array key "User_nombre"
+[Method: GET, Route: userElement]
+in APPPATH\Controllers\UserElement.php on line 63.
+ 1 APPPATH\Controllers\UserElement.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_nombre"', 'C:\\PROJECT_WM_SENA_W\\app\\Controllers\\UserElement.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+CRITICAL - 2024-11-26 02:22:34 --> ErrorException: Undefined array key "User_nombre"
+[Method: GET, Route: userElement]
+in APPPATH\Controllers\UserElement.php on line 64.
+ 1 APPPATH\Controllers\UserElement.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "User_nombre"', 'C:\\PROJECT_WM_SENA_W\\app\\Controllers\\UserElement.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 13:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-26 13:01:33 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: userElement]
+in APPPATH\Controllers\UserElement.php on line 56.
+ 1 APPPATH\Controllers\UserElement.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\PROJECT_WM_SENA_W\\app\\Controllers\\UserElement.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 13:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-26 13:02:03 --> ErrorException: Undefined variable $users
+[Method: GET, Route: userElement]
+in APPPATH\Views\userElement\form.php on line 8.
+ 1 APPPATH\Views\userElement\form.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php', 8)
+ 2 APPPATH\Views\userElement\userElement_view.php(45): require_once('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\form.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\PROJECT_WM_SENA_W\\app\\Views\\userElement\\userElement_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('userElement/userElement_view', [], true)
+ 6 APPPATH\Controllers\UserElement.php(62): view('userElement/userElement_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserElement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserElement))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\PROJECT_WM_SENA_W\\public\\index.php')
+INFO - 2024-11-26 13:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 14:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-26 14:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

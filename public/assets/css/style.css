@@ -84,7 +84,6 @@ h3 {
 }
 
 .main{
-    min-width: 100vh;
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
@@ -291,15 +290,19 @@ thead th:last-child {
 
 .table__body {
     width: 95%;
-    max-height: calc(89% - .8rem);
+    max-height: calc(89% - .8rem); /* Conserva tu cálculo actual */
     background-color: #fffb;
 
     margin: .8rem auto;
     border-radius: .6rem;
 
-    overflow: auto;
-    overflow: overlay;
+    overflow-y: auto; /* Solo scroll vertical */
+    overflow-x: hidden; /* Evitar scroll horizontal si no es necesario */
+
+    /* Nuevas reglas para limitar la altura máxima según la pantalla */
+    max-height: calc(100vh - 200px); /* Ajusta 200px según el espacio extra en tu diseño */
 }
+
 
 .table__body::-webkit-scrollbar {
     width: 0.5rem;
@@ -429,3 +432,142 @@ thead th.asc span.icon-arrow {
 tbody td.active {
     color: #6c006c;
 }
+
+/* Ocultar el sidebar y mostrar el botón en móviles */
+@media (max-width: 768px) {
+    #sidebar {
+        position: absolute;
+        top: 0;
+        left: -100%; /* Oculta el sidebar */
+        height: 100vh;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #sidebar.expand {
+        left: 0; /* Muestra el sidebar al hacer clic */
+    }
+
+    #toggle-btn {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1100;
+        background-color: #0e2238;
+        border-radius: 50%;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* Asegura que las celdas no se rompan */
+    }
+
+    .table__header .input-g {
+        width: 70%; /* Reduce el tamaño del input */
+    }
+}
+
+@media (max-width: 576px) {
+    .table__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    table th,
+    table td {
+        padding: 0.5rem; /* Reduce el padding */
+    }
+
+    tbody tr td:last-child {
+        position: static; /* Evita problemas con sticky en pantallas pequeñas */
+    }
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Evita que la imagen se mueva */
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1rem; /* Ajusta el tamaño del logo */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Coloca los enlaces en columna */
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        width: 100%; /* Haz que el menú dropdown ocupe toda la pantalla */
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    h1, h3 {
+        font-size: 1.2rem; /* Reduce los títulos */
+    }
+
+    .btn-actions {
+        font-size: 0.6em; /* Reduce el tamaño de los botones */
+        width: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1, h3 {
+        font-size: 1rem; /* Más pequeño en pantallas extra pequeñas */
+    }
+
+    .btn-actions {
+        font-size: 0.5em;
+    }
+
+    .main {
+        padding: 5px; /* Reduce los márgenes */
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        width: 90%; /* Reduce el ancho del modal en pantallas pequeñas */
+        margin: 10px auto;
+    }
+
+    .modal-content {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+}
+

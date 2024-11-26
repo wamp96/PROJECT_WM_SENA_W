@@ -12,7 +12,7 @@ class UserElementModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['User_element_id','User_element_fecha','User_fk','Element_fk','update_at'];
+    protected $allowedFields    = ['User_element_id', 'User_element_fecha', 'User_fk', 'Element_fk', 'update_at'];
 
     protected bool $allowEmptyInserts = false;
 
@@ -20,4 +20,9 @@ class UserElementModel extends Model
     protected $createdField  = 'create_at';
     protected $updatedField  = 'update_at';
 
+    public function getUserElementDetails()
+    {
+        $query = $this->db->query('CALL GetUserElementDetails()');
+        return $query->getResultArray(); // Devuelve los resultados como un array asociativo
+    }
 }

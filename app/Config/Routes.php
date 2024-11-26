@@ -158,11 +158,14 @@ $routes->group("category", function ($routes) {
 /**
  * Routes for userElement
  */
-$routes->group("userElement", function ($routes) {
-  $routes->get("/", "userElement::index");
-  $routes->post('/assign', 'UserElement::assignElementToUser');  // Para asignar un elemento a un usuario
-  $routes->get('/create', 'UserElement::create');
+$routes->group('userElement', function ($routes) {
+  $routes->get('/', 'UserElement::index'); // Página principal del módulo
+  $routes->post('assign', 'UserElement::assignElementToUser'); // Crear una asignación
+  $routes->get('getElementDetails/(:num)', 'UserElement::getElementDetails/$1'); // Obtener detalles de un elemento específico por ID
+  $routes->post('update', 'UserElement::updateElementAssignment'); // Actualizar una asignación
+  $routes->delete('delete/(:num)', 'UserElement::deleteElementAssignment/$1'); // Eliminar una asignación
 });
+
 
 
 
