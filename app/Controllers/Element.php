@@ -17,7 +17,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\API\ResponseTrait;
 
 
-class Element extends BaseController 
+class Element extends BaseController
 {
 
     //Variables
@@ -38,15 +38,15 @@ class Element extends BaseController
     {
         $this->primarykey = "Element_id";
         $this->elementModel = new ElementModel();
-        $this->categoryModel = new CategoryModel();                
-        $this->modelModel = new ModelModel();        
-        $this->brandModel = new BrandModel();         
+        $this->categoryModel = new CategoryModel();
+        $this->modelModel = new ModelModel();
+        $this->brandModel = new BrandModel();
         $this->elementStatusModel = new ElementStatusModel();
         $this->profileModel = new ProfileModel();
         $this->roleModulesModel = new roleModulesModel();
         $this->data = [];
         $this->model = "elements";
-    } 
+    }
 
     //Metodo index se inicia la vista y se establecen los parametros para enviar los datos en la vista del renderizado html
     public function index()
@@ -62,26 +62,31 @@ class Element extends BaseController
         return view('element/element_view', $this->data);
     }
 
-    public function viewList(){
-        return $this->respond(['elements'=>  $this->elementModel->findAll()], 200);
+    public function viewList()
+    {
+        try {
+            $elements = $this->elementModel->sp_elements(); // Llama al procedimiento almacenado
+            return $this->respond(['elements' => $elements], ResponseInterface::HTTP_OK); // Respuesta JSON con los datos
+        } catch (\Exception $e) {
+            return $this->respond(['error' => $e->getMessage()], ResponseInterface::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     public function create()
     {
-        if($this->request->isAJAX()){
+        if ($this->request->isAJAX()) {
             $dataModel = $this->getDataModel();
-            console.log(json_encode($dataModel));
-            if($this->elementModel->insert($dataModel)){
-                $data['message']= 'success';
-                $data['response']= ResponseInterface::HTTP_OK;
-                $data['data']=  $dataModel ;
-                $data['csrf']= csrf_hash();
-            }else{
+            if ($this->elementModel->insert($dataModel)) {
+                $data['message'] = 'success';
+                $data['response'] = ResponseInterface::HTTP_OK;
+                $data['data'] =  $dataModel;
+                $data['csrf'] = csrf_hash();
+            } else {
                 $data['message'] = 'Error create element';
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
-        }else{
+        } else {
             $data['message'] = 'Error Ajax';
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = '';
@@ -91,17 +96,17 @@ class Element extends BaseController
 
     public function singleElement($id = null)
     {
-        if($this->request->isAJAX()){
-            if($data[$this->model] = $this->elementModel->where($this->primarykey, $id)->first()){
+        if ($this->request->isAJAX()) {
+            if ($data[$this->model] = $this->elementModel->where($this->primarykey, $id)->first()) {
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
-            }else{
+            } else {
                 $data['message'] = 'Error create Element';
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
-        }else{
+        } else {
             $data['message'] = 'Success';
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = '';
@@ -109,11 +114,12 @@ class Element extends BaseController
         echo json_encode($data);
     }
 
-    public function update(){
-        if($this ->request->isAJAX()){
+    public function update()
+    {
+        if ($this->request->isAJAX()) {
             $today = date("Y-m-d H:i:s");
             $id = $this->request->getVar($this->primarykey);
-            $dataModel=[
+            $dataModel = [
                 'Element_nombre' => $this->request->getVar('Element_nombre'),
                 'Element_imagen' => $this->request->getVar('Element_imagen'),
                 'Element_serial' => $this->request->getVar('Element_serial'),
@@ -126,20 +132,20 @@ class Element extends BaseController
                 'Element_status_fk' => $this->request->getVar('Element_status_fk'),
                 'Brand_fk' => $this->request->getVar('Brand_fk'),
                 'Model_id' => $this->request->getVar('Model_id'),
-                'update_at' => $today                 
+                'update_at' => $today
             ];
-            if($this->elementModel->update($id, $dataModel)){
-                $data['message'] = 'success' ;
+            if ($this->elementModel->update($id, $dataModel)) {
+                $data['message'] = 'success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = $dataModel;
                 $data['csrf'] = csrf_hash();
-            }else{
-                $data['message'] = 'Error create Element' ;
+            } else {
+                $data['message'] = 'Error create Element';
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
                 $data['data'] = '';
             }
-        }else{
-            $data['message'] = 'Error create Element' ;
+        } else {
+            $data['message'] = 'Error create Element';
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = '';
         }
@@ -147,28 +153,29 @@ class Element extends BaseController
     }
 
     public function delete($id = null)
-    {   
-        try{
-            if($this->elementModel->where($this->primarykey, $id)->delete($id)){
-                $data['message'] = 'success' ;
+    {
+        try {
+            if ($this->elementModel->where($this->primarykey, $id)->delete($id)) {
+                $data['message'] = 'success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['data'] = "OK";
                 $data['csrf'] = csrf_hash();
-            }else{
-                $data['message'] = 'Error Ajax' ;
+            } else {
+                $data['message'] = 'Error Ajax';
                 $data['response'] = ResponseInterface::HTTP_CONFLICT;
                 $data['data'] = 'error';
             }
-        }catch(\Exception $e){
-            $data['message'] = 'Error create Element' ;
+        } catch (\Exception $e) {
+            $data['message'] = 'Error create Element';
             $data['response'] = ResponseInterface::HTTP_CONFLICT;
             $data['data'] = 'Error';
         }
         echo json_encode($data);
     }
 
-    public function getDataModel(){
-        $data =[
+    public function getDataModel()
+    {
+        $data = [
             'Element_nombre' => $this->request->getVar('Element_nombre'),
             'Element_imagen' => $this->request->getVar('Element_imagen'),
             'Element_serial' => $this->request->getVar('Element_serial'),
@@ -181,9 +188,8 @@ class Element extends BaseController
             'Element_status_fk' => $this->request->getVar('Element_status_fk'),
             'Brand_fk' => $this->request->getVar('Brand_fk'),
             'Model_id' => $this->request->getVar('Model_id'),
-            'update_at' => $this->request->getVar('update_at'),     
+            'update_at' => $this->request->getVar('update_at'),
         ];
         return $data;
     }
 }
-?>

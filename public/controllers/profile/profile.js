@@ -2,7 +2,7 @@
 const formId1 = 'my-profile';
 const modalId1 = 'my-modal_profile';
 const model1 = 'profiles';
-const tableId1= 'table-index';
+const tableId1 = 'table-index';
 const preloadId = 'preloadId';
 const classEdit = 'edit-input';
 const textConfirm = 'Press a button!\nEither OK or Cancel.';
@@ -13,7 +13,7 @@ const mainApp1 = new Main(modalId, formId, classEdit, preloadId);
 var insertUpdate = true;
 var url = "";
 var method = "";
-var data = "";  
+var data = "";
 var resultFetch = null;
 
 
@@ -53,7 +53,7 @@ async function close() {
     resultFetch = getData(data, method, url);
     resultFetch.then(response => response.json())
       .then(data => {
-         location.assign('/user');
+        location.assign('/user');
       })
       .catch(error => {
         console.error(error);
@@ -67,7 +67,7 @@ async function close() {
 
 async function getDataId(id) {
   method = 'GET';
-  url = URI_USER + LIST_CRUD[1] + '/' + id;
+  url = URI_PROFILE + LIST_CRUD[1] + '/' + id;
   data = mainApp.getDataFormJson();
   resultFetch = getData(data, method, url);
   resultFetch.then(response => response.json())
@@ -117,47 +117,50 @@ $(document).ready(function () {
   $('#' + tableId).DataTable();
 });
 
+
+
 mainApp.getForm().addEventListener('submit', async function (event) {
   event.preventDefault();
   if (mainApp.setValidateForm()) {
     mainApp.showPreload();
-    if (insertUpdate) {
-      method = 'POST';
-      url = URI_USER + LIST_CRUD[0];
-      data = mainApp.getDataFormJson();
-      console.log(data);
-      resultFetch = getData(data, method, url);
-      resultFetch.then(response => response.json())
-        .then(data => {
-          mainApp.hiddenModal();
-          reloadPage();
-        })
-        .catch(error => {
-          console.error(error);
-          mainApp.hiddenPreload();
-        })
-        .finally();
-    } else {
-      method = 'POST';
-      url = URI_USER + LIST_CRUD[2];
-      data = mainApp.getDataFormJson();
-      resultFetch = getData(data, method, url);
-      resultFetch.then(response => response.json())
-        .then(data => {
-          mainApp.hiddenModal();
-          reloadPage();
-        })
-        .catch(error => {
-          console.error(error);
-          mainApp.hiddenPreload();
-        })
-        .finally();
+    let url = insertUpdate ? 'profile/create' : 'profile/update';  // Determinar la ruta
+    let method = 'POST';
+    let data = mainApp.getDataFormJson();
+
+    try {
+      const resultFetch = await getData(data, method, url);
+      const resultData = await resultFetch.json();
+
+      if (resultData.status === 200) {
+        mainApp.hiddenModal();
+        reloadPage();
+      } else {
+        alert(resultData.message);  // Mostrar mensaje de error
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      mainApp.hiddenPreload();
     }
   } else {
-    alert("Data Validate");
+    alert("Data is invalid.");
     mainApp.resetForm();
   }
 });
+
+
+
+
+
+function setDataFormJson(data) {
+  if (data) {
+    // Actualizar cada campo del formulario con los datos del perfil
+    document.getElementById('Profile_id').value = data.Profile_id;
+    document.getElementById('Profile_email').value = data.Profile_email;
+    document.getElementById('Profile_name').value = data.Profile_name;
+    document.getElementById('Profile_photo').value = data.Profile_photo;
+  }
+}
+
 
 function reloadPage() {
   setTimeout(function () {

@@ -20,9 +20,12 @@ $routes->group("api", function ($routes) {
 });
 
 //
-$routes->group("profile", ['filter' => 'AuthCheck'], function ($routes) {
-  $routes->get("show/(:num)", "Profile::index/$1");
+$routes->group('profile', function($routes) {
+  $routes->get('(:num)', 'ProfileController::getProfile/$1'); // Ruta para obtener el perfil por ID
+  $routes->post('create', 'ProfileController::createProfile'); // Ruta para crear el perfil
+  $routes->post('update', 'ProfileController::updateProfile'); // Ruta para actualizar el perfil
 });
+
 
 //ROUTES CRUD LOGIN---------------------------------------------------------
 $routes->group("login", function ($routes) {

@@ -214,6 +214,10 @@ span{
     align-items: center;
 }
 
+.body2{
+    background: url(../img/fondos/pexels-500photos-com-15338-68629.jpg) center / cover !important;
+}
+
 table {
     width: 100%;
 }
@@ -303,6 +307,22 @@ thead th:last-child {
     max-height: calc(100vh - 200px); /* Ajusta 200px según el espacio extra en tu diseño */
 }
 
+.bi-dashboard {
+   color: #0e223e;
+}
+
+.card-title{
+    color: #0e223e;
+}
+
+.card-text{
+    color: black;
+}
+
+.bi-arrow-right-circle-fill{
+    color: #0e223e;
+    font-size: 25px;
+}
 
 .table__body::-webkit-scrollbar {
     width: 0.5rem;
