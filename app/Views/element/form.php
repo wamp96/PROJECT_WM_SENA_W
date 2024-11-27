@@ -39,23 +39,23 @@
     <div class="form-floating mb-3 col-12">
         <select class="form-select" aria-label="Id Parent" id="Category_fk" name="Category_fk" disabled>
             <option value=NULL selected>Open this select Categoria</option>
-                <?php if ($categories) : ?>
-                    <?php foreach ($categories as $obj) : ?>
-                        <option value="<?= $obj['Category_id'] ?>"><?= $obj['Category_nombre'] ?></option>
-                    <?php endforeach; ?>
-                <?php endif; ?>
+            <?php if ($categories) : ?>
+                <?php foreach ($categories as $obj) : ?>
+                    <option value="<?= $obj['Category_id'] ?>"><?= $obj['Category_nombre'] ?></option>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </select>
     </div>
 
-    <div class="form-floating mb-3 col-12">           
+    <div class="form-floating mb-3 col-12">
         <select class="form-select" aria-label="Id Parent" id="Element_status_fk" name="Element_status_fk" disabled>
             <option value=NULL selected>Open this select Element Status</option>
-                <?php if ($element_status) : ?>
-                    <?php foreach ($element_status as $obj) : ?>
-                        <option value="<?= $obj['Element_status_id'] ?>"><?= $obj['Element_status_name'] ?></option>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-        </select>            
+            <?php if ($element_status) : ?>
+                <?php foreach ($element_status as $obj) : ?>
+                    <option value="<?= $obj['Element_status_id'] ?>"><?= $obj['Element_status_name'] ?></option>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </select>
     </div>
 
     <div class="form-floating mb-3 col-12">
@@ -68,20 +68,21 @@
             <?php endif; ?>
         </select>
     </div>
-    
+
     <div class="form-floating mb-3 col-12">
         <select class="form-select" aria-label="Id Parent" id="Model_id" name="Model_id">
             <option value=NULL selected>Open this select Modelo</option>
             <?php if ($models) : ?>
                 <?php foreach ($models as $model) : ?>
-                    <?php if ($model[
-                        'Brand_fk' == $brand['Brand_id'] &&
+                    <?php if (
+                        $model['Brand_fk'] == $brand['Brand_id'] &&
                         $model['Model_brand_fk'] == $brand['Brand_id']
-                    ]) : ?>
-                        <option value="<?= $model['Model_id'] ?>"><?= $model['Model_name'] ?></option>                  
-                    <?php endif; ?>    
-                        <?php endforeach; ?>
+                    ) : ?>
+
+                        <option value="<?= $model['Model_id'] ?>"><?= $model['Model_name'] ?></option>
+                    <?php endif; ?>
+                <?php endforeach; ?>
             <?php endif; ?>
         </select>
     </div>
-</form>                                                                 
+</form>
