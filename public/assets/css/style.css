@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -12,7 +13,7 @@ html, body {
 }
 
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
@@ -20,46 +21,46 @@ a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-h1{
+h1 {
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-.btn-actions{
+.btn-actions {
     font-size: 0.7em !important;
     width: 60px;
     font-weight: bold;
     margin: 4px;
 }
 
-input[type="search"]{
+input[type="search"] {
     border-radius: 4px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color:black;
+    color: black;
     background-color: white;
     background-clip: padding-box;
     border: 1px solid rgb(97, 96, 96);
     margin: 3px;
 }
 
-.message-error{
+.message-error {
     color: red;
 }
 
-.preload{
+.preload {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(223, 227, 203, 0.73);
-    z-index:2000;
+    z-index: 2000;
     cursor: progress;
     display: none;
 }
@@ -75,22 +76,22 @@ h3 {
     margin: 15px;
     font-size: 35px;
     font-weight: bold;
-    
+
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     min-height: 100vh;
 }
 
-.main{
+.main {
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
     background-color: #EEEEEE;
 }
 
-#sidebar{
+#sidebar {
     width: 70px;
     min-width: 70px;
     z-index: 1000;
@@ -101,20 +102,20 @@ h3 {
     min-height: 100vh;
 }
 
-#sidebar.expand{
+#sidebar.expand {
     width: 260px;
     min-width: 260px;
 }
 
-#toggle-btn{
+#toggle-btn {
     background-color: transparent;
     cursor: pointer;
     border: 0;
-   
+
 }
 
-#toggle-btn img{
-    width:  65px;
+#toggle-btn img {
+    width: 65px;
     color: #fff;
 }
 
@@ -129,17 +130,17 @@ h3 {
 }
 
 #sidebar:not(.expand) .sidebar-logo,
-#sidebar:not(.expand) a.sidebar-link span{
+#sidebar:not(.expand) a.sidebar-link span {
     display: none;
 }
 
-.sidebar-nav{
+.sidebar-nav {
     padding: 2rem 0;
     flex: 1 1 auto;
 }
 
-a.sidebar-link{
-    padding:  .625rem 1.62rem;
+a.sidebar-link {
+    padding: .625rem 1.62rem;
     color: #fff;
     display: block;
     font-size: 0.9rem;
@@ -153,7 +154,7 @@ a.sidebar-link .i {
 }
 
 
-a.sidebar-link:hover{
+a.sidebar-link:hover {
     background-color: rgb(255, 255, 255, .075);
     border-left: 3px solid #3b7ddd;
 }
@@ -201,7 +202,7 @@ a.sidebar-link:hover{
     transition: all .2s ease-out;
 }
 
-span{
+span {
     margin: 5px;
 }
 
@@ -214,9 +215,13 @@ span{
     align-items: center;
 }
 
-.body2{
-    background: url(../img/fondos/pexels-500photos-com-15338-68629.jpg) center / cover !important;
+.body2 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        /* Capa opaca */
+        url(../img/fondos/pexels-500photos-com-15338-68629.jpg) center / cover !important;
 }
+
 
 table {
     width: 100%;
@@ -245,7 +250,7 @@ main.table1 {
     align-items: center;
 }
 
-.table__header .input-g img{
+.table__header .input-g img {
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -281,45 +286,54 @@ main.table1 {
 tbody td:last-child {
     position: sticky;
     right: 0;
-    background-color: #fff5; /* O el color de fondo que prefieras */
-    z-index: 1; /* Asegura que la columna pegajosa se superponga a otras columnas durante el desplazamiento */
+    background-color: #fff5;
+    /* O el color de fondo que prefieras */
+    z-index: 1;
+    /* Asegura que la columna pegajosa se superponga a otras columnas durante el desplazamiento */
 }
 
 thead th:last-child {
     position: sticky;
-    right: 0; /* Asegura que el encabezado se mantenga a la derecha al desplazarse horizontalmente */
-    background-color: #d5d1defe; /* Fondo para evitar superposición con otras filas */
-    z-index: 10; /* Asegura que el encabezado se superponga a otras celdas durante el desplazamiento */
+    right: 0;
+    /* Asegura que el encabezado se mantenga a la derecha al desplazarse horizontalmente */
+    background-color: #d5d1defe;
+    /* Fondo para evitar superposición con otras filas */
+    z-index: 10;
+    /* Asegura que el encabezado se superponga a otras celdas durante el desplazamiento */
 }
 
 .table__body {
     width: 95%;
-    max-height: calc(89% - .8rem); /* Conserva tu cálculo actual */
+    max-height: calc(89% - .8rem);
+    /* Conserva tu cálculo actual */
     background-color: #fffb;
 
     margin: .8rem auto;
     border-radius: .6rem;
 
-    overflow-y: auto; /* Solo scroll vertical */
-    overflow-x: hidden; /* Evitar scroll horizontal si no es necesario */
+    overflow-y: auto;
+    /* Solo scroll vertical */
+    overflow-x: hidden;
+    /* Evitar scroll horizontal si no es necesario */
 
     /* Nuevas reglas para limitar la altura máxima según la pantalla */
-    max-height: calc(100vh - 200px); /* Ajusta 200px según el espacio extra en tu diseño */
+    max-height: calc(100vh - 200px);
+    /* Ajusta 200px según el espacio extra en tu diseño */
 }
 
 .bi-dashboard {
-   color: #0e223e;
-}
-
-.card-title{
     color: #0e223e;
 }
 
-.card-text{
+.card-title {
+    color: #0e223e;
+}
+
+.card-text {
     color: black;
 }
 
-.bi-arrow-right-circle-fill{
+.bi-arrow-right-circle-fill {
     color: #0e223e;
     font-size: 25px;
 }
@@ -339,7 +353,8 @@ thead th:last-child {
     visibility: visible;
 }
 
-.table1 th, td {
+.table1 th,
+td {
     border-collapse: collapse;
     padding: 1rem;
     text-align: left;
@@ -373,12 +388,12 @@ tbody tr:hover {
 
 tbody tr td,
 tbody tr td p,
-tbody tr td p img{
+tbody tr td p img {
     transition: .2s ease-in-out;
 }
 
 tbody tr.hide td,
-tbody tr.hide td p{
+tbody tr.hide td p {
     padding: 0;
     font: 0 / 0 sans-serif;
     transition: .2s ease-in-out .5s;
@@ -392,12 +407,12 @@ tbody tr.hide td p{
     text-align: center;
 }
 
-.status.active{
+.status.active {
     background-color: #86e49d;
     color: #006b21;
 }
 
-.status.inactive{
+.status.inactive {
     background-color: #ebc474;
 }
 
@@ -406,8 +421,8 @@ tbody tr.hide td p{
     color: #b30021;
 }
 
-@media (max-width: 1000px){
-    td:not(:first-of-type){
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
         min-width: 12.1rem;
     }
 }
@@ -431,17 +446,17 @@ thead th.active {
 }
 
 
-thead th:hover span.icon-arrow{
+thead th:hover span.icon-arrow {
     border: 1.4px solid #6c006c;
-    
+
 }
 
 thead th:hover {
     color: #6c006c;
 }
 
-thead th.active span.icon-arrow{
-    background-color:  #6c006c;
+thead th.active span.icon-arrow {
+    background-color: #6c006c;
     color: #fff;
 }
 
@@ -458,14 +473,16 @@ tbody td.active {
     #sidebar {
         position: absolute;
         top: 0;
-        left: -100%; /* Oculta el sidebar */
+        left: -100%;
+        /* Oculta el sidebar */
         height: 100vh;
         z-index: 1000;
         transition: all 0.3s ease-in-out;
     }
 
     #sidebar.expand {
-        left: 0; /* Muestra el sidebar al hacer clic */
+        left: 0;
+        /* Muestra el sidebar al hacer clic */
     }
 
     #toggle-btn {
@@ -487,11 +504,13 @@ tbody td.active {
     table {
         display: block;
         overflow-x: auto;
-        white-space: nowrap; /* Asegura que las celdas no se rompan */
+        white-space: nowrap;
+        /* Asegura que las celdas no se rompan */
     }
 
     .table__header .input-g {
-        width: 70%; /* Reduce el tamaño del input */
+        width: 70%;
+        /* Reduce el tamaño del input */
     }
 }
 
@@ -503,23 +522,27 @@ tbody td.active {
 
     table th,
     table td {
-        padding: 0.5rem; /* Reduce el padding */
+        padding: 0.5rem;
+        /* Reduce el padding */
     }
 
     tbody tr td:last-child {
-        position: static; /* Evita problemas con sticky en pantallas pequeñas */
+        position: static;
+        /* Evita problemas con sticky en pantallas pequeñas */
     }
 }
 
 body {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Evita que la imagen se mueva */
+    background-attachment: fixed;
+    /* Evita que la imagen se mueva */
 }
 
 @media (max-width: 768px) {
     body {
-        background-size: contain; /* Ajusta el tamaño en pantallas pequeñas */
+        background-size: contain;
+        /* Ajusta el tamaño en pantallas pequeñas */
     }
 }
 
@@ -529,16 +552,19 @@ body {
 
 @media (max-width: 768px) {
     .navbar-brand {
-        font-size: 1rem; /* Ajusta el tamaño del logo */
+        font-size: 1rem;
+        /* Ajusta el tamaño del logo */
     }
 
     .navbar-nav {
-        flex-direction: column; /* Coloca los enlaces en columna */
+        flex-direction: column;
+        /* Coloca los enlaces en columna */
         text-align: center;
     }
 
     .dropdown-menu {
-        width: 100%; /* Haz que el menú dropdown ocupe toda la pantalla */
+        width: 100%;
+        /* Haz que el menú dropdown ocupe toda la pantalla */
         text-align: center;
     }
 
@@ -556,19 +582,26 @@ body {
 
 
 @media (max-width: 768px) {
-    h1, h3 {
-        font-size: 1.2rem; /* Reduce los títulos */
+
+    h1,
+    h3 {
+        font-size: 1.2rem;
+        /* Reduce los títulos */
     }
 
     .btn-actions {
-        font-size: 0.6em; /* Reduce el tamaño de los botones */
+        font-size: 0.6em;
+        /* Reduce el tamaño de los botones */
         width: 50px;
     }
 }
 
 @media (max-width: 576px) {
-    h1, h3 {
-        font-size: 1rem; /* Más pequeño en pantallas extra pequeñas */
+
+    h1,
+    h3 {
+        font-size: 1rem;
+        /* Más pequeño en pantallas extra pequeñas */
     }
 
     .btn-actions {
@@ -576,18 +609,20 @@ body {
     }
 
     .main {
-        padding: 5px; /* Reduce los márgenes */
+        padding: 5px;
+        /* Reduce los márgenes */
     }
 }
 
 @media (max-width: 576px) {
     .modal-dialog {
-        width: 90%; /* Reduce el ancho del modal en pantallas pequeñas */
+        width: 90%;
+        /* Reduce el ancho del modal en pantallas pequeñas */
         margin: 10px auto;
     }
 
     .modal-content {
-        font-size: 0.9rem; /* Reduce el tamaño del texto */
+        font-size: 0.9rem;
+        /* Reduce el tamaño del texto */
     }
 }
-

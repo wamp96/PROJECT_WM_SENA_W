@@ -23,6 +23,12 @@ class UserElementModel extends Model
     public function getUserElementDetails()
     {
         $query = $this->db->query('CALL GetUserElementDetails()');
-        return $query->getResultArray(); // Devuelve los resultados como un array asociativo
+        return $query->getResultArray();
+    }
+
+    public function getUserElementCounts()
+    {
+        $query = $this->db->query('CALL GetUserElementCounts()');
+        return $query->getResultArray();
     }
 }

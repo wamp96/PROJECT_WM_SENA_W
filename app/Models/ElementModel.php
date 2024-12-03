@@ -29,4 +29,11 @@ class ElementModel extends Model
         $query = $db->query('CALL sp_elements()'); // Llamada al procedimiento almacenado
         return $query->getResultArray(); // Retorna el resultado como un array
     }
+
+    public function sp_elements_by_brand()
+    {
+        $db = \Config\Database::connect(); // Conexión a la base de datos
+        $query = $db->query('CALL sp_elements_by_brand()'); // Llamada al procedimiento almacenado
+        return $query->getResultArray(); // Retorna el resultado como un array
+    }
 }
