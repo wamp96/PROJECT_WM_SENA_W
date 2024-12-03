@@ -42,9 +42,6 @@ $routes->group("dashboard", function ($routes) {
   $routes->get("/", "Dashboard::index", ['filter' => 'AuthCheck']);
 });
 
-
-
-
 //---------------------------ROUTES CRUD USER----------------------------------------------------------------
 
 $routes->group("user", function ($routes) {
@@ -95,9 +92,6 @@ $routes->group("role", function ($routes) {
   $routes->post("add", "role::create");
   $routes->post("update", "role::update");
 });
-
-
-
 
 //--------------------------------------ROUTES CRUD ELEMENT----------------------------------------------------------------
 $routes->group("element", function ($routes) {
@@ -170,9 +164,6 @@ $routes->group('userElement', function ($routes) {
   $routes->delete('delete/(:num)', 'UserElement::deleteElementAssignment/$1'); // Eliminar una asignación
 });
 
-
-
-
 /**
  * Routes for requestStatus
  */
@@ -216,25 +207,3 @@ $routes->group("roleModule", function ($routes) {
   $routes->post("add", "RoleModule::create");
   $routes->post("update", "RoleModule::update");
 });
-
-
-
-//ROUTES CRUD PERMISSION----------------------------------------------------------------
-
-$routes->group("permission", function ($routes) {
-  $routes->get("/", "Permission::index");
-  $routes->get("show", "Permission::index");
-  $routes->get("edit/(:num)", "Permission::singlePermission/$1");
-  $routes->get("delete/(:num)", "Permission::delete/$1");
-  $routes->post("add", "Permission::create");
-  $routes->post("update", "Permission::update");
-});
-  
-  // $routes->group("permission",['filter' => 'AuthCheck'],function($routes){
-  //   $routes->get("/", "Permission::index");
-  //   $routes->get("show", "Permission::index");
-  //   $routes->get("edit/(:num)", "Permission::singlePermission/$1");
-  //   $routes->get("delete/(:num)", "Permission::delete/$1");
-  //   $routes->post("add", "Permission::create");
-  //   $routes->post("update", "Permission::update");
-  // });
