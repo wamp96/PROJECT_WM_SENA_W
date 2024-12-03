@@ -9,7 +9,8 @@ use CodeIgniter\Router\RouteCollection;
 
 //GROUP CRUD----------------------------------------------------------------
 
-$routes->get("/", "Login::index", ['filter' => 'AlreadyLoggedIn']);
+$routes->get("/", "LandingController::index");
+
 
 //$routes->get('/','Home::index');
 $routes->group("api", function ($routes) {
