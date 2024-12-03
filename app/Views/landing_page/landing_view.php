@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WM Inventory - Gestión de Inventario Eficiente</title>
+    <title>WM Inventory - Efficient Inventory Management</title>
+   <!-- REMOVER EL CSS PARA OTRA CARPETA -->
     <style>
         * {
             margin: 0;
@@ -114,41 +115,41 @@
             <nav>
                 <div class="logo">WM Inventory</div>
                 <div class="nav-links">
-                    <a href="#features">Características</a>
-                    <a href="#contact">Contacto</a>
-                </div>
+                    <!-- AQUI ESTA EL BOTON DE LOGIN -->
+                    <a href="#features">Login</a>
+                    <a href="#contact">Contact</a>
+                </div>                      
             </nav>
         </div>
-    </header>
+    </header>                                       
 
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Gestión de Inventario Eficiente para tu Negocio</h1>
-                <p>Optimiza tu inventario, reduce costos y aumenta la productividad con WM Inventory</p>
-                <a href="#contact" class="cta-button">Solicitar Demo</a>
+                <h1>Efficient Inventory Management for Your Business</h1>
+                <p>Optimize your inventory, reduce costs, and boost productivity with WM Inventory</p>
             </div>
         </section>
 
         <section id="features" class="features">
             <div class="container">
-                <h2>Características Principales</h2>
+                <h2>Features Main</h2>
                 <div class="feature-grid">
                     <div class="feature">
-                        <h3>Control en Tiempo Real</h3>
-                        <p>Monitorea tu inventario en tiempo real desde cualquier dispositivo.</p>
+                        <h3>Real-Time Control</h3>
+                        <p>Monitor your inventory in real time from any device.</p>
                     </div>
                     <div class="feature">
-                        <h3>Gestión de Pedidos</h3>
-                        <p>Automatiza el proceso de pedidos y reabastecimiento.</p>
+                        <h3>Order Management</h3>
+                        <p>Automate the ordering and restocking process.</p>
                     </div>
                     <div class="feature">
-                        <h3>Informes Detallados</h3>
-                        <p>Genera informes personalizados para tomar decisiones informadas.</p>
+                        <h3>Detailed Reports</h3>
+                        <p>Generate custom reports to make informed decisions.</p>
                     </div>
                     <div class="feature">
-                        <h3>Integración Fácil</h3>
-                        <p>Integra fácilmente con tus sistemas existentes de contabilidad y ventas.</p>
+                        <h3>Easy Integration</h3>
+                        <p>Easily integrate with your existing accounting and sales systems.</p>
                     </div>
                 </div>
             </div>
@@ -157,8 +158,8 @@
 
     <footer id="contact">
         <div class="container">
-            <p>&copy; 2024 WM Inventory. Todos los derechos reservados.</p>
-            <p>Contacto: info@wminventory.com | Tel: (123) 456-7890</p>
+            <p>&copy; 2024 WM Inventory. All rights reserved.</p>
+            <p>Contact: info@wminventory.com | Tel: (123) 456-7890</p>
         </div>
     </footer>
 </body>
