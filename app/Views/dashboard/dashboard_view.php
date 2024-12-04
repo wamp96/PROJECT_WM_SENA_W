@@ -31,7 +31,7 @@
         <div class="row">
           <!-- Primer gráfico: Elementos Asignados -->
           <div class="col-12 col-md-6">
-            <h3 class="text-center">Elementos Asignados</h3>
+            <h3 class="text-center">Assigned Elements</h3>
             <div class="card shadow-sm p-3 mb-5 rounded" style="background-color: #fff5; backdrop-filter: blur(7px);">
               <div class="card-body">
                 <div class="chart-container" style="position: relative; height:50vh; width:100%;">
@@ -43,7 +43,7 @@
 
           <!-- Segundo gráfico: Elementos por Marca -->
           <div class="col-12 col-md-6">
-            <h3 class="text-center">Elementos por Marca</h3>
+            <h3 class="text-center">Elements by Brand</h3>
             <div class="card shadow-sm p-3 mb-5 rounded" style="background-color: #fff5; backdrop-filter: blur(7px);">
               <div class="card-body">
                 <div class="chart-container" style="position: relative; height:50vh; width:100%;">
