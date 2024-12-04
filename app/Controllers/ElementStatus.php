@@ -39,7 +39,6 @@ class ElementStatus extends Controller
     {
         $this->data['title'] = "ELEMENT STATUS";
         $this->data[$this->model] = $this->ElementStatusModel->orderBy($this->primarykey, 'ASC')->findAll();
-        $this->data['profile'] = $this->profileModel->where('user_fk', (int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('elementStatus/status_view', $this->data);
     }

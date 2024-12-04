@@ -54,7 +54,6 @@ class Request extends BaseController
         ->findAll();
         $this->data['elements'] = $this->elementModel->orderBy('Element_id', 'ASC')->findAll();
         $this->data['request_status'] = $this->requestStatusModel->orderBy('Request_status_id', 'ASC')->findAll();
-        $this->data['profiles'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('request/request_view', $this->data);
     }

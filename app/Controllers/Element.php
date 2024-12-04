@@ -57,7 +57,6 @@ class Element extends BaseController
         $this->data['brands'] = $this->brandModel->orderBy('Brand_id', 'ASC')->findAll();
         $this->data['models'] = $this->modelModel->orderBy('Model_id', 'ASC')->findAll();
         $this->data['element_status'] = $this->elementStatusModel->orderBy('Element_status_id', 'ASC')->findAll();
-        $this->data['profile'] = $this->profileModel->where('user_fk', (int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('element/element_view', $this->data);
     }

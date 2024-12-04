@@ -18,12 +18,14 @@
   <!--Preload -->
   <?php require_once('../app/Views/preload/preload.php') ?>
   <!--End Preload -->
-  <?php require_once('../app/Views/nav/navbar.php') ?>
+  
   <!--Container-->
 
   <div class="wrapper">
     <?php require_once('../app/Views/navSlider/navSlider.php') ?>
+    
     <div class="main body2">
+    <?php require_once('../app/Views/nav/navbar.php') ?>
 
       <h3 class="title text-center my-4"><?= $title ?></h3>
 
@@ -141,7 +143,6 @@
     const labelsBrand = elementsByBrand.map(item => item.Brand_nombre);
     const dataBrand = elementsByBrand.map(item => item.Total_Elements);
 
-    console.log(elementsByBrand)
 
     // Configuración para el gráfico de "Elementos por Marca"
     const ctxBrand = document.getElementById('elementsByBrandChart').getContext('2d');

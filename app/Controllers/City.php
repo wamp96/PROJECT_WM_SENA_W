@@ -39,7 +39,6 @@ class City extends Controller
     {
         $this->data['title'] = "CITIES";
         $this->data[$this->model] = $this->cityModel->orderBy($this->primarykey, 'ASC')->findAll();
-        $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('city/city_view', $this->data);
     }

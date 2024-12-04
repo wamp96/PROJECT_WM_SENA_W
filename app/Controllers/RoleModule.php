@@ -28,7 +28,6 @@ class RoleModule extends Controller
         $this->moduleModel = new ModuleModel();
         $this->roleModel = new RoleModel();
         $this->profileModel = new ProfileModel();
-        $this->permissionModel = new PermissionModel();
         $this->data = [];
         $this->model = "roleModules";
     }
@@ -41,7 +40,6 @@ class RoleModule extends Controller
         $this->data['roles'] = $this->roleModel->orderBy('Roles_id', 'ASC')->findAll();
         $this->data['modules'] = $this->moduleModel->orderBy('Modules_id', 'ASC')->findAll();
         $this->data['permissions'] = $this->permissionModel->orderBy('Permissions_id', 'ASC')->findAll();
-        $this->data['profiles'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('roleModule/roleModules_view', $this->data);
     }

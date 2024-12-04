@@ -39,7 +39,6 @@ class UserStatus extends Controller
     {
         $this->data['title'] = "USER STATUS";
         $this->data[$this->model] = $this->StatusModel->orderBy($this->primarykey, 'ASC')->findAll();
-        $this->data['profile'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('userStatus/status_view', $this->data);
     }

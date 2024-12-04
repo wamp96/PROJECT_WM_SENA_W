@@ -116,7 +116,7 @@
                 <div class="logo">WM Inventory</div>
                 <div class="nav-links">
                     <!-- AQUI ESTA EL BOTON DE LOGIN -->
-                    <a href="#features">Login</a>
+                    <a href="/login">Login</a>
                     <a href="#contact">Contact</a>
                 </div>                      
             </nav>

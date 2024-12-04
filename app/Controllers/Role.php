@@ -34,7 +34,6 @@ class Role extends Controller
   {
     $this->data['title'] = "ROLES";
     $this->data[$this->model] = $this->roleModel->orderBy($this->primaryKey, 'ASC')->findAll();
-    $this->data['profile'] =  $this->profileModel->where('User_fk', (int)$this->getSessionIdUser()['User_id'])->first();
     $this->data['userModules'] =  $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
     return view('role/roles_view', $this->data);
   }

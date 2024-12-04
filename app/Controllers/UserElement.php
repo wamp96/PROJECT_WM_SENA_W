@@ -52,9 +52,6 @@ class UserElement extends Controller
     // Obtener los datos usando el procedimiento almacenado
     $data['user_elements'] = $this->userElementModel->getUserElementDetails();
 
-    // Obtener el perfil del usuario (opcional)
-    $data['profile'] = $this->profileModel->where('User_fk', (int)$this->getSessionIdUser()['User_id'])->first();
-
     // Obtener los módulos del usuario
     $data['userModules'] = $this->roleModulesModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
 

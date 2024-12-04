@@ -39,7 +39,6 @@ class RequestStatus extends Controller
     {
         $this->data['title'] = "REQUEST STATUS";
         $this->data[$this->model] = $this->RequestStatusModel->orderBy($this->primarykey, 'ASC')->findAll();
-        $this->data['profiles'] = $this->profileModel->where('User_fk',(int)$this->getSessionIdUser()['User_id'])->first();
         $this->data['userModules'] = $this->roleModuleModel->sp_role_modules_id((int)$this->getSessionIdUser()['Roles_fk']);
         return view('requestStatus/status_view', $this->data);
     }
@@ -74,7 +73,6 @@ class RequestStatus extends Controller
                 $data['message'] = 'Success';
                 $data['response'] = ResponseInterface::HTTP_OK;
                 $data['csrf'] = csrf_hash();
-                console.log($data);
             }else{
                 $data['message'] = 'Error create request status';
                 $data['response'] = ResponseInterface::HTTP_NO_CONTENT;
